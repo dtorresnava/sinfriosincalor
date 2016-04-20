@@ -1,0 +1,1762 @@
+2016/03/09 22:44:26 [error] [exception.CException] exception 'CException' with message 'Alias "booster.widgets.TbNavbar" is invalid. Make sure it points to an existing directory or file.' in D:\wamp\www\yii1\framework\YiiBase.php:348
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\CWidgetFactory.php(146): YiiBase::import('booster.widgets...', true)
+#1 D:\wamp\www\yii1\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'booster.widgets...', Array)
+#2 D:\wamp\www\yii1\framework\web\CBaseController.php(180): CBaseController->createWidget('booster.widgets...', Array)
+#3 D:\wamp\www\academia_yii1\protected\views\layouts\main.php(40): CBaseController->widget('booster.widgets...', Array)
+#4 D:\wamp\www\yii1\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\aca...')
+#5 D:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\aca...', Array, true)
+#6 D:\wamp\www\yii1\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\wamp\\www\\aca...', Array, true)
+#7 D:\wamp\www\yii1\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 D:\wamp\www\yii1\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 D:\wamp\www\yii1\framework\web\CBaseController.php(214): COutputProcessor->run()
+#10 D:\wamp\www\yii1\framework\web\CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#11 D:\wamp\www\academia_yii1\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#12 D:\wamp\www\yii1\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\aca...')
+#13 D:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\aca...', Array, true)
+#14 D:\wamp\www\yii1\framework\web\CController.php(784): CBaseController->renderFile('D:\\wamp\\www\\aca...', Array, true)
+#15 D:\wamp\www\academia_yii1\protected\controllers\SiteController.php(32): CController->render('index')
+#16 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 D:\wamp\www\yii1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('')
+#21 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 D:\wamp\www\academia_yii1\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/academia_yii1/
+---
+2016/03/09 22:48:11 [error] [exception.CException] exception 'CException' with message 'Alias "booster.widgets.TbNavbar" is invalid. Make sure it points to an existing directory or file.' in D:\wamp\www\yii1\framework\YiiBase.php:348
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\CWidgetFactory.php(146): YiiBase::import('booster.widgets...', true)
+#1 D:\wamp\www\yii1\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'booster.widgets...', Array)
+#2 D:\wamp\www\yii1\framework\web\CBaseController.php(180): CBaseController->createWidget('booster.widgets...', Array)
+#3 D:\wamp\www\academia_yii1\protected\views\layouts\main.php(40): CBaseController->widget('booster.widgets...', Array)
+#4 D:\wamp\www\yii1\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\aca...')
+#5 D:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\aca...', Array, true)
+#6 D:\wamp\www\yii1\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\wamp\\www\\aca...', Array, true)
+#7 D:\wamp\www\yii1\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 D:\wamp\www\yii1\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 D:\wamp\www\yii1\framework\web\CBaseController.php(214): COutputProcessor->run()
+#10 D:\wamp\www\yii1\framework\web\CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#11 D:\wamp\www\academia_yii1\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#12 D:\wamp\www\yii1\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\aca...')
+#13 D:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\aca...', Array, true)
+#14 D:\wamp\www\yii1\framework\web\CController.php(784): CBaseController->renderFile('D:\\wamp\\www\\aca...', Array, true)
+#15 D:\wamp\www\academia_yii1\protected\controllers\SiteController.php(32): CController->render('index')
+#16 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 D:\wamp\www\yii1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('')
+#21 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 D:\wamp\www\academia_yii1\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/academia_yii1/
+---
+2016/03/09 22:48:18 [error] [exception.CException] exception 'CException' with message 'Alias "booster.widgets.TbNavbar" is invalid. Make sure it points to an existing directory or file.' in D:\wamp\www\yii1\framework\YiiBase.php:348
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\CWidgetFactory.php(146): YiiBase::import('booster.widgets...', true)
+#1 D:\wamp\www\yii1\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'booster.widgets...', Array)
+#2 D:\wamp\www\yii1\framework\web\CBaseController.php(180): CBaseController->createWidget('booster.widgets...', Array)
+#3 D:\wamp\www\academia_yii1\protected\views\layouts\main.php(40): CBaseController->widget('booster.widgets...', Array)
+#4 D:\wamp\www\yii1\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\aca...')
+#5 D:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\aca...', Array, true)
+#6 D:\wamp\www\yii1\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\wamp\\www\\aca...', Array, true)
+#7 D:\wamp\www\yii1\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 D:\wamp\www\yii1\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 D:\wamp\www\yii1\framework\web\CBaseController.php(214): COutputProcessor->run()
+#10 D:\wamp\www\yii1\framework\web\CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#11 D:\wamp\www\academia_yii1\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#12 D:\wamp\www\yii1\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\aca...')
+#13 D:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\aca...', Array, true)
+#14 D:\wamp\www\yii1\framework\web\CController.php(784): CBaseController->renderFile('D:\\wamp\\www\\aca...', Array, true)
+#15 D:\wamp\www\academia_yii1\protected\controllers\SiteController.php(32): CController->render('index')
+#16 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 D:\wamp\www\yii1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('')
+#21 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 D:\wamp\www\academia_yii1\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/academia_yii1/index.php
+---
+2016/03/09 22:57:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "autores/index".' in D:\wamp\www\yii1\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('autores/index')
+#1 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\wamp\www\academia_yii1\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/academia_yii1/index.php?r=autores/index
+HTTP_REFERER=http://localhost/academia_yii1/index.php?r=site/index
+---
+2016/03/09 22:59:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "usuarios/create".' in D:\wamp\www\yii1\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/create')
+#1 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\wamp\www\academia_yii1\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/academia_yii1/index.php?r=usuarios/create
+HTTP_REFERER=http://localhost/academia_yii1/index.php?r=site/index
+---
+2016/03/10 12:42:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "create".' in D:\wamp\www\yii1\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\CController.php(270): CController->missingAction('create')
+#1 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('create')
+#2 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/create')
+#3 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\wamp\www\academia_yii1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/academia_yii1/index.php?r=usuarios/create
+HTTP_REFERER=http://localhost/academia_yii1/
+---
+2016/03/27 19:33:05 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'academia.productos' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `productos`.
+in D:\wamp\www\academia_yii1\index.php (13)
+2016/04/04 17:36:09 [error] [php] include(DateTimeI18NBehavior.php): failed to open stream: No such file or directory (D:\wamp\www\yii1\framework\YiiBase.php:432)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 D:\wamp\www\yii1\framework\YiiBase.php(303): class_exists()
+#2 D:\wamp\www\yii1\framework\YiiBase.php(196): import()
+#3 D:\wamp\www\yii1\framework\base\CComponent.php(329): createComponent()
+#4 D:\wamp\www\yii1\framework\base\CComponent.php(298): Usuarios->attachBehavior()
+#5 D:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(83): Usuarios->attachBehaviors()
+#6 D:\wamp\www\academia_yii1\protected\controllers\UsuariosController.php(97): Usuarios->__construct()
+#7 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): UsuariosController->actionCreate()
+#8 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): UsuariosController->runAction()
+#10 D:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 D:\wamp\www\yii1\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 D:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): UsuariosController->filterAccessControl()
+#13 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 D:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#15 D:\wamp\www\yii1\framework\web\CController.php(265): UsuariosController->runActionWithFilters()
+#16 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): UsuariosController->run()
+#17 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#19 D:\wamp\www\academia_yii1\index.php(13): CWebApplication->run()
+REQUEST_URI=/academia_yii1/index.php?r=usuarios/create
+in D:\wamp\www\academia_yii1\protected\controllers\UsuariosController.php (97)
+in D:\wamp\www\academia_yii1\index.php (13)
+2016/04/04 18:31:22 [error] [exception.CException] exception 'CException' with message 'Property "UserIdentity.datos" is not defined.' in D:\wamp\www\yii1\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\academia_yii1\protected\models\LoginForm.php(73): CComponent->__get('datos')
+#1 D:\wamp\www\academia_yii1\protected\controllers\SiteController.php(94): LoginForm->login()
+#2 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#3 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\wamp\www\yii1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('login')
+#7 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#8 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 D:\wamp\www\academia_yii1\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/academia_yii1/index.php?r=site/login
+HTTP_REFERER=http://localhost/academia_yii1/index.php?r=site/login
+---
+2016/04/04 18:34:15 [error] [exception.CException] exception 'CException' with message 'Property "UserIdentity.datos" is not defined.' in D:\wamp\www\yii1\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\academia_yii1\protected\models\LoginForm.php(73): CComponent->__get('datos')
+#1 D:\wamp\www\academia_yii1\protected\controllers\SiteController.php(94): LoginForm->login()
+#2 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#3 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\wamp\www\yii1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('login')
+#7 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#8 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 D:\wamp\www\academia_yii1\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/academia_yii1/index.php?r=site/login
+HTTP_REFERER=http://localhost/academia_yii1/index.php?r=site/login
+---
+2016/04/04 18:39:18 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'usuario' in 'where clause'. The SQL statement executed was: SELECT * FROM `usuarios` `t` WHERE usuario=? LIMIT 1.
+in D:\wamp\www\academia_yii1\protected\components\UserIdentity.php (21)
+in D:\wamp\www\academia_yii1\protected\models\LoginForm.php (52)
+in D:\wamp\www\academia_yii1\protected\controllers\SiteController.php (94)
+2016/04/04 18:39:18 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'usuario' in 'where clause'. The SQL statement executed was: SELECT * FROM `usuarios` `t` WHERE usuario=? LIMIT 1' in D:\wamp\www\yii1\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\yii1\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(1356): CDbCommand->queryRow()
+#2 D:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(1461): CActiveRecord->query(Object(CDbCriteria))
+#3 D:\wamp\www\academia_yii1\protected\components\UserIdentity.php(21): CActiveRecord->find('usuario=?', Array)
+#4 D:\wamp\www\academia_yii1\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#5 D:\wamp\www\yii1\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#6 D:\wamp\www\yii1\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#7 D:\wamp\www\yii1\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#8 D:\wamp\www\academia_yii1\protected\controllers\SiteController.php(94): CModel->validate()
+#9 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#10 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\wamp\www\yii1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('login')
+#14 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#15 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 D:\wamp\www\academia_yii1\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/academia_yii1/index.php?r=site/login
+HTTP_REFERER=http://localhost/academia_yii1/index.php?r=site/login
+---
+2016/04/04 18:43:47 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'usuario' in 'where clause'. The SQL statement executed was: SELECT * FROM `usuarios` `t` WHERE usuario=? LIMIT 1.
+in D:\wamp\www\academia_yii1\protected\components\UserIdentity.php (21)
+in D:\wamp\www\academia_yii1\protected\models\LoginForm.php (52)
+in D:\wamp\www\academia_yii1\protected\controllers\SiteController.php (94)
+2016/04/04 18:43:47 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'usuario' in 'where clause'. The SQL statement executed was: SELECT * FROM `usuarios` `t` WHERE usuario=? LIMIT 1' in D:\wamp\www\yii1\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\yii1\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(1356): CDbCommand->queryRow()
+#2 D:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(1461): CActiveRecord->query(Object(CDbCriteria))
+#3 D:\wamp\www\academia_yii1\protected\components\UserIdentity.php(21): CActiveRecord->find('usuario=?', Array)
+#4 D:\wamp\www\academia_yii1\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#5 D:\wamp\www\yii1\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#6 D:\wamp\www\yii1\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#7 D:\wamp\www\yii1\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#8 D:\wamp\www\academia_yii1\protected\controllers\SiteController.php(94): CModel->validate()
+#9 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#10 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\wamp\www\yii1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('login')
+#14 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#15 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 D:\wamp\www\academia_yii1\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/academia_yii1/index.php?r=site/login
+HTTP_REFERER=http://localhost/academia_yii1/index.php?r=site/login
+---
+2016/04/04 18:46:39 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'usuario' in 'where clause'. The SQL statement executed was: SELECT * FROM `usuarios` `t` WHERE usuario=? LIMIT 1.
+in D:\wamp\www\academia_yii1\protected\components\UserIdentity.php (21)
+in D:\wamp\www\academia_yii1\protected\models\LoginForm.php (52)
+in D:\wamp\www\academia_yii1\protected\controllers\SiteController.php (94)
+2016/04/04 18:46:39 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'usuario' in 'where clause'. The SQL statement executed was: SELECT * FROM `usuarios` `t` WHERE usuario=? LIMIT 1' in D:\wamp\www\yii1\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\yii1\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(1356): CDbCommand->queryRow()
+#2 D:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(1461): CActiveRecord->query(Object(CDbCriteria))
+#3 D:\wamp\www\academia_yii1\protected\components\UserIdentity.php(21): CActiveRecord->find('usuario=?', Array)
+#4 D:\wamp\www\academia_yii1\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#5 D:\wamp\www\yii1\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#6 D:\wamp\www\yii1\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#7 D:\wamp\www\yii1\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#8 D:\wamp\www\academia_yii1\protected\controllers\SiteController.php(94): CModel->validate()
+#9 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#10 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\wamp\www\yii1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('login')
+#14 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#15 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 D:\wamp\www\academia_yii1\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/academia_yii1/index.php?r=site/login
+HTTP_REFERER=http://localhost/academia_yii1/index.php?r=site/login
+---
+2016/04/04 18:46:41 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'usuario' in 'where clause'. The SQL statement executed was: SELECT * FROM `usuarios` `t` WHERE usuario=? LIMIT 1.
+in D:\wamp\www\academia_yii1\protected\components\UserIdentity.php (21)
+in D:\wamp\www\academia_yii1\protected\models\LoginForm.php (52)
+in D:\wamp\www\academia_yii1\protected\controllers\SiteController.php (94)
+2016/04/04 18:46:41 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'usuario' in 'where clause'. The SQL statement executed was: SELECT * FROM `usuarios` `t` WHERE usuario=? LIMIT 1' in D:\wamp\www\yii1\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\yii1\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(1356): CDbCommand->queryRow()
+#2 D:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(1461): CActiveRecord->query(Object(CDbCriteria))
+#3 D:\wamp\www\academia_yii1\protected\components\UserIdentity.php(21): CActiveRecord->find('usuario=?', Array)
+#4 D:\wamp\www\academia_yii1\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#5 D:\wamp\www\yii1\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#6 D:\wamp\www\yii1\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#7 D:\wamp\www\yii1\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#8 D:\wamp\www\academia_yii1\protected\controllers\SiteController.php(94): CModel->validate()
+#9 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#10 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\wamp\www\yii1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('login')
+#14 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#15 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 D:\wamp\www\academia_yii1\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/academia_yii1/index.php?r=site/login
+HTTP_REFERER=http://localhost/academia_yii1/index.php?r=site/login
+---
+2016/04/04 18:46:52 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'usuario' in 'where clause'. The SQL statement executed was: SELECT * FROM `usuarios` `t` WHERE usuario=? LIMIT 1.
+in D:\wamp\www\academia_yii1\protected\components\UserIdentity.php (21)
+in D:\wamp\www\academia_yii1\protected\models\LoginForm.php (52)
+in D:\wamp\www\academia_yii1\protected\controllers\SiteController.php (94)
+2016/04/04 18:46:52 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'usuario' in 'where clause'. The SQL statement executed was: SELECT * FROM `usuarios` `t` WHERE usuario=? LIMIT 1' in D:\wamp\www\yii1\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\yii1\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(1356): CDbCommand->queryRow()
+#2 D:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(1461): CActiveRecord->query(Object(CDbCriteria))
+#3 D:\wamp\www\academia_yii1\protected\components\UserIdentity.php(21): CActiveRecord->find('usuario=?', Array)
+#4 D:\wamp\www\academia_yii1\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#5 D:\wamp\www\yii1\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#6 D:\wamp\www\yii1\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#7 D:\wamp\www\yii1\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#8 D:\wamp\www\academia_yii1\protected\controllers\SiteController.php(94): CModel->validate()
+#9 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#10 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\wamp\www\yii1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('login')
+#14 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#15 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 D:\wamp\www\academia_yii1\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/academia_yii1/index.php?r=site/login
+HTTP_REFERER=http://localhost/academia_yii1/index.php?r=site/login
+---
+2016/04/04 18:49:21 [error] [exception.CException] exception 'CException' with message 'Property "Usuarios.usuario" is not defined.' in D:\wamp\www\yii1\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(145): CComponent->__get('usuario')
+#1 D:\wamp\www\yii1\framework\web\helpers\CHtml.php(2729): CActiveRecord->__get('usuario')
+#2 D:\wamp\www\yii1\framework\web\helpers\CHtml.php(2452): CHtml::resolveValue(Object(Usuarios), 'usuario')
+#3 D:\wamp\www\yii1\framework\web\helpers\CHtml.php(1534): CHtml::activeInputField('text', Object(Usuarios), 'usuario', Array)
+#4 D:\wamp\www\yii1\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(Usuarios), 'usuario', Array)
+#5 [internal function]: CActiveForm->textField(Object(Usuarios), 'usuario', Array)
+#6 D:\wamp\www\academia_yii1\protected\extensions\booster\widgets\TbActiveForm.php(1293): call_user_func_array(Array, Array)
+#7 D:\wamp\www\academia_yii1\protected\extensions\booster\widgets\TbActiveForm.php(1152): TbActiveForm->verticalGroup(Array, Object(Usuarios), 'usuario', Array)
+#8 D:\wamp\www\academia_yii1\protected\extensions\booster\widgets\TbActiveForm.php(389): TbActiveForm->customFieldGroupInternal(Array, Object(Usuarios), 'usuario', Array)
+#9 D:\wamp\www\academia_yii1\protected\views\usuarios\_form.php(51): TbActiveForm->textFieldGroup(Object(Usuarios), 'usuario', Array)
+#10 D:\wamp\www\yii1\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\aca...')
+#11 D:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\aca...', Array, true)
+#12 D:\wamp\www\yii1\framework\web\CController.php(869): CBaseController->renderFile('D:\\wamp\\www\\aca...', Array, true)
+#13 D:\wamp\www\academia_yii1\protected\views\usuarios\create.php(27): CController->renderPartial('_form', Array)
+#14 D:\wamp\www\yii1\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\aca...')
+#15 D:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\aca...', Array, true)
+#16 D:\wamp\www\yii1\framework\web\CController.php(869): CBaseController->renderFile('D:\\wamp\\www\\aca...', Array, true)
+#17 D:\wamp\www\yii1\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#18 D:\wamp\www\academia_yii1\protected\controllers\UsuariosController.php(113): CController->render('create', Array)
+#19 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): UsuariosController->actionCreate()
+#20 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#21 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#22 D:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#23 D:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#24 D:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#25 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#26 D:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#27 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('create')
+#29 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/create')
+#30 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#31 D:\wamp\www\academia_yii1\index.php(13): CApplication->run()
+#32 {main}
+REQUEST_URI=/academia_yii1/index.php?r=usuarios/create
+HTTP_REFERER=http://localhost/academia_yii1/index.php?r=site/login
+---
+2016/04/04 18:51:25 [error] [exception.CException] exception 'CException' with message 'Property "UserIdentity.usuario" is not defined.' in D:\wamp\www\yii1\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\academia_yii1\protected\components\UserIdentity.php(20): CComponent->__get('usuario')
+#1 D:\wamp\www\academia_yii1\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#2 D:\wamp\www\yii1\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#3 D:\wamp\www\yii1\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#4 D:\wamp\www\yii1\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#5 D:\wamp\www\academia_yii1\protected\controllers\SiteController.php(94): CModel->validate()
+#6 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#7 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\yii1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('login')
+#11 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#12 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\academia_yii1\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/academia_yii1/index.php?r=site/login
+HTTP_REFERER=http://localhost/academia_yii1/index.php?r=site/login
+---
+2016/04/04 18:51:41 [error] [exception.CException] exception 'CException' with message 'Property "UserIdentity.datos" is not defined.' in D:\wamp\www\yii1\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\wamp\www\academia_yii1\protected\components\UserIdentity.php(27): CComponent->__set('datos', Object(Usuarios))
+#1 D:\wamp\www\academia_yii1\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#2 D:\wamp\www\yii1\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#3 D:\wamp\www\yii1\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#4 D:\wamp\www\yii1\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#5 D:\wamp\www\academia_yii1\protected\controllers\SiteController.php(94): CModel->validate()
+#6 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#7 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\yii1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('login')
+#11 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#12 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\academia_yii1\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/academia_yii1/index.php?r=site/login
+HTTP_REFERER=http://localhost/academia_yii1/index.php?r=site/login
+---
+2016/04/07 21:39:43 [error] [exception.CException] exception 'CException' with message 'UsuariosController contains improperly nested widget tags in its view "D:\wamp\www\academia_yii1\protected\views\usuarios\_form.php". A TbActiveForm widget does not have an endWidget() call.' in D:\wamp\www\yii1\framework\web\CBaseController.php:101
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\CController.php(869): CBaseController->renderFile('D:\\wamp\\www\\aca...', Array, true)
+#1 D:\wamp\www\academia_yii1\protected\views\usuarios\create.php(15): CController->renderPartial('_form', Array)
+#2 D:\wamp\www\yii1\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\aca...')
+#3 D:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\aca...', Array, true)
+#4 D:\wamp\www\yii1\framework\web\CController.php(869): CBaseController->renderFile('D:\\wamp\\www\\aca...', Array, true)
+#5 D:\wamp\www\yii1\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#6 D:\wamp\www\academia_yii1\protected\controllers\UsuariosController.php(105): CController->render('create', Array)
+#7 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): UsuariosController->actionCreate()
+#8 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 D:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 D:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 D:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#15 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('create')
+#17 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/create')
+#18 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#19 D:\wamp\www\academia_yii1\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/academia_yii1/index.php?r=usuarios/create
+HTTP_REFERER=http://localhost/academia_yii1/index.php?r=site/login
+---
+2016/04/07 21:52:40 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.roles" is not defined.' in D:\wamp\www\yii1\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\auth\CWebUser.php(146): CComponent->__get('roles')
+#1 D:\wamp\www\academia_yii1\protected\views\usuarios\_form.php(25): CWebUser->__get('roles')
+#2 D:\wamp\www\yii1\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\aca...')
+#3 D:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\aca...', Array, true)
+#4 D:\wamp\www\yii1\framework\web\CController.php(869): CBaseController->renderFile('D:\\wamp\\www\\aca...', Array, true)
+#5 D:\wamp\www\academia_yii1\protected\views\usuarios\create.php(15): CController->renderPartial('_form', Array)
+#6 D:\wamp\www\yii1\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\aca...')
+#7 D:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\aca...', Array, true)
+#8 D:\wamp\www\yii1\framework\web\CController.php(869): CBaseController->renderFile('D:\\wamp\\www\\aca...', Array, true)
+#9 D:\wamp\www\yii1\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#10 D:\wamp\www\academia_yii1\protected\controllers\UsuariosController.php(105): CController->render('create', Array)
+#11 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): UsuariosController->actionCreate()
+#12 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 D:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 D:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 D:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 D:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#19 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('create')
+#21 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/create')
+#22 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 D:\wamp\www\academia_yii1\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/academia_yii1/index.php?r=usuarios/create
+HTTP_REFERER=http://localhost/academia_yii1/index.php?r=site/contact
+---
+2016/04/07 21:52:47 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.roles" is not defined.' in D:\wamp\www\yii1\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\auth\CWebUser.php(146): CComponent->__get('roles')
+#1 D:\wamp\www\academia_yii1\protected\views\usuarios\_form.php(25): CWebUser->__get('roles')
+#2 D:\wamp\www\yii1\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\aca...')
+#3 D:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\aca...', Array, true)
+#4 D:\wamp\www\yii1\framework\web\CController.php(869): CBaseController->renderFile('D:\\wamp\\www\\aca...', Array, true)
+#5 D:\wamp\www\academia_yii1\protected\views\usuarios\create.php(15): CController->renderPartial('_form', Array)
+#6 D:\wamp\www\yii1\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\aca...')
+#7 D:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\aca...', Array, true)
+#8 D:\wamp\www\yii1\framework\web\CController.php(869): CBaseController->renderFile('D:\\wamp\\www\\aca...', Array, true)
+#9 D:\wamp\www\yii1\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#10 D:\wamp\www\academia_yii1\protected\controllers\UsuariosController.php(105): CController->render('create', Array)
+#11 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): UsuariosController->actionCreate()
+#12 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 D:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 D:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 D:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 D:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#19 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('create')
+#21 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/create')
+#22 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 D:\wamp\www\academia_yii1\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/academia_yii1/index.php?r=usuarios/create
+HTTP_REFERER=http://localhost/academia_yii1/index.php?r=site/login
+---
+2016/04/07 21:53:17 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.roles" is not defined.' in D:\wamp\www\yii1\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\auth\CWebUser.php(146): CComponent->__get('roles')
+#1 D:\wamp\www\academia_yii1\protected\views\usuarios\_form.php(25): CWebUser->__get('roles')
+#2 D:\wamp\www\yii1\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\aca...')
+#3 D:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\aca...', Array, true)
+#4 D:\wamp\www\yii1\framework\web\CController.php(869): CBaseController->renderFile('D:\\wamp\\www\\aca...', Array, true)
+#5 D:\wamp\www\academia_yii1\protected\views\usuarios\create.php(15): CController->renderPartial('_form', Array)
+#6 D:\wamp\www\yii1\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\aca...')
+#7 D:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\aca...', Array, true)
+#8 D:\wamp\www\yii1\framework\web\CController.php(869): CBaseController->renderFile('D:\\wamp\\www\\aca...', Array, true)
+#9 D:\wamp\www\yii1\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#10 D:\wamp\www\academia_yii1\protected\controllers\UsuariosController.php(105): CController->render('create', Array)
+#11 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): UsuariosController->actionCreate()
+#12 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 D:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 D:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 D:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 D:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#19 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('create')
+#21 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/create')
+#22 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 D:\wamp\www\academia_yii1\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/academia_yii1/index.php?r=usuarios/create
+HTTP_REFERER=http://localhost/academia_yii1/index.php?r=site/login
+---
+2016/04/07 21:54:19 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.user" is not defined.' in D:\wamp\www\yii1\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\auth\CWebUser.php(146): CComponent->__get('user')
+#1 D:\wamp\www\academia_yii1\protected\views\usuarios\_form.php(25): CWebUser->__get('user')
+#2 D:\wamp\www\yii1\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\aca...')
+#3 D:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\aca...', Array, true)
+#4 D:\wamp\www\yii1\framework\web\CController.php(869): CBaseController->renderFile('D:\\wamp\\www\\aca...', Array, true)
+#5 D:\wamp\www\academia_yii1\protected\views\usuarios\create.php(15): CController->renderPartial('_form', Array)
+#6 D:\wamp\www\yii1\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\aca...')
+#7 D:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\aca...', Array, true)
+#8 D:\wamp\www\yii1\framework\web\CController.php(869): CBaseController->renderFile('D:\\wamp\\www\\aca...', Array, true)
+#9 D:\wamp\www\yii1\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#10 D:\wamp\www\academia_yii1\protected\controllers\UsuariosController.php(105): CController->render('create', Array)
+#11 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): UsuariosController->actionCreate()
+#12 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 D:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 D:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 D:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 D:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#19 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('create')
+#21 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/create')
+#22 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 D:\wamp\www\academia_yii1\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/academia_yii1/index.php?r=usuarios/create
+HTTP_REFERER=http://localhost/academia_yii1/index.php?r=site/login
+---
+2016/04/07 21:54:26 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.user" is not defined.' in D:\wamp\www\yii1\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\auth\CWebUser.php(146): CComponent->__get('user')
+#1 D:\wamp\www\academia_yii1\protected\views\usuarios\_form.php(25): CWebUser->__get('user')
+#2 D:\wamp\www\yii1\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\aca...')
+#3 D:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\aca...', Array, true)
+#4 D:\wamp\www\yii1\framework\web\CController.php(869): CBaseController->renderFile('D:\\wamp\\www\\aca...', Array, true)
+#5 D:\wamp\www\academia_yii1\protected\views\usuarios\create.php(15): CController->renderPartial('_form', Array)
+#6 D:\wamp\www\yii1\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\aca...')
+#7 D:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\aca...', Array, true)
+#8 D:\wamp\www\yii1\framework\web\CController.php(869): CBaseController->renderFile('D:\\wamp\\www\\aca...', Array, true)
+#9 D:\wamp\www\yii1\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#10 D:\wamp\www\academia_yii1\protected\controllers\UsuariosController.php(105): CController->render('create', Array)
+#11 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): UsuariosController->actionCreate()
+#12 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 D:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 D:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 D:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 D:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#19 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('create')
+#21 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/create')
+#22 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 D:\wamp\www\academia_yii1\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/academia_yii1/index.php?r=usuarios/create
+HTTP_REFERER=http://localhost/academia_yii1/index.php?r=site/login
+---
+2016/04/07 21:54:28 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.user" is not defined.' in D:\wamp\www\yii1\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\auth\CWebUser.php(146): CComponent->__get('user')
+#1 D:\wamp\www\academia_yii1\protected\views\usuarios\_form.php(25): CWebUser->__get('user')
+#2 D:\wamp\www\yii1\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\aca...')
+#3 D:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\aca...', Array, true)
+#4 D:\wamp\www\yii1\framework\web\CController.php(869): CBaseController->renderFile('D:\\wamp\\www\\aca...', Array, true)
+#5 D:\wamp\www\academia_yii1\protected\views\usuarios\create.php(15): CController->renderPartial('_form', Array)
+#6 D:\wamp\www\yii1\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\aca...')
+#7 D:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\aca...', Array, true)
+#8 D:\wamp\www\yii1\framework\web\CController.php(869): CBaseController->renderFile('D:\\wamp\\www\\aca...', Array, true)
+#9 D:\wamp\www\yii1\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#10 D:\wamp\www\academia_yii1\protected\controllers\UsuariosController.php(105): CController->render('create', Array)
+#11 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): UsuariosController->actionCreate()
+#12 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 D:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 D:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 D:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 D:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#19 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('create')
+#21 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/create')
+#22 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 D:\wamp\www\academia_yii1\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/academia_yii1/index.php?r=usuarios/create
+HTTP_REFERER=http://localhost/academia_yii1/index.php?r=site/login
+---
+2016/04/09 12:16:39 [error] [exception.CException] exception 'CException' with message 'Property "Usuarios.estado" is not defined.' in D:\wamp\www\yii1\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(161): CComponent->__set('estado', 'P')
+#1 D:\wamp\www\academia_yii1\protected\models\Usuarios.php(95): CActiveRecord->__set('estado', 'P')
+#2 D:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(1074): Usuarios->beforeSave()
+#3 D:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#4 D:\wamp\www\academia_yii1\protected\controllers\UsuariosController.php(96): CActiveRecord->save()
+#5 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): UsuariosController->actionCreate()
+#6 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 D:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 D:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 D:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#13 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('create')
+#15 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/create')
+#16 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 D:\wamp\www\academia_yii1\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/academia_yii1/index.php?r=usuarios/create
+HTTP_REFERER=http://localhost/academia_yii1/index.php?r=usuarios/create
+---
+2016/04/09 12:17:19 [error] [exception.CException] exception 'CException' with message 'Property "Usuarios.ult_fecha" is not defined.' in D:\wamp\www\yii1\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(161): CComponent->__set('ult_fecha', '09/04/2016')
+#1 D:\wamp\www\academia_yii1\protected\models\Usuarios.php(96): CActiveRecord->__set('ult_fecha', '09/04/2016')
+#2 D:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(1074): Usuarios->beforeSave()
+#3 D:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#4 D:\wamp\www\academia_yii1\protected\controllers\UsuariosController.php(96): CActiveRecord->save()
+#5 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): UsuariosController->actionCreate()
+#6 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 D:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 D:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 D:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#13 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('create')
+#15 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/create')
+#16 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 D:\wamp\www\academia_yii1\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/academia_yii1/index.php?r=usuarios/create
+HTTP_REFERER=http://localhost/academia_yii1/index.php?r=usuarios/create
+---
+2016/04/09 12:17:29 [error] [exception.CException] exception 'CException' with message 'Property "Usuarios.ult_fecha" is not defined.' in D:\wamp\www\yii1\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(161): CComponent->__set('ult_fecha', '09/04/2016')
+#1 D:\wamp\www\academia_yii1\protected\models\Usuarios.php(96): CActiveRecord->__set('ult_fecha', '09/04/2016')
+#2 D:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(1074): Usuarios->beforeSave()
+#3 D:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#4 D:\wamp\www\academia_yii1\protected\controllers\UsuariosController.php(96): CActiveRecord->save()
+#5 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): UsuariosController->actionCreate()
+#6 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 D:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 D:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 D:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#13 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('create')
+#15 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/create')
+#16 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 D:\wamp\www\academia_yii1\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/academia_yii1/index.php?r=usuarios/create
+HTTP_REFERER=http://localhost/academia_yii1/index.php?r=usuarios/create
+---
+2016/04/09 12:17:37 [error] [exception.CException] exception 'CException' with message 'Property "Usuarios.ult_fecha" is not defined.' in D:\wamp\www\yii1\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(161): CComponent->__set('ult_fecha', '09/04/2016')
+#1 D:\wamp\www\academia_yii1\protected\models\Usuarios.php(96): CActiveRecord->__set('ult_fecha', '09/04/2016')
+#2 D:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(1074): Usuarios->beforeSave()
+#3 D:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#4 D:\wamp\www\academia_yii1\protected\controllers\UsuariosController.php(96): CActiveRecord->save()
+#5 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): UsuariosController->actionCreate()
+#6 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 D:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 D:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 D:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#13 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('create')
+#15 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/create')
+#16 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 D:\wamp\www\academia_yii1\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/academia_yii1/index.php?r=usuarios/create
+HTTP_REFERER=http://localhost/academia_yii1/index.php?r=usuarios/create
+---
+2016/04/12 19:57:32 [error] [exception.CException] exception 'CException' with message 'Usuarios y sus behaviors no tienen un método o closure llamado "fabricante".' in D:\wamp\www\yii1\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(227): CComponent->__call('fabricante', Array)
+#1 D:\wamp\www\sinfriosincalor1\protected\views\productos\_form.php(14): CActiveRecord->__call('fabricante', Array)
+#2 D:\wamp\www\sinfriosincalor1\protected\views\productos\_form.php(14): Usuarios->fabricante()
+#3 D:\wamp\www\yii1\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\sin...')
+#4 D:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\sin...', Array, true)
+#5 D:\wamp\www\yii1\framework\web\CController.php(869): CBaseController->renderFile('D:\\wamp\\www\\sin...', Array, true)
+#6 D:\wamp\www\sinfriosincalor1\protected\views\productos\create.php(15): CController->renderPartial('_form', Array)
+#7 D:\wamp\www\yii1\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\sin...')
+#8 D:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\sin...', Array, true)
+#9 D:\wamp\www\yii1\framework\web\CController.php(869): CBaseController->renderFile('D:\\wamp\\www\\sin...', Array, true)
+#10 D:\wamp\www\yii1\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#11 D:\wamp\www\sinfriosincalor1\protected\controllers\ProductosController.php(78): CController->render('create', Array)
+#12 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): ProductosController->actionCreate()
+#13 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#15 D:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 D:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#17 D:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#19 D:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#20 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('create')
+#22 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('productos/creat...')
+#23 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#24 D:\wamp\www\sinfriosincalor1\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/sinfriosincalor1/index.php?r=productos/create
+HTTP_REFERER=http://localhost/sinfriosincalor1/index.php?r=fabricante/view&id=1
+---
+2016/04/12 19:59:14 [error] [php] Undefined variable: fabricante (D:\wamp\www\sinfriosincalor1\protected\views\productos\_form.php:15)
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\CController.php(869): ProductosController->renderFile()
+#1 D:\wamp\www\sinfriosincalor1\protected\views\productos\create.php(15): ProductosController->renderPartial()
+#2 D:\wamp\www\yii1\framework\web\CBaseController.php(126): require()
+#3 D:\wamp\www\yii1\framework\web\CBaseController.php(95): ProductosController->renderInternal()
+#4 D:\wamp\www\yii1\framework\web\CController.php(869): ProductosController->renderFile()
+#5 D:\wamp\www\yii1\framework\web\CController.php(782): ProductosController->renderPartial()
+#6 D:\wamp\www\sinfriosincalor1\protected\controllers\ProductosController.php(78): ProductosController->render()
+#7 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): ProductosController->actionCreate()
+#8 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): ProductosController->runAction()
+#10 D:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 D:\wamp\www\yii1\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 D:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): ProductosController->filterAccessControl()
+#13 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 D:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#15 D:\wamp\www\yii1\framework\web\CController.php(265): ProductosController->runActionWithFilters()
+#16 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): ProductosController->run()
+#17 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#19 D:\wamp\www\sinfriosincalor1\index.php(13): CWebApplication->run()
+REQUEST_URI=/sinfriosincalor1/index.php?r=productos/create
+in D:\wamp\www\sinfriosincalor1\protected\views\productos\_form.php (15)
+in D:\wamp\www\sinfriosincalor1\protected\views\productos\create.php (15)
+in D:\wamp\www\sinfriosincalor1\protected\controllers\ProductosController.php (78)
+2016/04/13 21:44:39 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in D:\wamp\www\yii1\framework\web\CController.php:336
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('view')
+#9 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('fabricante/view')
+#10 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\sinfriosincalor1\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/sinfriosincalor1/index.php?r=fabricante/view
+HTTP_REFERER=http://localhost/sinfriosincalor1/index.php
+---
+2016/04/17 20:15:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "usaurios/index"' in D:\wamp\www\yii1\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('usaurios/index')
+#1 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\wamp\www\sinfriosincalor1\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sinfriosincalor1/index.php?r=usaurios/index
+HTTP_REFERER=http://localhost/sinfriosincalor1/index.php?r=productos/create
+---
+2016/04/17 20:17:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "usaurios/index"' in D:\wamp\www\yii1\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('usaurios/index')
+#1 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\wamp\www\sinfriosincalor1\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sinfriosincalor1/index.php?r=usaurios/index
+HTTP_REFERER=http://localhost/sinfriosincalor1/index.php?r=productos/create
+---
+2016/04/17 20:18:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "usaurios/index"' in D:\wamp\www\yii1\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('usaurios/index')
+#1 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\wamp\www\sinfriosincalor1\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sinfriosincalor1/index.php?r=usaurios/index
+HTTP_REFERER=http://localhost/sinfriosincalor1/index.php?r=productos/create
+---
+2016/04/17 20:18:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "empleados" solicitada.' in D:\wamp\www\yii1\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\CController.php(270): CController->missingAction('empleados')
+#1 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('empleados')
+#2 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/emplea...')
+#3 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\wamp\www\sinfriosincalor1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sinfriosincalor1/index.php?r=usuarios/empleados
+HTTP_REFERER=http://localhost/sinfriosincalor1/index.php?r=productos/create
+---
+2016/04/17 20:18:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "usaurios/index"' in D:\wamp\www\yii1\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('usaurios/index')
+#1 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\wamp\www\sinfriosincalor1\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sinfriosincalor1/index.php?r=usaurios/index
+HTTP_REFERER=http://localhost/sinfriosincalor1/index.php?r=productos/create
+---
+2016/04/17 20:19:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "usaurios/index"' in D:\wamp\www\yii1\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('usaurios/index')
+#1 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\wamp\www\sinfriosincalor1\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sinfriosincalor1/index.php?r=usaurios/index
+HTTP_REFERER=http://localhost/sinfriosincalor1/index.php?r=productos/create
+---
+2016/04/17 20:19:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "usaurios/index"' in D:\wamp\www\yii1\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('usaurios/index')
+#1 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\wamp\www\sinfriosincalor1\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sinfriosincalor1/index.php?r=usaurios/index
+HTTP_REFERER=http://localhost/sinfriosincalor1/index.php?r=productos/create
+---
+2016/04/17 20:19:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "usaurios/index"' in D:\wamp\www\yii1\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('usaurios/index')
+#1 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\wamp\www\sinfriosincalor1\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sinfriosincalor1/index.php?r=usaurios/index
+HTTP_REFERER=http://localhost/sinfriosincalor1/index.php?r=productos/create
+---
+2016/04/17 20:19:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "usaurios/index"' in D:\wamp\www\yii1\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('usaurios/index')
+#1 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\wamp\www\sinfriosincalor1\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sinfriosincalor1/index.php?r=usaurios/index
+HTTP_REFERER=http://localhost/sinfriosincalor1/index.php?r=productos/create
+---
+2016/04/17 20:21:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "usaurios/index"' in D:\wamp\www\yii1\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('usaurios/index')
+#1 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\wamp\www\sinfriosincalor1\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sinfriosincalor1/index.php?r=usaurios/index
+HTTP_REFERER=http://localhost/sinfriosincalor1/index.php?r=productos/create
+---
+2016/04/17 20:21:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "usaurios/index"' in D:\wamp\www\yii1\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('usaurios/index')
+#1 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\wamp\www\sinfriosincalor1\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sinfriosincalor1/index.php?r=usaurios/index
+HTTP_REFERER=http://localhost/sinfriosincalor1/index.php?r=productos/create
+---
+2016/04/17 20:21:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "usaurios/index"' in D:\wamp\www\yii1\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('usaurios/index')
+#1 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\wamp\www\sinfriosincalor1\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sinfriosincalor1/index.php?r=usaurios/index
+HTTP_REFERER=http://localhost/sinfriosincalor1/index.php?r=productos/create
+---
+2016/04/17 20:21:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "usaurios/index"' in D:\wamp\www\yii1\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('usaurios/index')
+#1 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\wamp\www\sinfriosincalor1\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sinfriosincalor1/index.php?r=usaurios/index
+HTTP_REFERER=http://localhost/sinfriosincalor1/index.php?r=productos/create
+---
+2016/04/17 20:21:24 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in D:\wamp\www\yii1\framework\web\CController.php:336
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('view')
+#9 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/view')
+#10 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\sinfriosincalor1\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/sinfriosincalor1/index.php?r=usuarios/view
+HTTP_REFERER=http://localhost/sinfriosincalor1/index.php?r=productos/create
+---
+2016/04/17 20:22:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "empleados" solicitada.' in D:\wamp\www\yii1\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\CController.php(270): CController->missingAction('empleados')
+#1 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('empleados')
+#2 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/emplea...')
+#3 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\wamp\www\sinfriosincalor1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sinfriosincalor1/index.php?r=usuarios/empleados
+HTTP_REFERER=http://localhost/sinfriosincalor1/index.php?r=usuarios/index
+---
+2016/04/17 20:23:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "empleados" solicitada.' in D:\wamp\www\yii1\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\CController.php(270): CController->missingAction('empleados')
+#1 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('empleados')
+#2 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/emplea...')
+#3 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\wamp\www\sinfriosincalor1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sinfriosincalor1/index.php?r=usuarios/empleados
+HTTP_REFERER=http://localhost/sinfriosincalor1/index.php?r=usuarios/index
+---
+2016/04/17 20:40:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "empleados" solicitada.' in D:\wamp\www\yii1\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\CController.php(270): CController->missingAction('empleados')
+#1 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('empleados')
+#2 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/emplea...')
+#3 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\wamp\www\sinfriosincalor1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sinfriosincalor1/index.php?r=usuarios/empleados
+HTTP_REFERER=http://localhost/sinfriosincalor1/index.php?r=usuarios/index
+---
+2016/04/17 20:40:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "servicios/index"' in D:\wamp\www\yii1\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('servicios/index')
+#1 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\wamp\www\sinfriosincalor1\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sinfriosincalor1/index.php?r=servicios/index
+HTTP_REFERER=http://localhost/sinfriosincalor1/index.php?r=productos/index
+---
+2016/04/17 21:15:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "empleados" solicitada.' in D:\wamp\www\yii1\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\CController.php(270): CController->missingAction('empleados')
+#1 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('empleados')
+#2 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/emplea...')
+#3 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\wamp\www\sinfriosincalor1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sinfriosincalor1/index.php?r=usuarios/empleados
+HTTP_REFERER=http://localhost/sinfriosincalor1/index.php?r=usuarios/admin
+---
+2016/04/17 21:15:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "empleados" solicitada.' in D:\wamp\www\yii1\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\CController.php(270): CController->missingAction('empleados')
+#1 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('empleados')
+#2 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/emplea...')
+#3 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\wamp\www\sinfriosincalor1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sinfriosincalor1/index.php?r=usuarios/empleados
+HTTP_REFERER=http://localhost/sinfriosincalor1/index.php?r=usuarios/index
+---
+2016/04/17 21:49:22 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in D:\wamp\www\yii1\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'Usted no se enc...')
+#1 D:\wamp\www\yii1\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('empleados')
+#8 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/emplea...')
+#9 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\wamp\www\sinfriosincalor1\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sinfriosincalor1/index.php?r=usuarios/empleados
+HTTP_REFERER=http://localhost/sinfriosincalor1/index.php?r=usuarios/index
+---
+2016/04/18 20:14:05 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'dni'. La sentencia SQL ejecutada fue: UPDATE `usuarios` SET `id`=:yp0, `nombre`=:yp1, `dni`=:yp2, `roles`=:yp3, `calle`=:yp4, `poblacion`=:yp5, `provincia`=:yp6, `cp`=:yp7, `email`=:yp8, `telefono`=:yp9, `fecha_alta`=:yp10, `usuario`=:yp11, `password`=:yp12 WHERE `usuarios`.`id`=3.
+in D:\wamp\www\sinfriosincalor1\protected\controllers\UsuariosController.php (136)
+in D:\wamp\www\sinfriosincalor1\index.php (13)
+2016/04/18 20:14:05 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'dni'. The SQL statement executed was: UPDATE `usuarios` SET `id`=:yp0, `nombre`=:yp1, `dni`=:yp2, `roles`=:yp3, `calle`=:yp4, `poblacion`=:yp5, `provincia`=:yp6, `cp`=:yp7, `email`=:yp8, `telefono`=:yp9, `fecha_alta`=:yp10, `usuario`=:yp11, `password`=:yp12 WHERE `usuarios`.`id`=3' in D:\wamp\www\yii1\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(1753): CDbCommand->execute()
+#1 D:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(1127): CActiveRecord->updateByPk('3', Array)
+#2 D:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(809): CActiveRecord->update(NULL)
+#3 D:\wamp\www\sinfriosincalor1\protected\controllers\UsuariosController.php(136): CActiveRecord->save()
+#4 [internal function]: UsuariosController->actionUpdate('3')
+#5 D:\wamp\www\yii1\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#6 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UsuariosController), Object(ReflectionMethod), Array)
+#7 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 D:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 D:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 D:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#14 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('update')
+#16 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/update')
+#17 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 D:\wamp\www\sinfriosincalor1\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/sinfriosincalor1/index.php?r=usuarios/update&id=3
+HTTP_REFERER=http://localhost/sinfriosincalor1/index.php?r=usuarios/update&id=3
+---
+2016/04/18 22:01:19 [error] [exception.CException] exception 'CException' with message 'La propiedad "TbMenu"."style" no se encuentra definida.' in D:\wamp\www\yii1\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\CWidgetFactory.php(161): CComponent->__set('style', 'text-align: rig...')
+#1 D:\wamp\www\yii1\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'booster.widgets...', Array)
+#2 D:\wamp\www\yii1\framework\web\CBaseController.php(180): CBaseController->createWidget('booster.widgets...', Array)
+#3 D:\wamp\www\sinfriosincalor1\protected\extensions\booster\widgets\TbNavbar.php(170): CBaseController->widget('booster.widgets...', Array)
+#4 D:\wamp\www\yii1\framework\web\CBaseController.php(181): TbNavbar->run()
+#5 D:\wamp\www\sinfriosincalor1\protected\views\layouts\main.php(53): CBaseController->widget('booster.widgets...', Array)
+#6 D:\wamp\www\yii1\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\sin...')
+#7 D:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\sin...', Array, true)
+#8 D:\wamp\www\yii1\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\wamp\\www\\sin...', Array, true)
+#9 D:\wamp\www\yii1\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#10 D:\wamp\www\yii1\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#11 D:\wamp\www\yii1\framework\web\CBaseController.php(214): COutputProcessor->run()
+#12 D:\wamp\www\yii1\framework\web\CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#13 D:\wamp\www\sinfriosincalor1\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#14 D:\wamp\www\yii1\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\sin...')
+#15 D:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\sin...', Array, true)
+#16 D:\wamp\www\yii1\framework\web\CController.php(784): CBaseController->renderFile('D:\\wamp\\www\\sin...', Array, true)
+#17 D:\wamp\www\sinfriosincalor1\protected\controllers\SiteController.php(32): CController->render('index')
+#18 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#19 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 D:\wamp\www\yii1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#21 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('')
+#23 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#24 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#25 D:\wamp\www\sinfriosincalor1\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/sinfriosincalor1/index.php
+HTTP_REFERER=http://localhost/sinfriosincalor1/index.php?r=productos/index
+---
+2016/04/18 22:06:17 [error] [exception.CException] exception 'CException' with message 'El alias "booster.widgets.TbMenu loginButtom" es inválido. Asegúrese de que apunta a un archivo PHP existente y que el archivo tiene permisos de lectura.' in D:\wamp\www\yii1\framework\YiiBase.php:323
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\CWidgetFactory.php(146): YiiBase::import('booster.widgets...', true)
+#1 D:\wamp\www\yii1\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'booster.widgets...', Array)
+#2 D:\wamp\www\yii1\framework\web\CBaseController.php(180): CBaseController->createWidget('booster.widgets...', Array)
+#3 D:\wamp\www\sinfriosincalor1\protected\extensions\booster\widgets\TbNavbar.php(170): CBaseController->widget('booster.widgets...', Array)
+#4 D:\wamp\www\yii1\framework\web\CBaseController.php(181): TbNavbar->run()
+#5 D:\wamp\www\sinfriosincalor1\protected\views\layouts\main.php(52): CBaseController->widget('booster.widgets...', Array)
+#6 D:\wamp\www\yii1\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\sin...')
+#7 D:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\sin...', Array, true)
+#8 D:\wamp\www\yii1\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\wamp\\www\\sin...', Array, true)
+#9 D:\wamp\www\yii1\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#10 D:\wamp\www\yii1\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#11 D:\wamp\www\yii1\framework\web\CBaseController.php(214): COutputProcessor->run()
+#12 D:\wamp\www\yii1\framework\web\CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#13 D:\wamp\www\sinfriosincalor1\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#14 D:\wamp\www\yii1\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\sin...')
+#15 D:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\sin...', Array, true)
+#16 D:\wamp\www\yii1\framework\web\CController.php(784): CBaseController->renderFile('D:\\wamp\\www\\sin...', Array, true)
+#17 D:\wamp\www\sinfriosincalor1\protected\controllers\SiteController.php(32): CController->render('index')
+#18 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#19 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 D:\wamp\www\yii1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#21 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('')
+#23 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#24 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#25 D:\wamp\www\sinfriosincalor1\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/sinfriosincalor1/index.php
+HTTP_REFERER=http://localhost/sinfriosincalor1/index.php?r=site/login
+---
+2016/04/18 22:06:18 [error] [exception.CException] exception 'CException' with message 'El alias "booster.widgets.TbMenu loginButtom" es inválido. Asegúrese de que apunta a un archivo PHP existente y que el archivo tiene permisos de lectura.' in D:\wamp\www\yii1\framework\YiiBase.php:323
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\CWidgetFactory.php(146): YiiBase::import('booster.widgets...', true)
+#1 D:\wamp\www\yii1\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'booster.widgets...', Array)
+#2 D:\wamp\www\yii1\framework\web\CBaseController.php(180): CBaseController->createWidget('booster.widgets...', Array)
+#3 D:\wamp\www\sinfriosincalor1\protected\extensions\booster\widgets\TbNavbar.php(170): CBaseController->widget('booster.widgets...', Array)
+#4 D:\wamp\www\yii1\framework\web\CBaseController.php(181): TbNavbar->run()
+#5 D:\wamp\www\sinfriosincalor1\protected\views\layouts\main.php(52): CBaseController->widget('booster.widgets...', Array)
+#6 D:\wamp\www\yii1\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\sin...')
+#7 D:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\sin...', Array, true)
+#8 D:\wamp\www\yii1\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\wamp\\www\\sin...', Array, true)
+#9 D:\wamp\www\yii1\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#10 D:\wamp\www\yii1\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#11 D:\wamp\www\yii1\framework\web\CBaseController.php(214): COutputProcessor->run()
+#12 D:\wamp\www\yii1\framework\web\CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#13 D:\wamp\www\sinfriosincalor1\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#14 D:\wamp\www\yii1\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\sin...')
+#15 D:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\sin...', Array, true)
+#16 D:\wamp\www\yii1\framework\web\CController.php(784): CBaseController->renderFile('D:\\wamp\\www\\sin...', Array, true)
+#17 D:\wamp\www\sinfriosincalor1\protected\controllers\SiteController.php(32): CController->render('index')
+#18 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#19 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 D:\wamp\www\yii1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#21 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('')
+#23 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#24 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#25 D:\wamp\www\sinfriosincalor1\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/sinfriosincalor1/index.php
+HTTP_REFERER=http://localhost/sinfriosincalor1/index.php?r=site/login
+---
+2016/04/18 22:06:38 [error] [exception.CException] exception 'CException' with message 'El alias "booster.widgets.TbMenu; loginButtom" es inválido. Asegúrese de que apunta a un archivo PHP existente y que el archivo tiene permisos de lectura.' in D:\wamp\www\yii1\framework\YiiBase.php:323
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\CWidgetFactory.php(146): YiiBase::import('booster.widgets...', true)
+#1 D:\wamp\www\yii1\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'booster.widgets...', Array)
+#2 D:\wamp\www\yii1\framework\web\CBaseController.php(180): CBaseController->createWidget('booster.widgets...', Array)
+#3 D:\wamp\www\sinfriosincalor1\protected\extensions\booster\widgets\TbNavbar.php(170): CBaseController->widget('booster.widgets...', Array)
+#4 D:\wamp\www\yii1\framework\web\CBaseController.php(181): TbNavbar->run()
+#5 D:\wamp\www\sinfriosincalor1\protected\views\layouts\main.php(52): CBaseController->widget('booster.widgets...', Array)
+#6 D:\wamp\www\yii1\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\sin...')
+#7 D:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\sin...', Array, true)
+#8 D:\wamp\www\yii1\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\wamp\\www\\sin...', Array, true)
+#9 D:\wamp\www\yii1\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#10 D:\wamp\www\yii1\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#11 D:\wamp\www\yii1\framework\web\CBaseController.php(214): COutputProcessor->run()
+#12 D:\wamp\www\yii1\framework\web\CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#13 D:\wamp\www\sinfriosincalor1\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#14 D:\wamp\www\yii1\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\sin...')
+#15 D:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\sin...', Array, true)
+#16 D:\wamp\www\yii1\framework\web\CController.php(784): CBaseController->renderFile('D:\\wamp\\www\\sin...', Array, true)
+#17 D:\wamp\www\sinfriosincalor1\protected\controllers\SiteController.php(32): CController->render('index')
+#18 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#19 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 D:\wamp\www\yii1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#21 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('')
+#23 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#24 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#25 D:\wamp\www\sinfriosincalor1\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/sinfriosincalor1/index.php
+HTTP_REFERER=http://localhost/sinfriosincalor1/index.php?r=site/login
+---
+2016/04/18 22:06:39 [error] [exception.CException] exception 'CException' with message 'El alias "booster.widgets.TbMenu; loginButtom" es inválido. Asegúrese de que apunta a un archivo PHP existente y que el archivo tiene permisos de lectura.' in D:\wamp\www\yii1\framework\YiiBase.php:323
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\CWidgetFactory.php(146): YiiBase::import('booster.widgets...', true)
+#1 D:\wamp\www\yii1\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'booster.widgets...', Array)
+#2 D:\wamp\www\yii1\framework\web\CBaseController.php(180): CBaseController->createWidget('booster.widgets...', Array)
+#3 D:\wamp\www\sinfriosincalor1\protected\extensions\booster\widgets\TbNavbar.php(170): CBaseController->widget('booster.widgets...', Array)
+#4 D:\wamp\www\yii1\framework\web\CBaseController.php(181): TbNavbar->run()
+#5 D:\wamp\www\sinfriosincalor1\protected\views\layouts\main.php(52): CBaseController->widget('booster.widgets...', Array)
+#6 D:\wamp\www\yii1\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\sin...')
+#7 D:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\sin...', Array, true)
+#8 D:\wamp\www\yii1\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\wamp\\www\\sin...', Array, true)
+#9 D:\wamp\www\yii1\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#10 D:\wamp\www\yii1\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#11 D:\wamp\www\yii1\framework\web\CBaseController.php(214): COutputProcessor->run()
+#12 D:\wamp\www\yii1\framework\web\CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#13 D:\wamp\www\sinfriosincalor1\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#14 D:\wamp\www\yii1\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\sin...')
+#15 D:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\sin...', Array, true)
+#16 D:\wamp\www\yii1\framework\web\CController.php(784): CBaseController->renderFile('D:\\wamp\\www\\sin...', Array, true)
+#17 D:\wamp\www\sinfriosincalor1\protected\controllers\SiteController.php(32): CController->render('index')
+#18 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#19 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 D:\wamp\www\yii1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#21 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('')
+#23 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#24 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#25 D:\wamp\www\sinfriosincalor1\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/sinfriosincalor1/index.php
+HTTP_REFERER=http://localhost/sinfriosincalor1/index.php?r=site/login
+---
+2016/04/19 16:59:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in D:\wamp\www\sinfriosincalor1\protected\controllers\EspecificacionesController.php:193
+Stack trace:
+#0 D:\wamp\www\sinfriosincalor1\protected\controllers\EspecificacionesController.php(80): EspecificacionesController->loadModel('1')
+#1 [internal function]: EspecificacionesController->actionView('1')
+#2 D:\wamp\www\yii1\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(EspecificacionesController), Array)
+#3 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(EspecificacionesController), Object(ReflectionMethod), Array)
+#4 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('view')
+#13 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('especificacione...')
+#14 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 D:\wamp\www\sinfriosincalor1\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/sinfriosincalor1/index.php?r=especificaciones/view&id=1
+HTTP_REFERER=http://localhost/sinfriosincalor1/index.php?r=productos/view&id=1
+---
+2016/04/19 17:00:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in D:\wamp\www\sinfriosincalor1\protected\controllers\EspecificacionesController.php:193
+Stack trace:
+#0 D:\wamp\www\sinfriosincalor1\protected\controllers\EspecificacionesController.php(80): EspecificacionesController->loadModel('1')
+#1 [internal function]: EspecificacionesController->actionView('1')
+#2 D:\wamp\www\yii1\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(EspecificacionesController), Array)
+#3 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(EspecificacionesController), Object(ReflectionMethod), Array)
+#4 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('view')
+#13 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('especificacione...')
+#14 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 D:\wamp\www\sinfriosincalor1\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/sinfriosincalor1/index.php?r=especificaciones/view&id=1
+HTTP_REFERER=http://localhost/sinfriosincalor1/index.php?r=productos/view&id=1
+---
+2016/04/19 17:01:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in D:\wamp\www\sinfriosincalor1\protected\controllers\EspecificacionesController.php:193
+Stack trace:
+#0 D:\wamp\www\sinfriosincalor1\protected\controllers\EspecificacionesController.php(80): EspecificacionesController->loadModel('1')
+#1 [internal function]: EspecificacionesController->actionView('1')
+#2 D:\wamp\www\yii1\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(EspecificacionesController), Array)
+#3 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(EspecificacionesController), Object(ReflectionMethod), Array)
+#4 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('view')
+#13 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('especificacione...')
+#14 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 D:\wamp\www\sinfriosincalor1\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/sinfriosincalor1/index.php?r=especificaciones/view&id=1
+HTTP_REFERER=http://localhost/sinfriosincalor1/index.php?r=productos/view&id=1
+---
+2016/04/19 17:01:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in D:\wamp\www\sinfriosincalor1\protected\controllers\EspecificacionesController.php:193
+Stack trace:
+#0 D:\wamp\www\sinfriosincalor1\protected\controllers\EspecificacionesController.php(80): EspecificacionesController->loadModel('1')
+#1 [internal function]: EspecificacionesController->actionView('1')
+#2 D:\wamp\www\yii1\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(EspecificacionesController), Array)
+#3 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(EspecificacionesController), Object(ReflectionMethod), Array)
+#4 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('view')
+#13 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('especificacione...')
+#14 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 D:\wamp\www\sinfriosincalor1\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/sinfriosincalor1/index.php?r=especificaciones/view&id=1
+HTTP_REFERER=http://localhost/sinfriosincalor1/index.php?r=productos/view&id=1
+---
+2016/04/19 17:01:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in D:\wamp\www\sinfriosincalor1\protected\controllers\EspecificacionesController.php:193
+Stack trace:
+#0 D:\wamp\www\sinfriosincalor1\protected\controllers\EspecificacionesController.php(80): EspecificacionesController->loadModel('1')
+#1 [internal function]: EspecificacionesController->actionView('1')
+#2 D:\wamp\www\yii1\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(EspecificacionesController), Array)
+#3 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(EspecificacionesController), Object(ReflectionMethod), Array)
+#4 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('view')
+#13 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('especificacione...')
+#14 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 D:\wamp\www\sinfriosincalor1\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/sinfriosincalor1/index.php?r=especificaciones/view&id=1
+HTTP_REFERER=http://localhost/sinfriosincalor1/index.php?r=productos/view&id=1
+---
+2016/04/19 17:01:18 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in D:\wamp\www\yii1\framework\web\CController.php:336
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('view')
+#9 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('especificacione...')
+#10 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\sinfriosincalor1\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/sinfriosincalor1/index.php?r=especificaciones/view&idproducto=1
+HTTP_REFERER=http://localhost/sinfriosincalor1/index.php?r=productos/view&id=1
+---
+2016/04/19 17:02:55 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in D:\wamp\www\yii1\framework\web\CController.php:336
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('view')
+#9 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('especificacione...')
+#10 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\sinfriosincalor1\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/sinfriosincalor1/index.php?r=especificaciones/view&idp=1
+HTTP_REFERER=http://localhost/sinfriosincalor1/index.php?r=productos/view&id=1
+---
+2016/04/19 17:08:22 [error] [php] Undefined variable: model (D:\wamp\www\sinfriosincalor1\protected\views\productos\_view.php:30)
+Stack trace:
+#0 D:\wamp\www\yii1\framework\zii\widgets\CListView.php(291): ProductosController->renderFile()
+#1 D:\wamp\www\yii1\framework\zii\widgets\CBaseListView.php(181): TbListView->renderItems()
+#2 unknown(0): TbListView->renderSection()
+#3 D:\wamp\www\yii1\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#4 D:\wamp\www\yii1\framework\zii\widgets\CBaseListView.php(149): TbListView->renderContent()
+#5 D:\wamp\www\yii1\framework\web\CBaseController.php(181): TbListView->run()
+#6 D:\wamp\www\sinfriosincalor1\protected\views\productos\index.php(29): ProductosController->widget()
+#7 D:\wamp\www\yii1\framework\web\CBaseController.php(126): require()
+#8 D:\wamp\www\yii1\framework\web\CBaseController.php(95): ProductosController->renderInternal()
+#9 D:\wamp\www\yii1\framework\web\CController.php(869): ProductosController->renderFile()
+#10 D:\wamp\www\yii1\framework\web\CController.php(782): ProductosController->renderPartial()
+#11 D:\wamp\www\sinfriosincalor1\protected\controllers\ProductosController.php(133): ProductosController->render()
+#12 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): ProductosController->actionIndex()
+#13 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): ProductosController->runAction()
+#15 D:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 D:\wamp\www\yii1\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#17 D:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): ProductosController->filterAccessControl()
+#18 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#19 D:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#20 D:\wamp\www\yii1\framework\web\CController.php(265): ProductosController->runActionWithFilters()
+#21 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): ProductosController->run()
+#22 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#24 D:\wamp\www\sinfriosincalor1\index.php(13): CWebApplication->run()
+REQUEST_URI=/sinfriosincalor1/index.php?r=productos/index
+in D:\wamp\www\sinfriosincalor1\protected\views\productos\_view.php (30)
+in D:\wamp\www\sinfriosincalor1\protected\views\productos\index.php (29)
+in D:\wamp\www\sinfriosincalor1\protected\controllers\ProductosController.php (133)
+2016/04/19 17:08:34 [error] [php] Undefined variable: model (D:\wamp\www\sinfriosincalor1\protected\views\productos\_view.php:30)
+Stack trace:
+#0 D:\wamp\www\yii1\framework\zii\widgets\CListView.php(291): ProductosController->renderFile()
+#1 D:\wamp\www\yii1\framework\zii\widgets\CBaseListView.php(181): TbListView->renderItems()
+#2 unknown(0): TbListView->renderSection()
+#3 D:\wamp\www\yii1\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#4 D:\wamp\www\yii1\framework\zii\widgets\CBaseListView.php(149): TbListView->renderContent()
+#5 D:\wamp\www\yii1\framework\web\CBaseController.php(181): TbListView->run()
+#6 D:\wamp\www\sinfriosincalor1\protected\views\productos\index.php(29): ProductosController->widget()
+#7 D:\wamp\www\yii1\framework\web\CBaseController.php(126): require()
+#8 D:\wamp\www\yii1\framework\web\CBaseController.php(95): ProductosController->renderInternal()
+#9 D:\wamp\www\yii1\framework\web\CController.php(869): ProductosController->renderFile()
+#10 D:\wamp\www\yii1\framework\web\CController.php(782): ProductosController->renderPartial()
+#11 D:\wamp\www\sinfriosincalor1\protected\controllers\ProductosController.php(133): ProductosController->render()
+#12 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): ProductosController->actionIndex()
+#13 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): ProductosController->runAction()
+#15 D:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 D:\wamp\www\yii1\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#17 D:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): ProductosController->filterAccessControl()
+#18 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#19 D:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#20 D:\wamp\www\yii1\framework\web\CController.php(265): ProductosController->runActionWithFilters()
+#21 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): ProductosController->run()
+#22 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#24 D:\wamp\www\sinfriosincalor1\index.php(13): CWebApplication->run()
+REQUEST_URI=/sinfriosincalor1/index.php?r=productos/index
+in D:\wamp\www\sinfriosincalor1\protected\views\productos\_view.php (30)
+in D:\wamp\www\sinfriosincalor1\protected\views\productos\index.php (29)
+in D:\wamp\www\sinfriosincalor1\protected\controllers\ProductosController.php (133)
+2016/04/19 17:31:44 [error] [php] htmlspecialchars(): charset `utf8' not supported, assuming utf-8 (D:\wamp\www\yii1\framework\web\helpers\CHtml.php:108)
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\CBaseController.php(126): require()
+#1 D:\wamp\www\yii1\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#2 D:\wamp\www\yii1\framework\web\CController.php(869): SiteController->renderFile()
+#3 D:\wamp\www\yii1\framework\web\CController.php(782): SiteController->renderPartial()
+#4 D:\wamp\www\sinfriosincalor1\protected\controllers\SiteController.php(32): SiteController->render()
+#5 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#6 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\wamp\www\yii1\framework\web\CController.php(286): SiteController->runAction()
+#8 D:\wamp\www\yii1\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#9 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): SiteController->run()
+#10 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\sinfriosincalor1\index.php(13): CWebApplication->run()
+REQUEST_URI=/sinfriosincalor1/index.php
+in D:\wamp\www\sinfriosincalor1\protected\views\site\index.php (7)
+in D:\wamp\www\sinfriosincalor1\protected\controllers\SiteController.php (32)
+in D:\wamp\www\sinfriosincalor1\index.php (13)
+2016/04/19 17:35:51 [error] [php] Undefined variable: idp (D:\wamp\www\sinfriosincalor1\protected\views\especificaciones\_form.php:10)
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\CController.php(869): EspecificacionesController->renderFile()
+#1 D:\wamp\www\sinfriosincalor1\protected\views\especificaciones\create.php(21): EspecificacionesController->renderPartial()
+#2 D:\wamp\www\yii1\framework\web\CBaseController.php(126): require()
+#3 D:\wamp\www\yii1\framework\web\CBaseController.php(95): EspecificacionesController->renderInternal()
+#4 D:\wamp\www\yii1\framework\web\CController.php(869): EspecificacionesController->renderFile()
+#5 D:\wamp\www\yii1\framework\web\CController.php(782): EspecificacionesController->renderPartial()
+#6 D:\wamp\www\sinfriosincalor1\protected\controllers\EspecificacionesController.php(106): EspecificacionesController->render()
+#7 unknown(0): EspecificacionesController->actionCreate()
+#8 D:\wamp\www\yii1\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#9 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): EspecificacionesController->runAction()
+#12 D:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 D:\wamp\www\yii1\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 D:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): EspecificacionesController->filterAccessControl()
+#15 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 D:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#17 D:\wamp\www\yii1\framework\web\CController.php(265): EspecificacionesController->runActionWithFilters()
+#18 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): EspecificacionesController->run()
+#19 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 D:\wamp\www\sinfriosincalor1\index.php(13): CWebApplication->run()
+REQUEST_URI=/sinfriosincalor1/index.php?r=especificaciones/create&idp=1
+in D:\wamp\www\sinfriosincalor1\protected\views\especificaciones\_form.php (10)
+in D:\wamp\www\sinfriosincalor1\protected\views\especificaciones\create.php (21)
+in D:\wamp\www\sinfriosincalor1\protected\controllers\EspecificacionesController.php (106)
+2016/04/19 17:42:39 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in D:\wamp\www\yii1\framework\web\CController.php:336
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('create')
+#9 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('especificacione...')
+#10 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\sinfriosincalor1\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/sinfriosincalor1/index.php?r=especificaciones/create
+HTTP_REFERER=http://localhost/sinfriosincalor1/index.php?r=productos/index
+---
+2016/04/19 17:50:58 [error] [php] link() expects exactly 2 parameters, 3 given (D:\wamp\www\sinfriosincalor1\protected\views\productos\_view.php:47)
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\CBaseController.php(95): ProductosController->renderInternal()
+#1 D:\wamp\www\yii1\framework\zii\widgets\CListView.php(291): ProductosController->renderFile()
+#2 D:\wamp\www\yii1\framework\zii\widgets\CBaseListView.php(181): TbListView->renderItems()
+#3 unknown(0): TbListView->renderSection()
+#4 D:\wamp\www\yii1\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#5 D:\wamp\www\yii1\framework\zii\widgets\CBaseListView.php(149): TbListView->renderContent()
+#6 D:\wamp\www\yii1\framework\web\CBaseController.php(181): TbListView->run()
+#7 D:\wamp\www\sinfriosincalor1\protected\views\productos\index.php(29): ProductosController->widget()
+#8 D:\wamp\www\yii1\framework\web\CBaseController.php(126): require()
+#9 D:\wamp\www\yii1\framework\web\CBaseController.php(95): ProductosController->renderInternal()
+#10 D:\wamp\www\yii1\framework\web\CController.php(869): ProductosController->renderFile()
+#11 D:\wamp\www\yii1\framework\web\CController.php(782): ProductosController->renderPartial()
+#12 D:\wamp\www\sinfriosincalor1\protected\controllers\ProductosController.php(133): ProductosController->render()
+#13 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): ProductosController->actionIndex()
+#14 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#15 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): ProductosController->runAction()
+#16 D:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 D:\wamp\www\yii1\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#18 D:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): ProductosController->filterAccessControl()
+#19 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#20 D:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#21 D:\wamp\www\yii1\framework\web\CController.php(265): ProductosController->runActionWithFilters()
+#22 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): ProductosController->run()
+#23 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#24 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#25 D:\wamp\www\sinfriosincalor1\index.php(13): CWebApplication->run()
+REQUEST_URI=/sinfriosincalor1/index.php?r=productos/index
+in D:\wamp\www\sinfriosincalor1\protected\views\productos\_view.php (47)
+in D:\wamp\www\sinfriosincalor1\protected\views\productos\index.php (29)
+in D:\wamp\www\sinfriosincalor1\protected\controllers\ProductosController.php (133)
+2016/04/19 22:24:57 [error] [php] Undefined variable: IsSMTP (D:\wamp\www\sinfriosincalor1\protected\models\EnviarEmail.php:10)
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): UsuariosController->runAction()
+#2 D:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\wamp\www\yii1\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#4 D:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): UsuariosController->filterAccessControl()
+#5 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#6 D:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\wamp\www\yii1\framework\web\CController.php(265): UsuariosController->runActionWithFilters()
+#8 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): UsuariosController->run()
+#9 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\sinfriosincalor1\index.php(13): CWebApplication->run()
+REQUEST_URI=/sinfriosincalor1/index.php?r=usuarios/create
+in D:\wamp\www\sinfriosincalor1\protected\models\EnviarEmail.php (10)
+in D:\wamp\www\sinfriosincalor1\protected\controllers\UsuariosController.php (120)
+in D:\wamp\www\sinfriosincalor1\index.php (13)
+2016/04/19 22:26:01 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '9c460842d2d530098f7b090a970bbe44' for key 'password'. La sentencia SQL ejecutada fue: INSERT INTO `usuarios` (`usuario`, `nombre`, `email`, `password`, `roles`, `fecha_alta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in D:\wamp\www\sinfriosincalor1\protected\controllers\UsuariosController.php (109)
+in D:\wamp\www\sinfriosincalor1\index.php (13)
+2016/04/19 22:26:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '9c460842d2d530098f7b090a970bbe44' for key 'password'. The SQL statement executed was: INSERT INTO `usuarios` (`usuario`, `nombre`, `email`, `password`, `roles`, `fecha_alta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5)' in D:\wamp\www\yii1\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(1080): CDbCommand->execute()
+#1 D:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 D:\wamp\www\sinfriosincalor1\protected\controllers\UsuariosController.php(109): CActiveRecord->save()
+#3 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): UsuariosController->actionCreate()
+#4 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('create')
+#13 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/create')
+#14 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 D:\wamp\www\sinfriosincalor1\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/sinfriosincalor1/index.php?r=usuarios/create
+HTTP_REFERER=http://localhost/sinfriosincalor1/index.php?r=usuarios/create
+---
+2016/04/19 22:28:46 [error] [php] Undefined variable: from (D:\wamp\www\sinfriosincalor1\protected\models\EnviarEmail.php:12)
+Stack trace:
+#0 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): UsuariosController->runAction()
+#2 D:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\wamp\www\yii1\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#4 D:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): UsuariosController->filterAccessControl()
+#5 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#6 D:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\wamp\www\yii1\framework\web\CController.php(265): UsuariosController->runActionWithFilters()
+#8 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): UsuariosController->run()
+#9 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\sinfriosincalor1\index.php(13): CWebApplication->run()
+REQUEST_URI=/sinfriosincalor1/index.php?r=usuarios/create
+in D:\wamp\www\sinfriosincalor1\protected\models\EnviarEmail.php (12)
+in D:\wamp\www\sinfriosincalor1\protected\controllers\UsuariosController.php (120)
+in D:\wamp\www\sinfriosincalor1\index.php (13)
+2016/04/19 22:30:32 [error] [php] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead (D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php:1727)
+Stack trace:
+#0 D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php(918): JPhpMailer->EncodeHeader()
+#1 D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php(901): JPhpMailer->AddrFormat()
+#2 D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php(1106): JPhpMailer->AddrAppend()
+#3 D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php(558): JPhpMailer->CreateHeader()
+#4 D:\wamp\www\sinfriosincalor1\protected\models\EnviarEmail.php(16): JPhpMailer->Send()
+#5 D:\wamp\www\sinfriosincalor1\protected\controllers\UsuariosController.php(120): EnviarEmail->enviar()
+#6 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): UsuariosController->actionCreate()
+#7 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): UsuariosController->runAction()
+#9 D:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 D:\wamp\www\yii1\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#11 D:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): UsuariosController->filterAccessControl()
+#12 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#13 D:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#14 D:\wamp\www\yii1\framework\web\CController.php(265): UsuariosController->runActionWithFilters()
+#15 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): UsuariosController->run()
+#16 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 D:\wamp\www\sinfriosincalor1\index.php(13): CWebApplication->run()
+REQUEST_URI=/sinfriosincalor1/index.php?r=usuarios/create
+in D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php (1727)
+in D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php (1566)
+in D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php (918)
+2016/04/19 22:32:42 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '9c460842d2d530098f7b090a970bbe44' for key 'password'. La sentencia SQL ejecutada fue: INSERT INTO `usuarios` (`usuario`, `nombre`, `email`, `password`, `roles`, `fecha_alta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in D:\wamp\www\sinfriosincalor1\protected\controllers\UsuariosController.php (109)
+in D:\wamp\www\sinfriosincalor1\index.php (13)
+2016/04/19 22:32:42 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '9c460842d2d530098f7b090a970bbe44' for key 'password'. The SQL statement executed was: INSERT INTO `usuarios` (`usuario`, `nombre`, `email`, `password`, `roles`, `fecha_alta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5)' in D:\wamp\www\yii1\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(1080): CDbCommand->execute()
+#1 D:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 D:\wamp\www\sinfriosincalor1\protected\controllers\UsuariosController.php(109): CActiveRecord->save()
+#3 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): UsuariosController->actionCreate()
+#4 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('create')
+#13 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/create')
+#14 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 D:\wamp\www\sinfriosincalor1\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/sinfriosincalor1/index.php?r=usuarios/create
+HTTP_REFERER=http://localhost/sinfriosincalor1/index.php?r=usuarios/create
+---
+2016/04/19 22:33:08 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '9c460842d2d530098f7b090a970bbe44' for key 'password'. La sentencia SQL ejecutada fue: INSERT INTO `usuarios` (`usuario`, `nombre`, `email`, `password`, `roles`, `fecha_alta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in D:\wamp\www\sinfriosincalor1\protected\controllers\UsuariosController.php (109)
+in D:\wamp\www\sinfriosincalor1\index.php (13)
+2016/04/19 22:33:08 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '9c460842d2d530098f7b090a970bbe44' for key 'password'. The SQL statement executed was: INSERT INTO `usuarios` (`usuario`, `nombre`, `email`, `password`, `roles`, `fecha_alta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5)' in D:\wamp\www\yii1\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(1080): CDbCommand->execute()
+#1 D:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 D:\wamp\www\sinfriosincalor1\protected\controllers\UsuariosController.php(109): CActiveRecord->save()
+#3 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): UsuariosController->actionCreate()
+#4 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('create')
+#13 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/create')
+#14 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 D:\wamp\www\sinfriosincalor1\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/sinfriosincalor1/index.php?r=usuarios/create
+HTTP_REFERER=http://localhost/sinfriosincalor1/index.php?r=usuarios/create
+---
+2016/04/19 22:33:25 [error] [php] preg_replace_callback(): Requires argument 2, ''='.sprintf('%02X', ord('\1'))', to be a valid callback (D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php:1727)
+Stack trace:
+#0 D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php(918): JPhpMailer->EncodeHeader()
+#1 D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php(901): JPhpMailer->AddrFormat()
+#2 D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php(1106): JPhpMailer->AddrAppend()
+#3 D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php(558): JPhpMailer->CreateHeader()
+#4 D:\wamp\www\sinfriosincalor1\protected\models\EnviarEmail.php(16): JPhpMailer->Send()
+#5 D:\wamp\www\sinfriosincalor1\protected\controllers\UsuariosController.php(120): EnviarEmail->enviar()
+#6 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): UsuariosController->actionCreate()
+#7 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): UsuariosController->runAction()
+#9 D:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 D:\wamp\www\yii1\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#11 D:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): UsuariosController->filterAccessControl()
+#12 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#13 D:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#14 D:\wamp\www\yii1\framework\web\CController.php(265): UsuariosController->runActionWithFilters()
+#15 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): UsuariosController->run()
+#16 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 D:\wamp\www\sinfriosincalor1\index.php(13): CWebApplication->run()
+REQUEST_URI=/sinfriosincalor1/index.php?r=usuarios/create
+in D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php (1727)
+in D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php (1566)
+in D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php (918)
+2016/04/20 19:34:03 [error] [php] preg_replace_callback(): Requires argument 2, ''='.sprintf('%02X', ord('\1'))', to be a valid callback (D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php:1727)
+Stack trace:
+#0 D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php(918): JPhpMailer->EncodeHeader()
+#1 D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php(901): JPhpMailer->AddrFormat()
+#2 D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php(1106): JPhpMailer->AddrAppend()
+#3 D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php(558): JPhpMailer->CreateHeader()
+#4 D:\wamp\www\sinfriosincalor1\protected\models\EnviarEmail.php(16): JPhpMailer->Send()
+#5 D:\wamp\www\sinfriosincalor1\protected\controllers\UsuariosController.php(120): EnviarEmail->enviar()
+#6 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): UsuariosController->actionCreate()
+#7 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): UsuariosController->runAction()
+#9 D:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 D:\wamp\www\yii1\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#11 D:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): UsuariosController->filterAccessControl()
+#12 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#13 D:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#14 D:\wamp\www\yii1\framework\web\CController.php(265): UsuariosController->runActionWithFilters()
+#15 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): UsuariosController->run()
+#16 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 D:\wamp\www\sinfriosincalor1\index.php(13): CWebApplication->run()
+REQUEST_URI=/sinfriosincalor1/index.php?r=usuarios/create
+in D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php (1727)
+in D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php (1566)
+in D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php (918)
+2016/04/20 19:38:46 [error] [php] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead (D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php:1727)
+Stack trace:
+#0 D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php(918): JPhpMailer->EncodeHeader()
+#1 D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php(901): JPhpMailer->AddrFormat()
+#2 D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php(1106): JPhpMailer->AddrAppend()
+#3 D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php(558): JPhpMailer->CreateHeader()
+#4 D:\wamp\www\sinfriosincalor1\protected\models\EnviarEmail.php(16): JPhpMailer->Send()
+#5 D:\wamp\www\sinfriosincalor1\protected\controllers\UsuariosController.php(120): EnviarEmail->enviar()
+#6 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): UsuariosController->actionCreate()
+#7 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): UsuariosController->runAction()
+#9 D:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 D:\wamp\www\yii1\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#11 D:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): UsuariosController->filterAccessControl()
+#12 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#13 D:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#14 D:\wamp\www\yii1\framework\web\CController.php(265): UsuariosController->runActionWithFilters()
+#15 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): UsuariosController->run()
+#16 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 D:\wamp\www\sinfriosincalor1\index.php(13): CWebApplication->run()
+REQUEST_URI=/sinfriosincalor1/index.php?r=usuarios/create
+in D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php (1727)
+in D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php (1566)
+in D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php (918)
+2016/04/20 20:15:43 [error] [php] preg_replace_callback(): Modifier /e cannot be used with replacement callback (D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php:1727)
+Stack trace:
+#0 D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php(918): JPhpMailer->EncodeHeader()
+#1 D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php(901): JPhpMailer->AddrFormat()
+#2 D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php(1106): JPhpMailer->AddrAppend()
+#3 D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php(558): JPhpMailer->CreateHeader()
+#4 D:\wamp\www\sinfriosincalor1\protected\models\EnviarEmail.php(16): JPhpMailer->Send()
+#5 D:\wamp\www\sinfriosincalor1\protected\controllers\UsuariosController.php(120): EnviarEmail->enviar()
+#6 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): UsuariosController->actionCreate()
+#7 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): UsuariosController->runAction()
+#9 D:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 D:\wamp\www\yii1\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#11 D:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): UsuariosController->filterAccessControl()
+#12 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#13 D:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#14 D:\wamp\www\yii1\framework\web\CController.php(265): UsuariosController->runActionWithFilters()
+#15 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): UsuariosController->run()
+#16 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 D:\wamp\www\sinfriosincalor1\index.php(13): CWebApplication->run()
+REQUEST_URI=/sinfriosincalor1/index.php?r=usuarios/create
+in D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php (1727)
+in D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php (1566)
+in D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php (918)
+2016/04/20 20:16:37 [error] [php] preg_replace_callback(): No ending delimiter '/' found (D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php:1727)
+Stack trace:
+#0 D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php(918): JPhpMailer->EncodeHeader()
+#1 D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php(901): JPhpMailer->AddrFormat()
+#2 D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php(1106): JPhpMailer->AddrAppend()
+#3 D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php(558): JPhpMailer->CreateHeader()
+#4 D:\wamp\www\sinfriosincalor1\protected\models\EnviarEmail.php(16): JPhpMailer->Send()
+#5 D:\wamp\www\sinfriosincalor1\protected\controllers\UsuariosController.php(120): EnviarEmail->enviar()
+#6 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): UsuariosController->actionCreate()
+#7 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): UsuariosController->runAction()
+#9 D:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 D:\wamp\www\yii1\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#11 D:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): UsuariosController->filterAccessControl()
+#12 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#13 D:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#14 D:\wamp\www\yii1\framework\web\CController.php(265): UsuariosController->runActionWithFilters()
+#15 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): UsuariosController->run()
+#16 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 D:\wamp\www\sinfriosincalor1\index.php(13): CWebApplication->run()
+REQUEST_URI=/sinfriosincalor1/index.php?r=usuarios/create
+in D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php (1727)
+in D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php (1566)
+in D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php (918)
+2016/04/20 20:17:05 [error] [php] preg_replace_callback(): No ending delimiter '/' found (D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php:1727)
+Stack trace:
+#0 D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php(918): JPhpMailer->EncodeHeader()
+#1 D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php(901): JPhpMailer->AddrFormat()
+#2 D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php(1106): JPhpMailer->AddrAppend()
+#3 D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php(558): JPhpMailer->CreateHeader()
+#4 D:\wamp\www\sinfriosincalor1\protected\models\EnviarEmail.php(16): JPhpMailer->Send()
+#5 D:\wamp\www\sinfriosincalor1\protected\controllers\UsuariosController.php(120): EnviarEmail->enviar()
+#6 D:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): UsuariosController->actionCreate()
+#7 D:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): UsuariosController->runAction()
+#9 D:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 D:\wamp\www\yii1\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#11 D:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): UsuariosController->filterAccessControl()
+#12 D:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#13 D:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#14 D:\wamp\www\yii1\framework\web\CController.php(265): UsuariosController->runActionWithFilters()
+#15 D:\wamp\www\yii1\framework\web\CWebApplication.php(282): UsuariosController->run()
+#16 D:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 D:\wamp\www\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 D:\wamp\www\sinfriosincalor1\index.php(13): CWebApplication->run()
+REQUEST_URI=/sinfriosincalor1/index.php?r=usuarios/create
+in D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php (1727)
+in D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php (1566)
+in D:\wamp\www\sinfriosincalor1\protected\extensions\phpmailer\class.phpmailer.php (918)
