@@ -6,7 +6,15 @@ $this->breadcrumbs = array (
 		'Create' 
 );
 
+$modelo = $_GET['modelop'];
+
 $this->menu = array (
+		array (
+				'label' => 'List Especificaciones',
+				'url' => array (
+						'index' 
+				) 
+		),
 		array (
 				'label' => 'Manage Especificaciones',
 				'url' => array (
@@ -16,6 +24,6 @@ $this->menu = array (
 );
 ?>
 
-<h1>Añadir especificaciones</h1>
+<h1>Añadir especificaciones al modelo: <?=$modelo ?></h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

@@ -59,6 +59,13 @@ $items = array (
 				'visible' =>Yii::app()->user->name == "admin"
 		),
 		array (
+				'label' => 'Ofertas',
+				'url' => array (
+						'/ofertas/index'
+				),
+				'visible' =>!Yii::app()->user->isGuest
+		),
+		array (
 				'label' => 'Producto',
 				'url' => array (
 						'/productos/create'

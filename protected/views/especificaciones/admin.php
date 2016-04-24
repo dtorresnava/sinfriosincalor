@@ -52,14 +52,19 @@ return false;
 		/*
 		'consumo_frio',
 		'consumo_calor',
-		'dimencion_alto',
-		'dimencion_ancho',
-		'dimencion_largo',
-		'peso',
+		'dimencion_alto_ue',
+		'dimencion_ancho_ue',
+		'dimencion_largo_ue',
+		'peso_ue',
 		'conexion_pequeña',
 		'conexion_grande',
 		'tipo_caudal',
 		'posicion_tubos_conextion',
+		'peso_ui',
+		'dimencion_alto_ui',
+		'dimencion_ancho_ui',
+		'dimencion_largo_ui',
+		'cantidad_unidades',
 		*/
 array(
 'class'=>'booster.widgets.TbButtonColumn',

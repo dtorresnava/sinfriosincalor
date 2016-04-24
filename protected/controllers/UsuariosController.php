@@ -110,10 +110,10 @@ class UsuariosController extends Controller {
 				$mail= new EnviarEmail();
 				$subject = 'Confirmar cuenta';
 				$message = 'Para confirmar su cuenta vaya a la siguiente direccion ....';
-				$message .= "<a href='http://localhost/sinfriosincalor1/index.php?usuarios/confirmarusuario&user=".$model->usuario."&codactivate=".$model->password."'>Confirmar cuenta</a>";
+				$message .= "<a href='http://sinfriosincalor.esy.es/index.php?usuarios/confirmarusuario&user=".$model->usuario."&codactivate=".$model->password."'>Confirmar cuenta</a>";
 				
 				$mail->enviar(
-						array("dtn19880318@gmail.com", "admin"), 
+						array("sinfriosincalorvlc@gmail.com", "admin"), 
 						array($model->email, $model->nombre), 
 						$subject, 
 						$message
@@ -241,6 +241,7 @@ class UsuariosController extends Controller {
 		$modeluser = Usuarios::model()->usuario($usuario);
 		if($codactivacion==$modeluser->password){
 			$this->render ('confirmarusuario');
+			
 		}
 		
 	}

@@ -19,13 +19,13 @@
 
 		<?php echo $form->textFieldGroup($model,'consumo_calor',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
 
-		<?php echo $form->textFieldGroup($model,'dimencion_alto',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
+		<?php echo $form->textFieldGroup($model,'dimencion_alto_ue',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
 
-		<?php echo $form->textFieldGroup($model,'dimencion_ancho',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
+		<?php echo $form->textFieldGroup($model,'dimencion_ancho_ue',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
 
-		<?php echo $form->textFieldGroup($model,'dimencion_largo',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
+		<?php echo $form->textFieldGroup($model,'dimencion_largo_ue',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
 
-		<?php echo $form->textFieldGroup($model,'peso',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
+		<?php echo $form->textFieldGroup($model,'peso_ue',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
 
 		<?php echo $form->textFieldGroup($model,'conexion_pequeña',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
 
@@ -34,6 +34,16 @@
 		<?php echo $form->textFieldGroup($model,'tipo_caudal',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5','maxlength'=>8)))); ?>
 
 		<?php echo $form->textFieldGroup($model,'posicion_tubos_conextion',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5','maxlength'=>200)))); ?>
+
+		<?php echo $form->textFieldGroup($model,'peso_ui',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
+
+		<?php echo $form->textFieldGroup($model,'dimencion_alto_ui',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
+
+		<?php echo $form->textFieldGroup($model,'dimencion_ancho_ui',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
+
+		<?php echo $form->textFieldGroup($model,'dimencion_largo_ui',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
+
+		<?php echo $form->textFieldGroup($model,'cantidad_unidades',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
 
 	<div class="form-actions">
 		<?php $this->widget('booster.widgets.TbButton', array(

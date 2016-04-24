@@ -1,15 +1,19 @@
-<?php $form=$this->beginWidget('booster.widgets.TbActiveForm',array(
-	'id'=>'especificaciones-form',
-	'enableAjaxValidation'=>false,
-)); 
-$idp= $_GET['idp'];
+<?php
+
+$form = $this->beginWidget ( 'booster.widgets.TbActiveForm', array (
+		'id' => 'especificaciones-form',
+		'enableAjaxValidation' => false 
+) );
+$idp = $_GET ['idp'];
 ?>
 
-<p class="help-block">Fields with <span class="required">*</span> are required.</p>
+<p class="help-block">
+	Fields with <span class="required">*</span> are required.
+</p>
 
 <?php echo $form->errorSummary($model); ?>
 
-	<?php echo $form->textFieldGroup($model,'producto_id',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5', 'value'=>$idp)))); ?>
+	<?php echo $form->textFieldGroup($model,'producto_id',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5', 'value'=>$idp, 'readonly'=>true)))); ?>
 
 	<?php echo $form->textFieldGroup($model,'potencia_frio',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
 
@@ -23,13 +27,13 @@ $idp= $_GET['idp'];
 
 	<?php echo $form->textFieldGroup($model,'consumo_calor',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
 
-	<?php echo $form->textFieldGroup($model,'dimencion_alto',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
+	<?php echo $form->textFieldGroup($model,'dimencion_alto_ue',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
 
-	<?php echo $form->textFieldGroup($model,'dimencion_ancho',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
+	<?php echo $form->textFieldGroup($model,'dimencion_ancho_ue',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
 
-	<?php echo $form->textFieldGroup($model,'dimencion_largo',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
+	<?php echo $form->textFieldGroup($model,'dimencion_largo_ue',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
 
-	<?php echo $form->textFieldGroup($model,'peso',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
+	<?php echo $form->textFieldGroup($model,'peso_ue',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
 
 	<?php echo $form->textFieldGroup($model,'conexion_pequeña',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
 
@@ -39,12 +43,25 @@ $idp= $_GET['idp'];
 
 	<?php echo $form->textFieldGroup($model,'posicion_tubos_conextion',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5','maxlength'=>200)))); ?>
 
+	<?php echo $form->textFieldGroup($model,'peso_ui',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
+
+	<?php echo $form->textFieldGroup($model,'dimencion_alto_ui',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
+
+	<?php echo $form->textFieldGroup($model,'dimencion_ancho_ui',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
+
+	<?php echo $form->textFieldGroup($model,'dimencion_largo_ui',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
+
+	<?php echo $form->textFieldGroup($model,'cantidad_unidades',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
+
 <div class="form-actions">
-	<?php $this->widget('booster.widgets.TbButton', array(
-			'buttonType'=>'submit',
-			'context'=>'primary',
-			'label'=>$model->isNewRecord ? 'Create' : 'Save',
-		)); ?>
+	<?php
+	
+$this->widget ( 'booster.widgets.TbButton', array (
+			'buttonType' => 'submit',
+			'context' => 'primary',
+			'label' => $model->isNewRecord ? 'Create' : 'Save' 
+	) );
+	?>
 </div>
 
 <?php $this->endWidget(); ?>

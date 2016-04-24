@@ -9,7 +9,7 @@
 			'tout' => 1 
 	) ) . '"></HEAD>';
 	?>
-	<link rel="stylesheet" type="text/css" href="/sinfriosincalor1/estilocabecera.css">
+	<link rel="stylesheet" type="text/css" href="/sinfriosincalor1/css/estilocabecera.css">
 </head>
 
 <body>
@@ -21,7 +21,7 @@
 	$this->widget ( 'booster.widgets.TbNavbar', array (
 			'type' => 'inverse',
 			'brand' => 'SIN FRIO SIN CALOR',
-			'collapse' => false,
+			'collapse' => true,
 			'fixed' => true,
 			'htmlOptions' => array (
 					'style' => 'margin-bottom:1px; text-align: left;' 

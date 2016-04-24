@@ -33,20 +33,20 @@
 	<?php echo CHtml::encode($data->consumo_calor); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('dimencion_alto')); ?>:</b>
-	<?php echo CHtml::encode($data->dimencion_alto); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('dimencion_alto_ue')); ?>:</b>
+	<?php echo CHtml::encode($data->dimencion_alto_ue); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('dimencion_ancho')); ?>:</b>
-	<?php echo CHtml::encode($data->dimencion_ancho); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('dimencion_ancho_ue')); ?>:</b>
+	<?php echo CHtml::encode($data->dimencion_ancho_ue); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('dimencion_largo')); ?>:</b>
-	<?php echo CHtml::encode($data->dimencion_largo); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('dimencion_largo_ue')); ?>:</b>
+	<?php echo CHtml::encode($data->dimencion_largo_ue); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('peso')); ?>:</b>
-	<?php echo CHtml::encode($data->peso); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('peso_ue')); ?>:</b>
+	<?php echo CHtml::encode($data->peso_ue); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('conexion_pequeña')); ?>:</b>
@@ -63,6 +63,26 @@
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('posicion_tubos_conextion')); ?>:</b>
 	<?php echo CHtml::encode($data->posicion_tubos_conextion); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('peso_ui')); ?>:</b>
+	<?php echo CHtml::encode($data->peso_ui); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('dimencion_alto_ui')); ?>:</b>
+	<?php echo CHtml::encode($data->dimencion_alto_ui); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('dimencion_ancho_ui')); ?>:</b>
+	<?php echo CHtml::encode($data->dimencion_ancho_ui); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('dimencion_largo_ui')); ?>:</b>
+	<?php echo CHtml::encode($data->dimencion_largo_ui); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('cantidad_unidades')); ?>:</b>
+	<?php echo CHtml::encode($data->cantidad_unidades); ?>
 	<br />
 
 	*/ ?>

@@ -46,7 +46,7 @@ class EspecificacionesController extends Controller {
 								'update' 
 						),
 						'users' => array (
-								'admin' 
+								'@' 
 						) 
 				),
 				array (
@@ -85,7 +85,7 @@ class EspecificacionesController extends Controller {
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
 	 */
-	public function actionCreate($idp) {
+public function actionCreate($idp, $modelop) {
 		$model = new Especificaciones ();
 		
 		// Uncomment the following line if AJAX validation is needed
@@ -102,9 +102,11 @@ class EspecificacionesController extends Controller {
 		
 		$this->render ( 'create', array (
 				'model' => $model,
-				'idp' => $idp
+				'idp' => $idp,
+				'modelop'=> $modelop
 		) );
 	}
+	
 	
 	/**
 	 * Updates a particular model.
