@@ -37,7 +37,7 @@ class UsuariosController extends Controller {
 						),
 						'users' => array (
 								'admin' 
-						) 
+						), 
 				),
 				array (
 						'allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -46,8 +46,8 @@ class UsuariosController extends Controller {
 								'update' 
 						),
 						'users' => array (
-								'admin' 
-						) 
+								'*' 
+						), 
 				),
 				array(
 						'allow',
@@ -57,7 +57,7 @@ class UsuariosController extends Controller {
 						),
 						'users' => array(
 								'admin'
-						)
+						),
 				),
 				array (
 						'allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -67,12 +67,12 @@ class UsuariosController extends Controller {
 						),
 						'users' => array (
 								'admin' 
-						) 
+						), 
 				),
 				array (
 						'deny', // deny all users
 						'users' => array (
-								'admin' 
+								'*' 
 						) 
 				)
 		);
