@@ -1,6 +1,23 @@
 @CHARSET "ISO-8859-1";
 
+.navbar-header a.navbar-brand{
+	color: black;
+}
 
 nav.navbar{
-	background: blue; 
+	position:fixed;
+	margin: 0 auto;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	background: #6BE0FF; 
+	border-radius: 0px;
+	color: black;
+	border: none;
+}
+
+.navbar-collapse .collapse .in,
+nav .navbar-nav,
+.navbar-header{
+	z-index: 99;
 }

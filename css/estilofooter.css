@@ -1,0 +1,20 @@
+@CHARSET "ISO-8859-1";
+div.footermainfix{
+	position: absolute;
+	margin: 0 auto;
+	bottom: 0px;
+	background: #6BE0FF;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+div.footermain{
+	background: #6BE0FF;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+hr.separador{
+	width: 100%;
+}
+

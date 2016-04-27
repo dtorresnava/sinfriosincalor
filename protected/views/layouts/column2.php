@@ -12,11 +12,11 @@ if (Yii::app ()->user->name === 'admin') {
 	
 	</div>
 	<div class="col-md-7">
-		<div id="content">
+		<div id="content" class="centermaindata">
 			<?php echo $content; ?>
 		</div>
 	</div>
-	<div class="col-md-3">
+	<div class="col-md-3 rigthmenudata" >
 		<div id="sidebar">
 		<?php
 		$this->beginWidget ( 'zii.widgets.CPortlet', array (
@@ -36,9 +36,10 @@ if (Yii::app ()->user->name === 'admin') {
 <?php
 } else {
 ?>
-	<div class="col-md-1"></div>
+	<div class="col-md-2">
+	</div>
 	
-	<div class="col-md-11">
+	<div class="col-md-10 centermaindata">
 		<div id="content">
 			<?php echo $content; ?>
 		</div>

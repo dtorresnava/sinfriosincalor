@@ -1,5 +1,4 @@
 <?php
-
 $form = $this->beginWidget ( 'booster.widgets.TbActiveForm', array (
 		'id' => 'especificaciones-form',
 		'enableAjaxValidation' => false 
@@ -56,7 +55,7 @@ $idp = $_GET ['idp'];
 <div class="form-actions">
 	<?php
 	
-$this->widget ( 'booster.widgets.TbButton', array (
+	$this->widget ( 'booster.widgets.TbButton', array (
 			'buttonType' => 'submit',
 			'context' => 'primary',
 			'label' => $model->isNewRecord ? 'Create' : 'Save' 

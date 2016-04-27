@@ -46,7 +46,7 @@ class UsuariosController extends Controller {
 								'update' 
 						),
 						'users' => array (
-								'*' 
+								'admin' 
 						) 
 				),
 				array(

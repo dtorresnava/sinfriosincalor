@@ -1,0 +1,27 @@
+@CHARSET "ISO-8859-1";
+
+.list-view{
+	top: 0px;
+}
+.centermaindata{
+	position:fixed;
+	margin: 0 auto;
+	overflow: auto;
+	width: 55%;
+	top: 50px;
+	bottom: 100px;
+	z-index: -1;
+}
+
+.rigthmenudata{
+	position:absolute;
+	margin: 0 auto;
+	overflow: auto;
+	top: 50px;
+	right: 1%;
+}
+
+.loginpos{
+	top: 50px;
+	z-index: -1;
+}

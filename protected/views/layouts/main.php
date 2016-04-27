@@ -10,6 +10,9 @@
 	) ) . '"></HEAD>';
 	?>
 	<link rel="stylesheet" type="text/css" href="/sinfriosincalor1/css/estilocabecera.css">
+	<link rel="stylesheet" type="text/css" href="/sinfriosincalor1/css/estilofooter.css">
+	<link rel="stylesheet" type="text/css" href="/sinfriosincalor1/css/bodystyle.css">
+
 </head>
 
 <body>
@@ -76,20 +79,15 @@
 	echo $content;
 	
 	?>
-	<script>$(".buttonlink").addClass("btn").addClass("btn-primary").removeClass("buttonlink");</script>
-
-
-
 	<!-- page -->
-	<br>
-	<hr class="container"></hr>
-	<div id="footer" class="container text-center">
-		<a href="index.php?theme=classic" style='font-size: 0.7em;'>Cambiar a
-			vista Escritorio</a>
-		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br /> All
-		Rights Reserved.<br />
+	<br />
+	
+	<div id="footer" class="footermainfix col-xs-12 text-center">
+		Copyright &copy; <?php echo date('Y'); ?> por Sin Frio Sin Calor.<br />
+		Todos los derechos reservados.<br />
 		<?php echo Yii::powered(); ?>
 	</div>
 	<!-- footer -->
+	<script>$(".buttonlink").addClass("btn").addClass("btn-primary").removeClass("buttonlink");</script>
 </body>
 </html>

@@ -38,7 +38,7 @@ $items = array (
 				'visible' =>Yii::app()->user->name != "admin"
 		),
 		array (
-				'label' => 'Contact',
+				'label' => 'Contacto',
 				'url' => array (
 						'/site/contact' 
 				),
@@ -54,28 +54,28 @@ $items = array (
 		array (
 				'label' => 'Servicios',
 				'url' => array (
-						'/servicios/create'
+						'/servicios/admin'
 				),
 				'visible' =>Yii::app()->user->name == "admin"
 		),
 		array (
 				'label' => 'Ofertas',
 				'url' => array (
-						'/ofertas/index'
+						'/ofertas/admin'
 				),
-				'visible' =>!Yii::app()->user->isGuest
+				'visible' =>Yii::app()->user->name =="admin"
 		),
 		array (
 				'label' => 'Producto',
 				'url' => array (
-						'/productos/create'
+						'/productos/admin'
 				),
 				'visible' =>Yii::app()->user->name == "admin"
 		),
 		array (
 				'label' => 'Fabricante',
 				'url' => array (
-						'/fabricante/create'
+						'/fabricante/admin'
 				),
 				'visible' =>Yii::app()->user->name == "admin"
 		),
