@@ -83,8 +83,8 @@
 	<br />
 	
 	<div id="footer" class="footermainfix col-xs-12 text-center">
-		Copyright &copy; <?php echo date('Y'); ?> por Sin Frio Sin Calor.<br />
-		Todos los derechos reservados.<br />
+		Copyright &copy; <?php echo date('Y'); ?> por Sin Frio Sin Calor.
+		Todos los derechos reservados.
 		<?php echo Yii::powered(); ?>
 	</div>
 	<!-- footer -->

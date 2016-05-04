@@ -7,9 +7,10 @@
 	position:fixed;
 	margin: 0 auto;
 	overflow: auto;
-	width: 55%;
+	width: 78%;
+	margin-left: 20px;
 	top: 50px;
-	bottom: 100px;
+	bottom: 50px;
 	z-index: -1;
 }
 
@@ -18,10 +19,32 @@
 	margin: 0 auto;
 	overflow: auto;
 	top: 50px;
-	right: 1%;
+	right: 0%;
+	width: 20%;
+	z-index: -1;
 }
 
 .loginpos{
 	top: 50px;
 	z-index: -1;
+}
+
+div.portada{
+	position:absolute;
+	margin: 0 auto;
+	top: 50px;
+	width: 100%;
+	bottom: 35px;
+	z-index: -1;
+}
+
+div.portada img{
+	width: 100%;
+	height: 100%;
+}
+
+@media (max-width: 991px){
+	.centermaindata{
+		top: 100px;
+	}
 }

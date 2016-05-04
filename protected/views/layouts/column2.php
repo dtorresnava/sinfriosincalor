@@ -8,10 +8,7 @@
 <?php
 if (Yii::app ()->user->name === 'admin') {
 	?>
-	<div class="col-md-2">
-	
-	</div>
-	<div class="col-md-7">
+	<div class="col-md-9">
 		<div id="content" class="centermaindata">
 			<?php echo $content; ?>
 		</div>

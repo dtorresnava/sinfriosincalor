@@ -227,3 +227,10 @@ div.search-form
 {
 	background: #80CFFF;
 }
+
+/*Estilo propio*/
+div.portada{
+	position:absolute;
+	margin: 0 auto;
+	top: 50px;
+}
