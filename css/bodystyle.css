@@ -48,3 +48,12 @@ div.portada img{
 		top: 100px;
 	}
 }
+
+
+
+@media (max-width: 535px){
+	div.portada{
+		bottom: 50px;
+	}
+}
+
