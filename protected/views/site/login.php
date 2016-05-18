@@ -15,8 +15,6 @@
     ?>
 
     <h1>Login</h1>
-
-    <p>Please fill out the following form with your login credentials:</p>
      
     <div class="form">
 
@@ -29,25 +27,15 @@
                 'validateOnSubmit' => true,
             ),
         ));
-        ?>
-        
-        <p class="note">Fields with <span class="required">*</span> are required.</p>
-        
+        ?>        
         
         <?php echo $form->textFieldGroup($model, 'username', array('widgetOptions' => array('htmlOptions' => array('class' => 'span5', 'maxlength' => 16)))); ?>		
-            
-
-       
+                
         <?php echo $form->passwordFieldGroup($model, 'password', array('widgetOptions' => array('htmlOptions' => array('class' => 'span5', 'maxlength' => 32)))); ?>
-        <p class="hint">
-            Hint: You may login with <kbd>demo</kbd>/<kbd>demo</kbd> or <kbd>admin</kbd>/<kbd>admin</kbd>.
-        </p>
-      
-
         
         <?php
         echo $form->checkboxGroup(
-                $model, 'rememberMe'
+                $model, encode('rememberMe')
         );
         ?>
          

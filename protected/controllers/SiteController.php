@@ -124,8 +124,12 @@ public function actionLogin()
 						'usuario'=>$model->usuario
 				));
 				
+				
+				
 				if(isset($modelusuario)){
-					$password = $modelusuario->password;
+					$password = $model->generaPass();
+					$modelusuario->password=$password;
+					$modelusuario->save();
 					
 					$email = new EnviarEmail();
 					$subject="Has solicitado recuperar el password en ";
@@ -140,8 +144,12 @@ public function actionLogin()
 							$subject,
 							$message);
 				}
+				$mse='<strong>Se ha enviado un email con la nueva contraseña</strong>';
 			}
 		}
 		$this->render('recuperarpassword', array('model'=>$model, 'mse'=>$mse));
 	}
+	
+	
+	
 }
