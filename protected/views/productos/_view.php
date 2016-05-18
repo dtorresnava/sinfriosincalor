@@ -37,6 +37,7 @@
 	<?php 
 	if($data->alta_especificaciones==0 && Yii::app()->user->name == "admin"){ 
 		echo CHtml::link(utf8_encode('Añadir especificaciones'),array('especificaciones/create&idp='.$data->id.'&modelop='.$data->modelo));
-	} 
+	}else if ($data->alta_especificaciones==1)
+		echo CHtml::link(utf8_encode('Ver especificaciones'),array('especificaciones/view&id='.$data->id));
 	?>
 </div>

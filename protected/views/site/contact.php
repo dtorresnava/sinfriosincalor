@@ -1,3 +1,7 @@
+<div class="col-xs-2 col-md-3 loginpos">
+
+</div>
+<div class="col-xs-6 col-md-6 loginpos">
 <?php
 /* @var $this SiteController */
 /* @var $model ContactForm */
@@ -83,3 +87,4 @@ If you have business inquiries or other questions, please fill out the following
 </div><!-- form -->
 
 <?php endif; ?>
+</div>

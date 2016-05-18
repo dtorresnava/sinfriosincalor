@@ -106,4 +106,42 @@ public function actionLogin()
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
 	}
+	
+	/**
+	 * 
+	 */
+	public function actionRecuperarpassword(){
+		$model = new RecuperarPassword();
+		$mse = "";
+		if(isset($_POST['RecuperarPassword'])){
+			$model->attributes = $_POST['RecuperarPassword'];
+			if(!$model->validate()){
+				$mse='<strong>Error al enviar el formulario</strong>';
+			}else {
+				$modelusuario = new Usuarios();
+				$modelusuario=Usuarios::model()->findByAttributes(array(
+						'email' => $model->email,
+						'usuario'=>$model->usuario
+				));
+				
+				if(isset($modelusuario)){
+					$password = $modelusuario->password;
+					
+					$email = new EnviarEmail();
+					$subject="Has solicitado recuperar el password en ";
+					$subject.=Yii::app()->name;
+					$message = "Bienvenid@".$modelusuario->nombre." su password es ";
+					$message.=$password;
+					$message.="<br><br>";
+					$message.="<a href='http://sinfriosincalor.esy.es/index.php?</a>";
+					
+					$email->enviar(array("sinfriosincalorvlcpyme@gmail.com","admin"),
+							array($modelusuario->email, $modelusuario->usuario),
+							$subject,
+							$message);
+				}
+			}
+		}
+		$this->render('recuperarpassword', array('model'=>$model, 'mse'=>$mse));
+	}
 }

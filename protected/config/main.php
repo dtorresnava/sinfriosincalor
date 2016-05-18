@@ -9,7 +9,7 @@ return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Sin frío sin calor',
 	'language' => 'es',
-	'sourceLanguage' => 'en',
+	'sourceLanguage' => 'es_Es',
 	// preloading 'log' component
 	'preload' => array('log', 'booster'),
 
@@ -43,7 +43,6 @@ return array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
-
 		// uncomment the following to enable URLs in path-format
 		/*
 		'urlManager'=>array(
@@ -85,6 +84,6 @@ return array(
 	// using Yii::app()->params['paramName']
 	'params'=>array(
 		// this is used in contact page
-		'adminEmail'=>'dtn19880318@gmail.com',
+		'adminEmail'=>'sinfriosincalorvlcpyme@gmail.com',
 	),
 );

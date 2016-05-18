@@ -54,10 +54,18 @@
 
         <div class=" buttons">
             
-            <?php echo CHtml::submitButton('Login'); ?>
+            <?php 
+            $this->widget ( 'booster.widgets.TbButton', array (
+            		'buttonType' => 'submit',
+            		'context' => 'primary',
+            		'label' => 'Login'
+            ) );
+            
+            ?>
            
         </div>
 
         <?php $this->endWidget(); ?>
     </div><!-- form -->
+    <a href="<?php echo Yii::app()->createUrl('site/recuperarpassword')?>">Recuperar password</a>
 </div>

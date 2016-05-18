@@ -11,9 +11,13 @@ array('label'=>'Update Especificaciones','url'=>array('update','id'=>$model->id)
 array('label'=>'Delete Especificaciones','url'=>'#','linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
 array('label'=>'Manage Especificaciones','url'=>array('admin')),
 );
+
+$producto=Productos::model()->findByAttributes(array(
+					'id' => $model->producto_id
+			));
 ?>
 
-<h1>View Especificaciones #<?php echo $model->id; ?></h1>
+<h1><small>Especificaciones del modelo:</small> <?php echo $producto->modelo; ?></small> </h1>
 
 <?php $this->widget('booster.widgets.TbDetailView',array(
 'data'=>$model,
@@ -30,7 +34,7 @@ array('label'=>'Manage Especificaciones','url'=>array('admin')),
 		'dimencion_ancho_ue',
 		'dimencion_largo_ue',
 		'peso_ue',
-		'conexion_pequeña',
+		'conexion_pequenya',
 		'conexion_grande',
 		'tipo_caudal',
 		'posicion_tubos_conextion',

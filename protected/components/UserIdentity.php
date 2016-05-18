@@ -22,9 +22,11 @@ class UserIdentity extends CUserIdentity {
 		) );
 		if ($user === null)
 			$this->errorCode = self::ERROR_USERNAME_INVALID;
-		else if (md5 ( $this->password ) !== $user->password)
+		else if (md5 ( $this->password ) !== $user->password){
 			$this->errorCode = self::ERROR_PASSWORD_INVALID;
-		else {
+		}else if ($user->activo == 0){
+			$this->errorCode = self::ERROR_PASSWORD_INVALID;
+		}else {
 			$this->datos = $user;
 			$this->errorCode = self::ERROR_NONE;
 		}

@@ -30,18 +30,29 @@
 }
 
 div.portada{
-	position:absolute;
+	position:fixed;
 	margin: 0 auto;
 	top: 50px;
+	overflow: hidden;
 	width: 100%;
 	bottom: 35px;
 	z-index: -1;
+	text-align: center;
+	
+	background-color: #EBE59D;
 }
 
-div.portada img{
-	width: 100%;
-	height: 100%;
+div.portadaimg{
+	-webkit-box-shadow: 0px 0px 81px 11px rgba(235,229,157,1) inset;
+	-moz-box-shadow: 0px 0px 81px 11px rgba(235,229,157,1) inset;
+	box-shadow: 0px 0px 81px 11px rgba(235,229,157,1) inset;
 }
+
+
+div.portadaimg img{
+	width: 80%;
+}
+
 
 @media (max-width: 991px){
 	.centermaindata{

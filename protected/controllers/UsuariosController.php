@@ -69,6 +69,15 @@ class UsuariosController extends Controller {
 								'admin' 
 						), 
 				),
+				array(
+						'allow',
+						'actions'=> array(
+								'confirmarusuario'
+						),
+						'users' => array(
+								'*'
+						)
+				),
 				array (
 						'deny', // deny all users
 						'users' => array (
@@ -106,23 +115,36 @@ class UsuariosController extends Controller {
 		if (isset ( $_POST ['Usuarios'] )) {
 			$model->attributes = $_POST ['Usuarios'];
 			
-			if ($model->save ())
+			if ($model->save ()){
 				$mail= new EnviarEmail();
 				$subject = 'Confirmar cuenta';
 				$message = 'Para confirmar su cuenta vaya a la siguiente direccion ....';
-				$message .= "<a href='http://sinfriosincalor.esy.es/index.php?usuarios/confirmarusuario&user=".$model->usuario."&codactivate=".$model->password."'>Confirmar cuenta</a>";
+				$message .= "<a href='http://sinfriosincalor.esy.es/index.php?r=usuarios/create&user=".$model->usuario."&codactivate=".$model->password."'>Confirmar cuenta</a>";
 				
 				$mail->enviar(
-						array("sinfriosincalorvlc@gmail.com", "admin"), 
+						array("sinfriosincalorvlcpyme@gmail.com", "admin"), 
 						array($model->email, $model->nombre), 
 						$subject, 
 						$message
 						);
-				
+		
 				$this->redirect ( array (
 						'view',
 						'id' => $model->id 
 				) );
+			}
+		}
+		if(isset($_GET["user"]) && isset($_GET["codactivate"])){
+			$usuario=$_GET['usuario'];
+			$codactivate= $_GET['codactivate'];
+
+			$modelusuario=Usuarios::model()->findByAttributes(array(
+					'password' => $codactivate
+			));
+			if(isset($modelusuario)){
+				$modelusuario->activo=1;
+				$modelusuario->save();
+			}		
 		}
 		
 		$this->render ( 'create', array (
@@ -204,6 +226,7 @@ class UsuariosController extends Controller {
 		) );
 	}
 	
+	
 	/**
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
@@ -234,14 +257,13 @@ class UsuariosController extends Controller {
 	}
 	
 	
-	public function actionConfirmarusuarios(){
+	public function actionConfirmarusuario(){
 		$usuario=$_GET['user'];
 		$codactivacion=$_GET['codactivate'];
 		
 		$modeluser = Usuarios::model()->usuario($usuario);
 		if($codactivacion==$modeluser->password){
-			$this->render ('confirmarusuario');
-			
+			$this->render ('confirmarusuario');	
 		}
 		
 	}

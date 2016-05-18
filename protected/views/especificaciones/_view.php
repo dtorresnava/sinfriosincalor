@@ -49,7 +49,7 @@
 	<?php echo CHtml::encode($data->peso_ue); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('conexion_pequeña')); ?>:</b>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('conexion_pequenya')); ?>:</b>
 	<?php echo CHtml::encode($data->conexion_pequeña); ?>
 	<br />
 

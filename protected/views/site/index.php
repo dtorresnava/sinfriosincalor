@@ -5,6 +5,8 @@ $this->pageTitle=Yii::app()->name;
 ?>
 
 <div class="portada">
-	<img src="<?php echo Yii:: app() ->baseUrl.'/images/homepicture.jpg' ?>">
+	<div class="portadaimg">
+		<img src="<?php echo Yii:: app() ->baseUrl.'/images/homepicture3.png' ?>">
+	</div>
 </div>
 

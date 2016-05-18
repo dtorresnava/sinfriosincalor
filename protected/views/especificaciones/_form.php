@@ -1,9 +1,16 @@
 <?php
+
 $form = $this->beginWidget ( 'booster.widgets.TbActiveForm', array (
 		'id' => 'especificaciones-form',
 		'enableAjaxValidation' => false 
 ) );
-$idp = $_GET ['idp'];
+
+if(isset($_GET['idp']) && isset($_GET['modelop'])){
+	$idp=$_GET['idp'];
+	$modelop=$_GET['modelop'];
+	//$model->producto_id = $idp;
+}
+
 ?>
 
 <p class="help-block">
@@ -11,11 +18,11 @@ $idp = $_GET ['idp'];
 </p>
 
 <?php echo $form->errorSummary($model); ?>
-
-	<?php echo $form->textFieldGroup($model,'producto_id',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5', 'value'=>$idp, 'readonly'=>true)))); ?>
-
-	<?php echo $form->textFieldGroup($model,'potencia_frio',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
-
+	
+	<?php echo $form->textFieldGroup($model,'producto_id',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5', 'value'=>$idp, 'readonly'=>true))));?>
+	
+	<?php echo $form->textFieldGroup($model,'potencia_frio',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5'))));?>
+	
 	<?php echo $form->textFieldGroup($model,'potencia_calor',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
 
 	<?php echo $form->textFieldGroup($model,'eficiencia_frio',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
@@ -34,7 +41,7 @@ $idp = $_GET ['idp'];
 
 	<?php echo $form->textFieldGroup($model,'peso_ue',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
 
-	<?php echo $form->textFieldGroup($model,'conexion_pequeña',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
+	<?php echo $form->textFieldGroup($model,'conexion_pequenya',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
 
 	<?php echo $form->textFieldGroup($model,'conexion_grande',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
 
@@ -55,7 +62,7 @@ $idp = $_GET ['idp'];
 <div class="form-actions">
 	<?php
 	
-	$this->widget ( 'booster.widgets.TbButton', array (
+$this->widget ( 'booster.widgets.TbButton', array (
 			'buttonType' => 'submit',
 			'context' => 'primary',
 			'label' => $model->isNewRecord ? 'Create' : 'Save' 

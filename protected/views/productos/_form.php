@@ -31,8 +31,10 @@
 
 	<?php echo $form->textFieldGroup($model,'precio',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
 
-	<?php echo $form->textFieldGroup($model,'alta_especificaciones',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
+	<?php //echo $form->textFieldGroup($model,'alta_especificaciones',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
 
+	<?php echo $form->hiddenField($model,'alta_especificaciones',array('value'=>'0')); ?>
+	
 <div class="form-actions">
 	<?php $this->widget('booster.widgets.TbButton', array(
 			'buttonType'=>'submit',

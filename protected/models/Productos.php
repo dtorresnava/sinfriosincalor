@@ -118,4 +118,13 @@ class Productos extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+	
+	public function beforeSave() {
+		if ($this->isNewRecord) {
+			$this->alta_especificaciones = 0;
+			
+		}
+		return parent::beforeSave ();
+	}
+	
 }

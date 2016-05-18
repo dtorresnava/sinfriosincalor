@@ -76,8 +76,11 @@ class EspecificacionesController extends Controller {
 	 *        	
 	 */
 	public function actionView($id) {
+		$especificaciones=Especificaciones::model()->findByAttributes(array(
+				'producto_id' => $id
+		));
 		$this->render ( 'view', array (
-				'model' => $this->loadModel ( $id ) 
+				'model' => $especificaciones 
 		) );
 	}
 	
@@ -85,7 +88,7 @@ class EspecificacionesController extends Controller {
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
 	 */
-public function actionCreate($idp, $modelop) {
+	public function actionCreate() {
 		$model = new Especificaciones ();
 		
 		// Uncomment the following line if AJAX validation is needed
@@ -101,12 +104,9 @@ public function actionCreate($idp, $modelop) {
 		}
 		
 		$this->render ( 'create', array (
-				'model' => $model,
-				'idp' => $idp,
-				'modelop'=> $modelop
+				'model' => $model 
 		) );
 	}
-	
 	
 	/**
 	 * Updates a particular model.

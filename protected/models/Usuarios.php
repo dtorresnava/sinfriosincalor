@@ -17,6 +17,7 @@
  * @property string $fecha_alta
  * @property string $usuario
  * @property string $password
+ * @property integer $activo
  */
 class Usuarios extends CActiveRecord
 {
@@ -37,7 +38,7 @@ class Usuarios extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('nombre, email, usuario, password', 'required'),
-			array('cp, telefono', 'numerical', 'integerOnly'=>true),
+			array('cp, telefono, activo', 'numerical', 'integerOnly'=>true),
 			array('nombre', 'length', 'max'=>50),
 			array('dni', 'length', 'max'=>10),
 			array('roles', 'length', 'max'=>1),
@@ -81,6 +82,7 @@ class Usuarios extends CActiveRecord
 			'fecha_alta' => 'Fecha Alta',
 			'usuario' => 'Usuario',
 			'password' => 'Password',
+			'activo' => 'Activo',
 		);
 	}
 	
@@ -129,6 +131,7 @@ class Usuarios extends CActiveRecord
 		$criteria->compare('fecha_alta',$this->fecha_alta,true);
 		$criteria->compare('usuario',$this->usuario,true);
 		$criteria->compare('password',$this->password,true);
+		$criteria->compare('activo', $this->activo,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
