@@ -1,7 +1,8 @@
 @CHARSET "ISO-8859-1";
 
-.navbar-header a.navbar-brand{
-	color: black;
+.navbar-header a.navbar-brand,
+.navbar-inverse .navbar-nav>li>a{
+	color: #30404E;
 }
 
 nav.navbar{
@@ -10,9 +11,9 @@ nav.navbar{
 	left: 0px;
 	right: 0px;
 	top: 0px;
-	background: #6BE0FF; 
+	background: #74C0CF; 
 	border-radius: 0px;
-	color: black;
+	color: #30404E;
 	border: none;
 }
 
@@ -20,4 +21,11 @@ nav.navbar{
 nav .navbar-nav,
 .navbar-header{
 	z-index: 99;
+}
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:hover, 
+.navbar-inverse .navbar-nav>.active>a:focus{
+	color: #fff;
+    background-color: #30404E;
 }

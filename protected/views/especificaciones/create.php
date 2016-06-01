@@ -27,6 +27,6 @@ if(isset($_GET['modelop'])){
 
 ?>
 
-<h1>Añadir especificaciones <?= $modelop;  ?></h1>
+<h1><?= $modelop;  ?></h1>
 
-<?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+<?php echo $this->renderPartial('_form', array('model'=>$model, 'userid'=>$id)); ?>

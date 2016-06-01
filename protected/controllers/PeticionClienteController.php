@@ -1,5 +1,5 @@
 <?php
-class EspecificacionesController extends Controller {
+class PeticionClienteController extends Controller {
 	/**
 	 *
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -76,11 +76,8 @@ class EspecificacionesController extends Controller {
 	 *        	
 	 */
 	public function actionView($id) {
-		$especificaciones=Especificaciones::model()->findByAttributes(array(
-				'producto_id' => $id
-		));
 		$this->render ( 'view', array (
-				'model' => $especificaciones 
+				'model' => $this->loadModel ( $id ) 
 		) );
 	}
 	
@@ -89,23 +86,43 @@ class EspecificacionesController extends Controller {
 	 * If creation is successful, the browser will be redirected to the 'view' page.
 	 */
 	public function actionCreate() {
-		$model = new Especificaciones ();
+		$model = new PeticionCliente ();
+		$usuario = new Usuarios();
+		$id=Yii::app()->user->id;
+		
 		
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 		
-		if (isset ( $_POST ['Especificaciones'] )) {
-			$model->attributes = $_POST ['Especificaciones'];
-			if ($model->save ())
+		if (isset ( $_POST ['PeticionCliente'] )) {
+			$model->attributes = $_POST ['PeticionCliente'];
+			if ($model->save ()){
+				$usuario = Usuarios::model()->findByAttributes(array(
+						'id' => $id
+				));
+				$mail= new EnviarEmail();
+				$subject = 'Petición presupuesto nº: '.$model->numero_pedido;
+				$message = 'tiene una nueva petición de presupuesto.';
+				$message .= "<a href='http://sinfriosincalor.esy.es/index.php?r=peticionCliente/view&id=".$model->id."'>Ver petición</a>";
+				
+				$mail->enviar(
+						array($usuario->email, $usuario->nombre),
+						array("sinfriosincalorvlcpyme@gmail.com", "admin"),
+						$subject,
+						$message
+						);
+				
+				
 				$this->redirect ( array (
 						'view',
 						'id' => $model->id 
 				) );
+			}
 		}
 		
 		$this->render ( 'create', array (
-				'model' => $model ,
-				'id' => $model->id
+				'model' => $model,
+				'id'=>$id
 		) );
 	}
 	
@@ -123,8 +140,8 @@ class EspecificacionesController extends Controller {
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 		
-		if (isset ( $_POST ['Especificaciones'] )) {
-			$model->attributes = $_POST ['Especificaciones'];
+		if (isset ( $_POST ['PeticionCliente'] )) {
+			$model->attributes = $_POST ['PeticionCliente'];
 			if ($model->save ())
 				$this->redirect ( array (
 						'view',
@@ -163,7 +180,7 @@ class EspecificacionesController extends Controller {
 	 * Lists all models.
 	 */
 	public function actionIndex() {
-		$dataProvider = new CActiveDataProvider ( 'Especificaciones' );
+		$dataProvider = new CActiveDataProvider ( 'PeticionCliente' );
 		$this->render ( 'index', array (
 				'dataProvider' => $dataProvider 
 		) );
@@ -173,10 +190,10 @@ class EspecificacionesController extends Controller {
 	 * Manages all models.
 	 */
 	public function actionAdmin() {
-		$model = new Especificaciones ( 'search' );
+		$model = new PeticionCliente ( 'search' );
 		$model->unsetAttributes (); // clear any default values
-		if (isset ( $_GET ['Especificaciones'] ))
-			$model->attributes = $_GET ['Especificaciones'];
+		if (isset ( $_GET ['PeticionCliente'] ))
+			$model->attributes = $_GET ['PeticionCliente'];
 		
 		$this->render ( 'admin', array (
 				'model' => $model 
@@ -192,7 +209,7 @@ class EspecificacionesController extends Controller {
 	 *        	
 	 */
 	public function loadModel($id) {
-		$model = Especificaciones::model ()->findByPk ( $id );
+		$model = PeticionCliente::model ()->findByPk ( $id );
 		if ($model === null)
 			throw new CHttpException ( 404, 'The requested page does not exist.' );
 		return $model;
@@ -206,7 +223,7 @@ class EspecificacionesController extends Controller {
 	 *        	
 	 */
 	protected function performAjaxValidation($model) {
-		if (isset ( $_POST ['ajax'] ) && $_POST ['ajax'] === 'especificaciones-form') {
+		if (isset ( $_POST ['ajax'] ) && $_POST ['ajax'] === 'peticion-cliente-form') {
 			echo CActiveForm::validate ( $model );
 			Yii::app ()->end ();
 		}

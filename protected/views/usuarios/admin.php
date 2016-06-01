@@ -5,31 +5,22 @@ $this->breadcrumbs = array (
 		),
 		'Manage' 
 );
-if(Yii::app()->user->name == "admin"){
-	$this->menu = array (
-			array (
-					'label' => 'List Usuarios',
-					'url' => array (
-							'index' 
-					) 
-			) 
-	);
-}else{
-	$this->menu = array (
-			array (
-					'label' => 'List Usuarios',
-					'url' => array (
-							'index'
-					)
-			),
-			array (
-					'label' => 'Create Usuarios',
-					'url' => array (
-							'create'
-					)
-			)
-	);
-}
+
+$this->menu = array (
+		array (
+				'label' => 'List Usuarios',
+				'url' => array (
+						'index'
+				)
+		),
+		array (
+				'label' => 'Create Usuarios',
+				'url' => array (
+						'create'
+				)
+		)
+);
+
 Yii::app ()->clientScript->registerScript ( 'search', "
 $('.search-button').click(function(){
 $('.search-form').toggle();

@@ -4,9 +4,11 @@ body
 	padding: 0;
 	color: #555;
 	font: normal 10pt Arial,Helvetica,sans-serif;
-	background: #EFEFEF;
+	background: #F1F7E2;
 }
-
+a{
+	color: #74C0CF;
+}
 #page
 {
 	margin-top: 5px;

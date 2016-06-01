@@ -57,16 +57,16 @@ class SiteController extends Controller
 			$model->attributes=$_POST['ContactForm'];
 			if($model->validate())
 			{
-				$name='=?UTF-8?B?'.base64_encode($model->name).'?=';
-				$subject='=?UTF-8?B?'.base64_encode($model->subject).'?=';
-				$headers="From: $name <{$model->email}>\r\n".
-					"Reply-To: {$model->email}\r\n".
-					"MIME-Version: 1.0\r\n".
-					"Content-Type: text/plain; charset=UTF-8";
-
-				mail(Yii::app()->params['adminEmail'],$subject,$model->body,$headers);
-				Yii::app()->user->setFlash('contact','Thank you for contacting us. We will respond to you as soon as possible.');
-				$this->refresh();
+				
+				$email = new EnviarEmail();
+				$subject=$model->subject;
+				$message = $model->body;
+				$message.="<br><br>";
+					
+				$email->enviar(array($model->email,$model->name),
+						array("sinfriosincalorvlcpyme@gmail.com", "admin"),
+						$subject,
+						$message);
 			}
 		}
 		$this->render('contact',array('model'=>$model));
@@ -128,23 +128,23 @@ public function actionLogin()
 				
 				if(isset($modelusuario)){
 					$password = $model->generaPass();
-					$modelusuario->password=$password;
+					$modelusuario->password=md5($password);
 					$modelusuario->save();
-					
+					$mse='<strong>'.$password.'</strong>';
 					$email = new EnviarEmail();
 					$subject="Has solicitado recuperar el password en ";
 					$subject.=Yii::app()->name;
 					$message = "Bienvenid@".$modelusuario->nombre." su password es ";
 					$message.=$password;
 					$message.="<br><br>";
-					$message.="<a href='http://sinfriosincalor.esy.es/index.php?</a>";
+					$message.="<a href='http://sinfriosincalor.esy.es/index.php?'> Recuperar password </a>";
 					
 					$email->enviar(array("sinfriosincalorvlcpyme@gmail.com","admin"),
 							array($modelusuario->email, $modelusuario->usuario),
 							$subject,
 							$message);
 				}
-				$mse='<strong>Se ha enviado un email con la nueva contraseña</strong>';
+				//$mse='<strong>Se ha enviado un email con la nueva contraseña</strong>';
 			}
 		}
 		$this->render('recuperarpassword', array('model'=>$model, 'mse'=>$mse));

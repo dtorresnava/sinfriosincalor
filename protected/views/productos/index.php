@@ -19,7 +19,7 @@ $this->menu = array (
 );
 ?>
 
-<h1>Productoses</h1>
+<h2>Nuestros productos</h2>
 
 <?php
 

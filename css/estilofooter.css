@@ -3,15 +3,14 @@ div.footermainfix{
 	position: absolute;
 	margin: 0 auto;
 	bottom: 0px;
-	background: #6BE0FF;
+	background: #74C0CF;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	font-size: 80%;
-	opacity: 0.8;
 }
 
 div.footermain{
-	background: #6BE0FF;
+	background: #74C0CF;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }

@@ -35,7 +35,7 @@
         
         <?php
         echo $form->checkboxGroup(
-                $model, encode('rememberMe')
+                $model, 'rememberMe'
         );
         ?>
          

@@ -1,5 +1,5 @@
 <?php
-class EspecificacionesController extends Controller {
+class OrientacionMetadataController extends Controller {
 	/**
 	 *
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -76,11 +76,8 @@ class EspecificacionesController extends Controller {
 	 *        	
 	 */
 	public function actionView($id) {
-		$especificaciones=Especificaciones::model()->findByAttributes(array(
-				'producto_id' => $id
-		));
 		$this->render ( 'view', array (
-				'model' => $especificaciones 
+				'model' => $this->loadModel ( $id ) 
 		) );
 	}
 	
@@ -89,13 +86,13 @@ class EspecificacionesController extends Controller {
 	 * If creation is successful, the browser will be redirected to the 'view' page.
 	 */
 	public function actionCreate() {
-		$model = new Especificaciones ();
+		$model = new OrientacionMetadata ();
 		
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 		
-		if (isset ( $_POST ['Especificaciones'] )) {
-			$model->attributes = $_POST ['Especificaciones'];
+		if (isset ( $_POST ['OrientacionMetadata'] )) {
+			$model->attributes = $_POST ['OrientacionMetadata'];
 			if ($model->save ())
 				$this->redirect ( array (
 						'view',
@@ -104,8 +101,7 @@ class EspecificacionesController extends Controller {
 		}
 		
 		$this->render ( 'create', array (
-				'model' => $model ,
-				'id' => $model->id
+				'model' => $model 
 		) );
 	}
 	
@@ -123,8 +119,8 @@ class EspecificacionesController extends Controller {
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 		
-		if (isset ( $_POST ['Especificaciones'] )) {
-			$model->attributes = $_POST ['Especificaciones'];
+		if (isset ( $_POST ['OrientacionMetadata'] )) {
+			$model->attributes = $_POST ['OrientacionMetadata'];
 			if ($model->save ())
 				$this->redirect ( array (
 						'view',
@@ -163,7 +159,7 @@ class EspecificacionesController extends Controller {
 	 * Lists all models.
 	 */
 	public function actionIndex() {
-		$dataProvider = new CActiveDataProvider ( 'Especificaciones' );
+		$dataProvider = new CActiveDataProvider ( 'OrientacionMetadata' );
 		$this->render ( 'index', array (
 				'dataProvider' => $dataProvider 
 		) );
@@ -173,10 +169,10 @@ class EspecificacionesController extends Controller {
 	 * Manages all models.
 	 */
 	public function actionAdmin() {
-		$model = new Especificaciones ( 'search' );
+		$model = new OrientacionMetadata ( 'search' );
 		$model->unsetAttributes (); // clear any default values
-		if (isset ( $_GET ['Especificaciones'] ))
-			$model->attributes = $_GET ['Especificaciones'];
+		if (isset ( $_GET ['OrientacionMetadata'] ))
+			$model->attributes = $_GET ['OrientacionMetadata'];
 		
 		$this->render ( 'admin', array (
 				'model' => $model 
@@ -192,7 +188,7 @@ class EspecificacionesController extends Controller {
 	 *        	
 	 */
 	public function loadModel($id) {
-		$model = Especificaciones::model ()->findByPk ( $id );
+		$model = OrientacionMetadata::model ()->findByPk ( $id );
 		if ($model === null)
 			throw new CHttpException ( 404, 'The requested page does not exist.' );
 		return $model;
@@ -206,7 +202,7 @@ class EspecificacionesController extends Controller {
 	 *        	
 	 */
 	protected function performAjaxValidation($model) {
-		if (isset ( $_POST ['ajax'] ) && $_POST ['ajax'] === 'especificaciones-form') {
+		if (isset ( $_POST ['ajax'] ) && $_POST ['ajax'] === 'orientacion-metadata-form') {
 			echo CActiveForm::validate ( $model );
 			Yii::app ()->end ();
 		}

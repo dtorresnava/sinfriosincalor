@@ -1,5 +1,8 @@
 @CHARSET "ISO-8859-1";
 
+body{
+	background: #F1F7E2;
+}
 .list-view{
 	top: 0px;
 }
@@ -9,9 +12,33 @@
 	overflow: auto;
 	width: 78%;
 	margin-left: 20px;
+	margin-right:20px;
 	top: 50px;
 	bottom: 50px;
 	z-index: -1;
+	background: #F1F7E2;
+}
+.centermaindatauser{
+	position:fixed;
+	margin: 0 auto;
+	overflow: auto;
+	width: 100%;
+	margin-left: 20px;
+	top: 50px;
+	bottom: 50px;
+	z-index: -1;
+	background: #F1F7E2;
+}
+
+#enlaceespe{
+	cursor: pointer;
+	color: #74C0CF;
+}
+.desplegar:hover{
+	cursor: pointer;
+}
+.infoEspecificaciones{
+	width: 300px;
 }
 
 .rigthmenudata{
@@ -22,6 +49,7 @@
 	right: 0%;
 	width: 20%;
 	z-index: -1;
+	background: #F1F7E2;
 }
 
 .loginpos{
@@ -38,14 +66,11 @@ div.portada{
 	bottom: 35px;
 	z-index: -1;
 	text-align: center;
-	
-	background-color: #EBE59D;
+	background: #F1F7E2;
 }
 
 div.portadaimg{
-	-webkit-box-shadow: 0px 0px 81px 11px rgba(235,229,157,1) inset;
-	-moz-box-shadow: 0px 0px 81px 11px rgba(235,229,157,1) inset;
-	box-shadow: 0px 0px 81px 11px rgba(235,229,157,1) inset;
+	background: #F1F7E2;
 }
 
 
@@ -53,10 +78,41 @@ div.portadaimg img{
 	width: 80%;
 }
 
+.summary{
+	display: none;
+}
+
+.grid-view table.items th a {
+	color: #30404E;
+}
+
+td.button-column a i{
+	color: #30404E;
+}
+
+td.selected{
+	background-color: #74C0CF;
+}
+.anyadirPeticion{
+	width: 400px;
+	
+}
+
+@media (max-width: 1199px){
+	.centermaindata{
+		top: 100px;
+	}
+	.rigthmenudata{
+		top: 100px;	
+	}
+}
 
 @media (max-width: 991px){
 	.centermaindata{
 		top: 100px;
+	}
+	.rigthmenudata{
+		top: 100px;	
 	}
 }
 

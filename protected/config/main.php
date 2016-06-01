@@ -43,6 +43,14 @@ return array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
+// 		'clientScript'=>array(
+// 				'packages'=>array(
+// 						'jquery'=>array(
+// 								'baseUrl'=>'//ajax.googleapis.com/ajax/libs/jquery/1/',
+// 								'js'=>array('jquery.min.js'),
+// 						)
+// 				),
+// 		),
 		// uncomment the following to enable URLs in path-format
 		/*
 		'urlManager'=>array(
