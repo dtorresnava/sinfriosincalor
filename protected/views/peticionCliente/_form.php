@@ -50,10 +50,6 @@
 	
 		<?php echo $form->textFieldGroup($model,'ancho_ventana',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5','maxlength'=>20)))); ?>
 	
-		<?php echo $form->datePickerGroup($model,'fecha_pedido',array('widgetOptions'=>array('options'=>array(),'htmlOptions'=>array('class'=>'span5')), 'prepend'=>'<i class="glyphicon glyphicon-calendar"></i>')); ?>
-	
-		<?php echo $form->textFieldGroup($model,'imagen_id',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5','maxlength'=>20)))); ?>
-	
 	<div class="form-actions">
 		<?php $this->widget('booster.widgets.TbButton', array(
 				'buttonType'=>'submit',

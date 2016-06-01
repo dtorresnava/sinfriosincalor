@@ -36,14 +36,13 @@ class PeticionClienteController extends Controller {
 								'view' 
 						),
 						'users' => array (
-								'*' 
+								'@' 
 						) 
 				),
 				array (
 						'allow', // allow authenticated user to perform 'create' and 'update' actions
 						'actions' => array (
-								'create',
-								'update' 
+								'create'
 						),
 						'users' => array (
 								'@' 
@@ -96,6 +95,7 @@ class PeticionClienteController extends Controller {
 		
 		if (isset ( $_POST ['PeticionCliente'] )) {
 			$model->attributes = $_POST ['PeticionCliente'];
+			$model->fecha_pedido=date ( 'd/m/Y' );
 			if ($model->save ()){
 				$usuario = Usuarios::model()->findByAttributes(array(
 						'id' => $id
@@ -150,7 +150,8 @@ class PeticionClienteController extends Controller {
 		}
 		
 		$this->render ( 'update', array (
-				'model' => $model 
+				'model' => $model,
+				'id'=>$id
 		) );
 	}
 	

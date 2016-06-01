@@ -14,6 +14,9 @@ array('label'=>'Manage PresupuestoPeticion','url'=>array('admin')),
 ?>
 
 <h1>View PresupuestoPeticion #<?php echo $model->id; ?></h1>
+<?php 
+$name=Yii::app()->user->name;
+?>
 
 <?php $this->widget('booster.widgets.TbDetailView',array(
 'data'=>$model,
@@ -26,6 +29,11 @@ array('label'=>'Manage PresupuestoPeticion','url'=>array('admin')),
 		'presupuesto_servicio',
 		'fecha_presupuesto',
 		'fecha_alta_presupuesto',
-		'validar',
 ),
 )); ?>
+
+<?php if(!Yii::app()->user->isGuest && Yii::app()->user->name != "admin") {?>
+<div class="col-md-3">
+	<h3><?php echo CHtml::link(utf8_encode('Validar presupuesto'),array('presupuestoPeticion/validar&presupuesto_id='.$model->id.'&name='.$name)); ?></h3>
+</div>
+<?php }?>

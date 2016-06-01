@@ -1,4 +1,5 @@
 <?php
+YII_DEBUG;
 class PresupuestoPeticionController extends Controller {
 	/**
 	 *
@@ -33,10 +34,11 @@ class PresupuestoPeticionController extends Controller {
 						'allow', // allow all users to perform 'index' and 'view' actions
 						'actions' => array (
 								'index',
-								'view' 
+								'view',
+								'validar'
 						),
 						'users' => array (
-								'*' 
+								'@' 
 						) 
 				),
 				array (
@@ -46,14 +48,16 @@ class PresupuestoPeticionController extends Controller {
 								'update' 
 						),
 						'users' => array (
-								'@' 
+								'admin' 
 						) 
 				),
+				
 				array (
 						'allow', // allow admin user to perform 'admin' and 'delete' actions
 						'actions' => array (
 								'admin',
-								'delete' 
+								'delete',
+								'createAuto'
 						),
 						'users' => array (
 								'admin' 
@@ -93,7 +97,10 @@ class PresupuestoPeticionController extends Controller {
 		
 		if (isset ( $_POST ['PresupuestoPeticion'] )) {
 			$model->attributes = $_POST ['PresupuestoPeticion'];
-			if ($model->save ())
+			$model->validar = 0;
+			$model->fecha_presupuesto = date('d/m/Y');
+			if ($model->save ())		
+				
 				$this->redirect ( array (
 						'view',
 						'id' => $model->id 
@@ -103,6 +110,82 @@ class PresupuestoPeticionController extends Controller {
 		$this->render ( 'create', array (
 				'model' => $model,
 		) );
+	}
+	
+	/**
+	 * Generar presupuesto de forma automática
+	 */
+	
+	public function actionCreateAuto(){
+		$model = new PresupuestoPeticion ();
+		
+		if(isset($_GET['cliente']) && $_GET['peticion_id']){
+			$cliente_id=$_GET["cliente"];
+			$peticion_id=$_GET['peticion_id'];
+			
+			$usermodel= new Usuarios();
+			$peticionmodel = new PeticionCliente();
+			
+			
+			$usermodel=Usuarios::model()->findByAttributes(array(
+					'id'=>$cliente_id
+			));
+			
+			$peticionmodel= PeticionCliente::model()->findByAttributes(array(
+					'id'=>$peticion_id
+			));
+			
+			
+			$productos=Productos::model()->findAll();
+			$num=0;
+			foreach($productos as $producto){
+				$num++;
+			}
+			$randomselect=rand(0, $num-1);
+			$model->producto_id=$productos[$randomselect]->id;
+			$model->presupuesto_producto=$productos[$randomselect]->precio;
+			
+			$servicios=Servicios::model()->findAll();
+			$num=0;
+			foreach($servicios as $servicio){
+				$num++;
+			}
+			$randomselect=rand(0, $num-1);
+			$model->servicio_id=$servicios[$randomselect]->id;
+			$model->presupuesto_servicio=$servicios[$randomselect]->precio_hora;
+			
+			$model->peticion_cliente_id=$peticion_id;
+			$model->validar = 0;
+			$model->fecha_presupuesto = date('d/m/Y');
+			
+			
+			$smg="No se ha podido generar el presupuesto";
+			if($model->save (false)){
+				$smg="Se ha generado el presupuesto";
+				
+				$usuario=new Usuarios();
+				$usuario = Usuarios::model()->findByPk($cliente_id);
+				
+				$mail= new EnviarEmail();
+				$subject = 'Presupuesto producto y servicio nº: '.$model->id;
+				$message = 'Se ha generado el presupuesto para ver los detalles y validar el presupuesto acceda mediante el siguiente enlace:';
+				$message .= "<a href='http://sinfriosincalor.esy.es/index.php?r=presupuestoPeticion/view&id=".$model->id."'>Ver y Validar presupuesto</a>";
+				
+				$mail->enviar(
+						array("sinfriosincalorvlcpyme@gmail.com", "admin"),
+						array($usuario->email, $usuario->nombre),						
+						$subject,
+						$message
+						);
+					
+			}
+			
+			$this->render ( 'view', array (
+					'model' => $model,
+					'numfilas'=>$smg
+			) );
+			
+		}
 	}
 	
 	/**
@@ -180,6 +263,48 @@ class PresupuestoPeticionController extends Controller {
 	}
 	
 	/**
+	 * Validar el presupuesto acción que realiza el usuario
+	 * 
+	 */
+	public function actionValidar(){
+		
+		$smg="No entras en el if";
+		if (isset($_GET['presupuesto_id'])&& isset($_GET['name'])){
+			
+			$idPresu=$_GET['presupuesto_id'];
+			$user=$_GET['name'];
+			$userPeticion="";
+			
+			$presupuesto = new PresupuestoPeticion();
+			$usuario = new Usuarios();
+			$pteciones = new PeticionCliente();
+			 
+			$presupuesto = PresupuestoPeticion::model()->findByPk($idPresu);
+			if(isset($presupuesto)){
+				
+				$pteciones = PeticionCliente::model()->findByPk((int)$presupuesto->peticion_cliente_id);
+				
+				$usuario = Usuarios::model()->findByAttributes(array(
+						'usuario'=>$user
+				));
+				
+				if($usuario->id == $pteciones->cliente_id){
+					$presupuesto->validar=1;
+					$presupuesto->fecha_alta_presupuesto=date('d/m/Y');
+					$presupuesto->save(false);
+				}
+			}
+			
+			
+			$smg="Si entras en el if y validas";
+			
+		}
+		
+		$this->render ( 'validar', array(
+				'smg'=>$smg
+		) );
+	}
+	/**
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
 	 * 
@@ -193,6 +318,8 @@ class PresupuestoPeticionController extends Controller {
 			throw new CHttpException ( 404, 'The requested page does not exist.' );
 		return $model;
 	}
+	
+	
 	
 	/**
 	 * Performs the AJAX validation.

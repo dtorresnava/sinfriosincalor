@@ -122,12 +122,13 @@ class PresupuestoPeticion extends CActiveRecord
 		return parent::model($className);
 	}
 	
-	public function beforeSave() {
-		if ($this->isNewRecord) {
-			$this->validar = 0;
-			$this->fecha_presupuesto=date ( 'd/m/Y' );	
-		}
-		return parent::beforeSave ();
+	
+	public function behaviors() {
+		return array (
+				'datetimeI18NBehavior' => array (
+						'class' => 'DateTimeI18NBehavior'
+				)
+		);
 	}
 	
 }

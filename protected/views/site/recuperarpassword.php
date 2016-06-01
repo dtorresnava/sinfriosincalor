@@ -14,6 +14,9 @@
     echo $mse;
     
     ?>
+    <br>
+    <h1>Recuperar password</h1>
+    
     <div class="form">
 
 

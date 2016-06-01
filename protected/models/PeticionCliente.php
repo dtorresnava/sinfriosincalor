@@ -74,13 +74,13 @@ class PeticionCliente extends CActiveRecord
 			'id' => 'ID',
 			'cliente_id' => 'Cliente',
 			'numero_pedido' => 'Numero Pedido',
-			'largo_habitacion' => 'Largo Habitacion',
-			'ancho_habitacion' => 'Ancho Habitacion',
-			'alto_habitacion' => 'Alto Habitacion',
+			'largo_habitacion' => 'Largo Habitacion (cm)',
+			'ancho_habitacion' => 'Ancho Habitacion (cm)',
+			'alto_habitacion' => 'Alto Habitacion (cm)',
 			'orientacion' => 'Orientacion',
 			'matirial_ventana_id' => 'Matirial Ventana',
-			'alto_ventana' => 'Alto Ventana',
-			'ancho_ventana' => 'Ancho Ventana',
+			'alto_ventana' => 'Alto Ventana (cm)',
+			'ancho_ventana' => 'Ancho Ventana (cm)',
 			'fecha_pedido' => 'Fecha Pedido',
 			'imagen_id' => 'Imagen',
 		);
@@ -131,5 +131,21 @@ class PeticionCliente extends CActiveRecord
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
+	}
+	
+	
+	public function beforeSave() {
+		if ($this->isNewRecord) {		
+			$this->fecha_pedido=date ( 'd/m/Y' );
+		}
+		return parent::beforeSave ();
+	}
+	
+	public function behaviors() {
+		return array (
+				'datetimeI18NBehavior' => array (
+						'class' => 'DateTimeI18NBehavior'
+				)
+		);
 	}
 }

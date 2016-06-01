@@ -47,12 +47,7 @@ if (isset($_GET["cliente"]) && isset($_GET['peticion_id'])){
 
 	<?php echo $form->textFieldGroup($model,'presupuesto_producto',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
 
-	<?php echo $form->textFieldGroup($model,'presupuesto_servicio',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
-
-
-	<?php echo $form->datePickerGroup($model,'fecha_alta_presupuesto',array('widgetOptions'=>array('options'=>array(),'htmlOptions'=>array('class'=>'span5')), 'prepend'=>'<i class="glyphicon glyphicon-calendar"></i>', 'append'=>'Click on Month/Year to select a different Month/Year.')); ?>
-
-	
+	<?php echo $form->textFieldGroup($model,'presupuesto_servicio',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>	
 
 <div class="form-actions">
 	<?php $this->widget('booster.widgets.TbButton', array(

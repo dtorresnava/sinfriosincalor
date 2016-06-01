@@ -17,6 +17,10 @@
 
 <body>
 
+	<div class="logo">
+		
+	</div>
+
 	<?php
 	// MENU
 	require ('_menu.php');

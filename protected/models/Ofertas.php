@@ -101,4 +101,12 @@ class Ofertas extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+	
+	public function behaviors() {
+		return array (
+				'datetimeI18NBehavior' => array (
+						'class' => 'DateTimeI18NBehavior'
+				)
+		);
+	}
 }

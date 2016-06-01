@@ -8,24 +8,30 @@
 <?php
 if (Yii::app ()->user->name === 'admin') {
 	?>
-	<div class="col-md-9">
+	<div>
 		<div id="content" class="centermaindata">
 			<?php echo $content; ?>
 		</div>
 	</div>
-	<div class="col-md-3 rigthmenudata" >
+	<div class="rigthmenudata" >
 		<div id="sidebar">
+		<h4>Opciones</h4>
 		<?php
-		$this->beginWidget ( 'zii.widgets.CPortlet', array (
-				'title' => 'Opciones' 
-		) );
-		$this->widget ( 'zii.widgets.CMenu', array (
+		
+		
+// 		$this->widget ( 'zii.widgets.CMenu', array (
+// 				'items' => $this->menu,
+// 				'htmlOptions' => array (
+// 						'class' => 'operations' 
+// 				) 
+// 		) );
+
+		
+		$this->widget('booster.widgets.TbMenu', array(
+				'type' => 'navbar', // <-- also try 'pills' here for different styling or 'list' for vertical menu
 				'items' => $this->menu,
-				'htmlOptions' => array (
-						'class' => 'operations' 
-				) 
-		) );
-		$this->endWidget ();
+				)
+		);
 		?>
 		</div>
 		<!-- sidebar -->
