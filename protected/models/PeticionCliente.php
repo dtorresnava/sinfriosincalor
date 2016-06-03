@@ -7,6 +7,7 @@
  * @property integer $id
  * @property integer $cliente_id
  * @property integer $numero_pedido
+ * @property integer $servicio_extra_id
  * @property string $largo_habitacion
  * @property string $ancho_habitacion
  * @property string $alto_habitacion
@@ -42,8 +43,10 @@ class PeticionCliente extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('cliente_id, numero_pedido, largo_habitacion, ancho_habitacion, alto_habitacion, orientacion, matirial_ventana_id, alto_ventana, ancho_ventana, fecha_pedido', 'required'),
-			array('cliente_id, numero_pedido, orientacion, matirial_ventana_id', 'numerical', 'integerOnly'=>true),
-			array('largo_habitacion, ancho_habitacion, alto_habitacion, alto_ventana, ancho_ventana, imagen_id', 'length', 'max'=>20),
+			array('cliente_id, numero_pedido, orientacion, matirial_ventana_id, servicio_extra_id', 'numerical', 'integerOnly'=>true),
+			array('largo_habitacion, ancho_habitacion, alto_habitacion, alto_ventana, ancho_ventana', 'length', 'max'=>20),
+			array('imagen', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
+			array('imagen_id', 'length', 'max'=>255, 'on'=>'insert,update'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, cliente_id, numero_pedido, largo_habitacion, ancho_habitacion, alto_habitacion, orientacion, matirial_ventana_id, alto_ventana, ancho_ventana, fecha_pedido, imagen_id', 'safe', 'on'=>'search'),
@@ -71,9 +74,10 @@ class PeticionCliente extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'ID',
+			'id' => 'Num pedido (ID)',
 			'cliente_id' => 'Cliente',
 			'numero_pedido' => 'Numero Pedido',
+			'servicio_extra_id'=>'Servicio contratado',
 			'largo_habitacion' => 'Largo Habitacion (cm)',
 			'ancho_habitacion' => 'Ancho Habitacion (cm)',
 			'alto_habitacion' => 'Alto Habitacion (cm)',
@@ -116,6 +120,7 @@ class PeticionCliente extends CActiveRecord
 		$criteria->compare('ancho_ventana',$this->ancho_ventana,true);
 		$criteria->compare('fecha_pedido',$this->fecha_pedido,true);
 		$criteria->compare('imagen_id',$this->imagen_id,true);
+		$criteria->compare('servicio_extra_id',$this->servicio_extra_id, true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

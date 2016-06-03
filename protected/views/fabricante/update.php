@@ -6,13 +6,13 @@ $this->breadcrumbs=array(
 );
 
 	$this->menu=array(
-	array('label'=>'List Fabricante','url'=>array('index')),
-	array('label'=>'Create Fabricante','url'=>array('create')),
-	array('label'=>'View Fabricante','url'=>array('view','id'=>$model->id)),
-	array('label'=>'Manage Fabricante','url'=>array('admin')),
+	array('label'=>'Ver fabricantes','url'=>array('index')),
+	array('label'=>'Añadir fabricante','url'=>array('create')),
+	array('label'=>'Ver fabricante','url'=>array('view','id'=>$model->id)),
+	array('label'=>'Administrar fabricantes','url'=>array('admin')),
 	);
 	?>
 
-	<h1>Update Fabricante <?php echo $model->id; ?></h1>
+	<h1>Actualizar fabricante nº:<?php echo $model->id; ?></h1>
 
 <?php echo $this->renderPartial('_form',array('model'=>$model)); ?>

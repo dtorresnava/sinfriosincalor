@@ -6,13 +6,13 @@ $this->breadcrumbs=array(
 );
 
 	$this->menu=array(
-	array('label'=>'List Servicios','url'=>array('index')),
-	array('label'=>'Create Servicios','url'=>array('create')),
-	array('label'=>'View Servicios','url'=>array('view','id'=>$model->id)),
-	array('label'=>'Manage Servicios','url'=>array('admin')),
+	array('label'=>'Ver servicios','url'=>array('index')),
+	array('label'=>'Añadir servicio','url'=>array('create')),
+	array('label'=>'Detalle servicio','url'=>array('view','id'=>$model->id)),
+	array('label'=>'Administrar servicio','url'=>array('admin')),
 	);
 	?>
 
-	<h1>Update Servicios <?php echo $model->id; ?></h1>
+	<h1>Actualizar servicio <?php echo $model->id; ?></h1>
 
 <?php echo $this->renderPartial('_form',array('model'=>$model)); ?>

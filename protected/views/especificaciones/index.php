@@ -4,8 +4,7 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-array('label'=>'Create Especificaciones','url'=>array('create')),
-array('label'=>'Manage Especificaciones','url'=>array('admin')),
+array('label'=>'Administrar especificaciones','url'=>array('admin')),
 );
 ?>
 

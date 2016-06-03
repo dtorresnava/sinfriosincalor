@@ -24,13 +24,13 @@ $this->menu = array (
 				)
 		),
 		array (
-				'label' => 'Registrar empleado',
+				'label' => 'Registrar usuario',
 				'url' => array (
 						'create' 
 				) 
 		),
 		array (
-				'label' => 'Mas info',
+				'label' => 'Detalle usuario',
 				'url' => array (
 						'view',
 						'id' => $model->id 

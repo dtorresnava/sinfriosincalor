@@ -8,13 +8,13 @@ $this->breadcrumbs = array (
 
 $this->menu = array (
 		array (
-				'label' => 'List Usuarios',
+				'label' => 'Ver Usuarios',
 				'url' => array (
 						'index' 
 				) 
 		),
 		array (
-				'label' => 'Manage Usuarios',
+				'label' => 'Administrar usuarios',
 				'url' => array (
 						'admin' 
 				) 
@@ -22,6 +22,6 @@ $this->menu = array (
 );
 ?>
 
-<h1>Crear Usuarios</h1>
+<h1>Crear usuario</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

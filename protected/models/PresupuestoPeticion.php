@@ -10,6 +10,9 @@
  * @property integer $servicio_id
  * @property integer $presupuesto_producto
  * @property integer $presupuesto_servicio
+ * @property integer $horas_servicio
+ * @property integer $oferta
+ * @property integer $total
  * @property string $fecha_presupuesto
  * @property string $fecha_alta_presupuesto
  * @property integer $validar
@@ -38,11 +41,12 @@ class PresupuestoPeticion extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('peticion_cliente_id, fecha_presupuesto, validar', 'required'),
-			array('peticion_cliente_id, producto_id, servicio_id, presupuesto_producto, presupuesto_servicio, validar', 'numerical', 'integerOnly'=>true),
+			array('peticion_cliente_id, producto_id, servicio_id, oferta, validar, horas_servicio', 'numerical', 'integerOnly'=>true),
+			array('presupuesto_producto, presupuesto_servicio, total', 'numerical'),
 			array('fecha_alta_presupuesto', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, peticion_cliente_id, producto_id, servicio_id, presupuesto_producto, presupuesto_servicio, fecha_presupuesto, fecha_alta_presupuesto, validar', 'safe', 'on'=>'search'),
+			array('id, peticion_cliente_id, producto_id, servicio_id, presupuesto_producto, presupuesto_servicio,oferta, fecha_presupuesto, fecha_alta_presupuesto, validar', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -70,8 +74,11 @@ class PresupuestoPeticion extends CActiveRecord
 			'peticion_cliente_id' => 'Peticion Cliente',
 			'producto_id' => 'Producto',
 			'servicio_id' => 'Servicio',
+			'horas_servicio'=>'Estamación horas',
 			'presupuesto_producto' => 'Presupuesto Producto',
 			'presupuesto_servicio' => 'Presupuesto Servicio',
+			'oferta'=>'Descuento aplicado (%)',
+			'total'=>'Total presupuesto',
 			'fecha_presupuesto' => 'Fecha Presupuesto',
 			'fecha_alta_presupuesto' => 'Fecha Alta Presupuesto',
 			'validar' => 'Validar',
@@ -102,6 +109,9 @@ class PresupuestoPeticion extends CActiveRecord
 		$criteria->compare('servicio_id',$this->servicio_id);
 		$criteria->compare('presupuesto_producto',$this->presupuesto_producto);
 		$criteria->compare('presupuesto_servicio',$this->presupuesto_servicio);
+		$criteria->compare('horas_servicios',$this->horas_servicio);
+		$criteria->compare('oferta',$this->oferta);
+		$criteria->compare('total', $this->total);
 		$criteria->compare('fecha_presupuesto',$this->fecha_presupuesto,true);
 		$criteria->compare('fecha_alta_presupuesto',$this->fecha_alta_presupuesto,true);
 		$criteria->compare('validar',$this->validar);

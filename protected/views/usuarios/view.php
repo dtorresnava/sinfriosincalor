@@ -14,7 +14,7 @@ $this->menu = array (
 				) 
 		),
 		array (
-				'label' => 'Registrar empleados',
+				'label' => 'AÃ±adir usuario',
 				'url' => array (
 						'create' 
 				) 
@@ -34,7 +34,7 @@ $this->menu = array (
 								'delete',
 								'id' => $model->id 
 						),
-						'confirm' => 'Estás seguro de eliminar al usaurio?' 
+						'confirm' => 'Estï¿½s seguro de eliminar al usaurio?' 
 				) 
 		),
 		array (

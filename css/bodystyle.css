@@ -6,6 +6,13 @@ body{
 .list-view{
 	top: 0px;
 }
+.logo img{
+	position: fixed;
+	left: 10px;
+	width: 65px;
+	z-index: 100;
+}
+
 .centermaindata{
 	position:fixed;
 	margin: 0 auto;
@@ -18,6 +25,7 @@ body{
 	z-index: -1;
 	background: #F1F7E2;
 }
+
 .centermaindatauser{
 	position:fixed;
 	margin: 0 auto;
@@ -28,6 +36,14 @@ body{
 	bottom: 50px;
 	z-index: -1;
 	background: #F1F7E2;
+}
+
+li a{
+	color: 	#202B30;
+}
+li a:hover{
+	background: #4FA9B8;
+	color: 	#202B30;
 }
 
 #enlaceespe{
@@ -61,7 +77,12 @@ body{
 	left: 100px;
 }
 .loginpos{
+	position:fixed;
+	margin: 0 auto;
 	top: 50px;
+	left: 100px;
+	width: 400px;
+	overflow: hidden;
 	z-index: -1;
 }
 
@@ -105,26 +126,104 @@ td.selected{
 	width: 400px;
 	
 }
-
+.imagenProducto{
+	width: 250px;
+	position: relative;
+	left: 400px;
+	top: -170px;
+	border-radius: 5px;
+}
+.imagenProducto img{
+	width: 500px;
+}
 .paneladmin{
 	width: 90%;
 }
+.paneladmin a{
+	color: 	#202B30;
+}
+.formulariosStyle{
+	width: 400px;
+}
+.formulariosStyleAlta{
+	width: 600px;
+}
+.texto{
+	position: absolute;
+	margin: 0 auto;
+	top: 20%;
+	left: 20%;
+	right: 20%;
+}
+.texto p{
+	position: absolute;
+	margin: 0 auto;
+	top: 20%;
+	left: 20%;
+	font-size: 20px;
+	padding: 10px;
+	border-radius:10px;
+	background: #F1F7E2;
+	opacity: 0.9;
+}
+.mostrarCliente{
+	height: 300px;
+	width: 95%;
+	left: 100px;
+	border:1px solid #4E7178;
+	border-radius: 10px;
+	background: #FFFFFF;
+}
+.infoProducto{
+	position: relative;
+	top: 20px;
+	left: 100px;
+	width: 200px;
+}
+h5.enlaceEspe{
+	margin-top: 30px;
+	margin-left:100px;
+	top: 20px;
+}
+#desplegable{
+	position: relative;
+	top: 100px;
+}
 
 @media (max-width: 1199px){
+	.centermaindatauser{
+		top: 204px;
+	}
 	.centermaindata{
-		top: 154px;
+		top: 204px;
+	}
+	div.portada{
+		top:104px;
 	}
 	.rigthmenudata{
-		top: 100px;	
+		top: 154px;	
+	}
+	.loginpos{
+		
+		top: 154px;
 	}
 }
 
 @media (max-width: 991px){
-	.centermaindata{
-		top: 100px;
+	.centermaindatauser{
+		top: 204px;
+	}.centermaindata{
+		top: 204px;
 	}
 	.rigthmenudata{
-		top: 100px;	
+		top: 204px;	
+	}
+	div.portada{
+		top:204px;
+	}
+	.loginpos{
+		
+		top: 204px;
 	}
 }
 

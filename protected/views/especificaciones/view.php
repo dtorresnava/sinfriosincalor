@@ -1,23 +1,21 @@
 <?php
 $this->breadcrumbs=array(
 	'Especificaciones'=>array('index'),
-	$model->id,
 );
 
 $this->menu=array(
-array('label'=>'List Especificaciones','url'=>array('index')),
-array('label'=>'Create Especificaciones','url'=>array('create')),
-array('label'=>'Update Especificaciones','url'=>array('update','id'=>$model->id)),
-array('label'=>'Delete Especificaciones','url'=>'#','linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
-array('label'=>'Manage Especificaciones','url'=>array('admin')),
+array('label'=>'Ver especificaciones','url'=>array('index')),
+array('label'=>'Modificar especificacion','url'=>array('update','id'=>$model->id)),
+array('label'=>'Borrar especificacion','url'=>'#','linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
+array('label'=>'Administrar especificaciones','url'=>array('admin')),
 );
 
-$producto=Productos::model()->findByAttributes(array(
-					'id' => $model->producto_id
-			));
+$producto=Productos::model()->findByPk($model->producto_id);
+$modelo=$producto->modelo;
 ?>
 
-<h1><small>Especificaciones del modelo:</small> <?php echo $producto->modelo; ?></small> </h1>
+<h1>Especificaciones modelo: <?=$modelo ?></h1>
+<h5><?php echo CHtml::link('Volver a los productos',array('productos/index')); ?></h5>
 
 <?php $this->widget('booster.widgets.TbDetailView',array(
 'data'=>$model,

@@ -6,6 +6,8 @@
  * The followings are the available columns in table 'ofertas':
  * @property integer $id
  * @property string $nombre
+ * @property integer $descuento_producto
+ * @property integer $descuento_servicio
  * @property string $descripcion
  * @property string $fecha_ini
  * @property string $fecha_fin
@@ -28,12 +30,13 @@ class Ofertas extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('nombre, descripcion, fecha_ini, fecha_fin', 'required'),
+			array('nombre, descuento_producto, descuento_servicio, descripcion, fecha_ini, fecha_fin', 'required'),
+			array('descuento_producto, descuento_servicio', 'numerical', 'integerOnly'=>true),
 			array('nombre', 'length', 'max'=>30),
 			array('descripcion', 'length', 'max'=>300),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, nombre, descripcion, fecha_ini, fecha_fin', 'safe', 'on'=>'search'),
+			array('id, nombre, descuento_producto, descuento_servicio, descripcion, fecha_ini, fecha_fin', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -56,6 +59,8 @@ class Ofertas extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'nombre' => 'Nombre',
+			'descuento_producto' => 'Descuento Producto',
+			'descuento_servicio' => 'Descuento Servicio',
 			'descripcion' => 'Descripcion',
 			'fecha_ini' => 'Fecha Ini',
 			'fecha_fin' => 'Fecha Fin',
@@ -82,6 +87,8 @@ class Ofertas extends CActiveRecord
 
 		$criteria->compare('id',$this->id);
 		$criteria->compare('nombre',$this->nombre,true);
+		$criteria->compare('descuento_producto',$this->descuento_producto);
+		$criteria->compare('descuento_servicio',$this->descuento_servicio);
 		$criteria->compare('descripcion',$this->descripcion,true);
 		$criteria->compare('fecha_ini',$this->fecha_ini,true);
 		$criteria->compare('fecha_fin',$this->fecha_fin,true);
@@ -100,13 +107,5 @@ class Ofertas extends CActiveRecord
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
-	}
-	
-	public function behaviors() {
-		return array (
-				'datetimeI18NBehavior' => array (
-						'class' => 'DateTimeI18NBehavior'
-				)
-		);
 	}
 }

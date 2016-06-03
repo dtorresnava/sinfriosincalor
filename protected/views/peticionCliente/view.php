@@ -8,37 +8,13 @@ $this->breadcrumbs = array (
 
 $this->menu = array (
 		array (
-				'label' => 'List PeticionCliente',
+				'label' => 'Ver peticiones',
 				'url' => array (
 						'index' 
 				) 
 		),
 		array (
-				'label' => 'Create PeticionCliente',
-				'url' => array (
-						'create' 
-				) 
-		),
-		array (
-				'label' => 'Update PeticionCliente',
-				'url' => array (
-						'update',
-						'id' => $model->id 
-				) 
-		),
-		array (
-				'label' => 'Delete PeticionCliente',
-				'url' => '#',
-				'linkOptions' => array (
-						'submit' => array (
-								'delete',
-								'id' => $model->id 
-						),
-						'confirm' => 'Are you sure you want to delete this item?' 
-				) 
-		),
-		array (
-				'label' => 'Manage PeticionCliente',
+				'label' => 'Administrar peticiones',
 				'url' => array (
 						'admin' 
 				) 
@@ -46,7 +22,9 @@ $this->menu = array (
 );
 ?>
 
-<h1>View PeticionCliente #<?php echo $model->id; ?></h1>
+
+
+<h1>View PeticionCliente #<?=$model->id; ?></h1>
 
 <?php
 
@@ -54,8 +32,7 @@ $this->widget ( 'booster.widgets.TbDetailView', array (
 		'data' => $model,
 		'attributes' => array (
 				'id',
-				'cliente_id',
-				'numero_pedido',
+				'servicio_extra_id',
 				'largo_habitacion',
 				'ancho_habitacion',
 				'alto_habitacion',
@@ -64,7 +41,6 @@ $this->widget ( 'booster.widgets.TbDetailView', array (
 				'alto_ventana',
 				'ancho_ventana',
 				'fecha_pedido',
-				'imagen_id' 
 		) 
 ) );
 ?>
@@ -75,6 +51,6 @@ $this->widget ( 'booster.widgets.TbDetailView', array (
 </div>
 
 <div class="col-md-4">
-	<h3><?php echo CHtml::link(utf8_encode('Generar presupuesto automático'),array('presupuestoPeticion/createAuto&cliente='.$model->cliente_id.'&peticion_id='.$model->id)); ?></h3>
+	<h3><?php echo CHtml::link('Generar presupuesto automÃ¡tico',array('presupuestoPeticion/createAuto&cliente='.$model->cliente_id.'&peticion_id='.$model->id)); ?></h3>
 </div>
 <?php }?>

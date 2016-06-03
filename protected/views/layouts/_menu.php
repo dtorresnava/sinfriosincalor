@@ -23,6 +23,20 @@ $items = array (
 				'visible'=>!Yii::app()->user->isGuest && Yii::app()->user->name !="admin"
 		),
 		array(
+				'label'=>'Ver presupuestos',
+				'url'=>array(
+						'presupuestoPeticion/verPresupuestos'
+				),
+				'visible'=>!Yii::app()->user->isGuest && Yii::app()->user->name !="admin"
+		),
+		array(
+				'label'=>'Ver ofertas',
+				'url'=>array(
+						'ofertas/index'
+				),
+				'visible'=>!Yii::app()->user->isGuest && Yii::app()->user->name !="admin"
+		),
+		array(
 				'label'=>'Ver peticiones',
 				'url'=>array(
 						'peticionCliente/admin'
@@ -43,20 +57,6 @@ $items = array (
 				),
 				'visible' =>Yii::app()->user->name == "admin"
 		),
-// 		array (
-// 				'label' => 'Orientacion habitacion',
-// 				'url' => array (
-// 						'/orientacionMetadata/admin'
-// 				),
-// 				'visible' =>Yii::app()->user->name == "admin"
-// 		),
-// 		array (
-// 				'label' => 'Material ventana ',
-// 				'url' => array (
-// 						'/materialVentanaMetadata/admin'
-// 				),
-// 				'visible' =>Yii::app()->user->name == "admin"
-// 		),
 		array (
 				'label' => 'About',
 				'url' => array (
@@ -97,6 +97,13 @@ $items = array (
 				'label' => 'Producto',
 				'url' => array (
 						'/productos/admin'
+				),
+				'visible' =>Yii::app()->user->name == "admin"
+		),
+		array (
+				'label' => 'Materiales ',
+				'url' => array (
+						'/materialVentanaMetadata/admin'
 				),
 				'visible' =>Yii::app()->user->name == "admin"
 		),

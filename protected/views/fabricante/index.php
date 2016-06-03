@@ -4,8 +4,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-array('label'=>'Create Fabricante','url'=>array('create')),
-array('label'=>'Manage Fabricante','url'=>array('admin')),
+array('label'=>'Añadir fabricante','url'=>array('create')),
+array('label'=>'Administrar fabricantes','url'=>array('admin')),
 );
 ?>
 

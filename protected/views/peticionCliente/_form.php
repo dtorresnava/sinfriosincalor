@@ -4,7 +4,9 @@
 		'enableAjaxValidation'=>false,
 	)); ?>
 	
-	<p class="help-block">Fields with <span class="required">*</span> are required.</p>
+<p class="help-block">
+	Campos con el <span class="required">*</span> son obligatorios.
+</p>
 	
 	<?php echo $form->errorSummary($model); ?>
 	
@@ -49,6 +51,21 @@
 		<?php echo $form->textFieldGroup($model,'alto_ventana',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5','maxlength'=>20)))); ?>
 	
 		<?php echo $form->textFieldGroup($model,'ancho_ventana',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5','maxlength'=>20)))); ?>
+	
+		<?php
+	        $servicios= Servicios::model()->findAll();
+	        $listServicios=CHtml::listData($servicios,'id','nombre');
+	        echo $form->dropDownListGroup($model,'servicio_extra_id',array(
+	                        'wrapperHtmlOptions' => array(
+	                                'class' => 'col-sm-5 col-xs-5',
+	                        ),
+	                        'widgetOptions' => array(
+	                                'data' => $listServicios,
+	                                'htmlOptions' => array(),
+	                        )
+	                )); 
+		?>
+		
 	
 	<div class="form-actions">
 		<?php $this->widget('booster.widgets.TbButton', array(

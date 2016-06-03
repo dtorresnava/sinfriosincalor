@@ -6,13 +6,13 @@ $this->breadcrumbs=array(
 );
 
 	$this->menu=array(
-	array('label'=>'List Productos','url'=>array('index')),
-	array('label'=>'Create Productos','url'=>array('create')),
-	array('label'=>'View Productos','url'=>array('view','id'=>$model->id)),
-	array('label'=>'Manage Productos','url'=>array('admin')),
+	array('label'=>'Ver productos','url'=>array('index')),
+	array('label'=>'Añadir Productos','url'=>array('create')),
+	array('label'=>'Ver producto','url'=>array('view','id'=>$model->id)),
+	array('label'=>'Administrar Productos','url'=>array('admin')),
 	);
 	?>
 
-	<h1>Update Productos <?php echo $model->id; ?></h1>
+	<h1>Actualizar producto <?php echo $model->id; ?></h1>
 
 <?php echo $this->renderPartial('_form',array('model'=>$model)); ?>

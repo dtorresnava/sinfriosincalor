@@ -42,7 +42,7 @@ if (Yii::app ()->user->name === 'admin') {
 	<div class="col-md-2">
 	</div>
 	
-	<div class="col-md-10 centermaindatauser">
+	<div class="centermaindatauser">
 		<div id="content">
 			<?php echo $content; ?>
 		</div>

@@ -5,11 +5,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-array('label'=>'List PresupuestoPeticion','url'=>array('index')),
-array('label'=>'Create PresupuestoPeticion','url'=>array('create')),
-array('label'=>'Update PresupuestoPeticion','url'=>array('update','id'=>$model->id)),
-array('label'=>'Delete PresupuestoPeticion','url'=>'#','linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
-array('label'=>'Manage PresupuestoPeticion','url'=>array('admin')),
+array('label'=>'Var presupuestos','url'=>array('index')),
+array('label'=>'Administrar presupuestos','url'=>array('admin')),
 );
 ?>
 
@@ -30,7 +27,13 @@ $name=Yii::app()->user->name;
 		'fecha_presupuesto',
 		'fecha_alta_presupuesto',
 ),
-)); ?>
+)); 
+
+$totalpresupuesto=$model->total;
+
+?>
+
+<h4>Total IVA incluido: <?= $totalpresupuesto?> euros</h4>
 
 <?php if(!Yii::app()->user->isGuest && Yii::app()->user->name != "admin") {?>
 <div class="col-md-3">

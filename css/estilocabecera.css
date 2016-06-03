@@ -4,7 +4,9 @@
 .navbar-inverse .navbar-nav>li>a{
 	color: #30404E;
 }
-
+.container{
+	margin-left: 80px;
+}
 nav.navbar{
 	position:fixed;
 	margin: 0 auto;

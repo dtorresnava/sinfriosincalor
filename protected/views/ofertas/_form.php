@@ -3,11 +3,17 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-<p class="help-block">Fields with <span class="required">*</span> are required.</p>
+<p class="help-block">
+	Campos con el <span class="required">*</span> son obligatorios.
+</p>
 
 <?php echo $form->errorSummary($model); ?>
 
 	<?php echo $form->textFieldGroup($model,'nombre',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5','maxlength'=>30)))); ?>
+
+	<?php echo $form->textFieldGroup($model,'descuento_producto',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
+
+	<?php echo $form->textFieldGroup($model,'descuento_servicio',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
 
 	<?php echo $form->textFieldGroup($model,'descripcion',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5','maxlength'=>300)))); ?>
 

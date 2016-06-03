@@ -18,7 +18,7 @@
 <body>
 
 	<div class="logo">
-		
+		<img src="<?php echo Yii:: app() ->baseUrl.'/images/logo.png' ?>">
 	</div>
 
 	<?php

@@ -5,13 +5,13 @@ $this->breadcrumbs = array (
 
 $this->menu = array (
 		array (
-				'label' => 'Create Productos',
+				'label' => 'Añadir productos',
 				'url' => array (
 						'create' 
 				) 
 		),
 		array (
-				'label' => 'Manage Productos',
+				'label' => 'Administrar Productos',
 				'url' => array (
 						'admin' 
 				) 

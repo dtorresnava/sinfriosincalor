@@ -8,37 +8,37 @@ $this->breadcrumbs = array (
 
 $this->menu = array (
 		array (
-				'label' => 'List Productos',
+				'label' => 'Ver productos',
 				'url' => array (
 						'index' 
 				) 
 		),
 		array (
-				'label' => 'Create Productos',
+				'label' => 'Añadir producto',
 				'url' => array (
 						'create' 
 				) 
 		),
 		array (
-				'label' => 'Update Productos',
+				'label' => 'Actualizar Producto',
 				'url' => array (
 						'update',
 						'id' => $model->id 
 				) 
 		),
 		array (
-				'label' => 'Delete Productos',
+				'label' => 'Borrar producto',
 				'url' => '#',
 				'linkOptions' => array (
 						'submit' => array (
 								'delete',
 								'id' => $model->id 
 						),
-						'confirm' => 'Are you sure you want to delete this item?' 
+						'confirm' => 'Estás seguro que quieres eliminar el producto?' 
 				) 
 		),
 		array (
-				'label' => 'Manage Productos',
+				'label' => 'Administrar productos',
 				'url' => array (
 						'admin' 
 				) 
@@ -46,7 +46,7 @@ $this->menu = array (
 );
 ?>
 
-<h1>View Productos #<?php echo $model->id; ?></h1>
+<h1>Detalle del producto #<?php echo $model->id; ?></h1>
 
 <?php
 

@@ -6,13 +6,13 @@ $this->breadcrumbs=array(
 );
 
 	$this->menu=array(
-	array('label'=>'List Ofertas','url'=>array('index')),
-	array('label'=>'Create Ofertas','url'=>array('create')),
-	array('label'=>'View Ofertas','url'=>array('view','id'=>$model->id)),
-	array('label'=>'Manage Ofertas','url'=>array('admin')),
+	array('label'=>'Ver ofertas','url'=>array('index')),
+	array('label'=>'Añadir ofertas','url'=>array('create')),
+	array('label'=>'Ver oferta','url'=>array('view','id'=>$model->id)),
+	array('label'=>'Administrar ofertas','url'=>array('admin')),
 	);
 	?>
 
-	<h1>Update Ofertas <?php echo $model->id; ?></h1>
+	<h1>Actualizar oferta nº: <?php echo $model->id; ?></h1>
 
 <?php echo $this->renderPartial('_form',array('model'=>$model)); ?>

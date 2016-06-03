@@ -76,12 +76,18 @@ class EspecificacionesController extends Controller {
 	 *        	
 	 */
 	public function actionView($id) {
-		$especificaciones=Especificaciones::model()->findByAttributes(array(
-				'producto_id' => $id
-		));
-		$this->render ( 'view', array (
-				'model' => $especificaciones 
-		) );
+		if(isset($_GET['id'])){
+			$ides=$_GET['id'];
+			$especificaciones=Especificaciones::model()->findByAttributes(array(
+					'producto_id' => $ides
+			));
+			$this->render ( 'view', array (
+					'model' => $especificaciones
+			) );
+		}else
+			$this->render ( 'view', array (
+					'model' => $this->loadModel ( $id ) 
+			) );
 	}
 	
 	/**

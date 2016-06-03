@@ -5,7 +5,7 @@ $this->breadcrumbs = array (
 
 $this->menu = array (	
 		array (
-				'label' => 'Manage PeticionCliente',
+				'label' => 'Administrar peticiones de los clientes',
 				'url' => array (
 						'admin' 
 				) 
@@ -13,7 +13,7 @@ $this->menu = array (
 );
 ?>
 
-<h1>Peticion Clientes</h1>
+<h1>Peticiones de los clientes</h1>
 
 <?php
 

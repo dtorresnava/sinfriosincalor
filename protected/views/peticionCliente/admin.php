@@ -8,7 +8,7 @@ $this->breadcrumbs = array (
 
 $this->menu = array (
 		array (
-				'label' => 'List PeticionCliente',
+				'label' => 'Ver peticiones de los clientes',
 				'url' => array (
 						'index' 
 				) 
@@ -31,16 +31,14 @@ return false;
 ?>
 
 <div class="paneladmin" >
-	<h1>Manage Peticion Clientes</h1>
+	<h1>Administrar peticiones de los clientes</h1>
 	
 	<p>
-		You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>,
-		<b>&gt;</b>, <b>&gt;=</b>, <b> &lt;&gt;</b> or <b>=</b>) at the
-		beginning of each of your search values to specify how the comparison
-		should be done.
+		Puedes añadir de forma opcional los siguientes comparadores (<b>&lt;</b>, <b>&lt;=</b>,
+		<b>&gt;</b>, <b>&gt;=</b>, <b> &lt;&gt;</b> or <b>=</b>) al principio de la busqueda de cada campo.
 	</p>
 	
-	<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button btn')); ?>
+	<?php echo CHtml::link('Búsqueda avanzada','#',array('class'=>'search-button btn')); ?>
 	<div class="search-form" style="display: none">
 		<?php
 		
@@ -61,12 +59,12 @@ return false;
 			'dataProvider' => $model->search (),
 			'filter' => $model,
 			'columns' => array (
-					'numero_pedido',
+					'id',
 					'largo_habitacion',
 					'ancho_habitacion',
 					'alto_habitacion',
-			
 					'orientacion',
+					'servicio_extra_id',
 					'matirial_ventana_id',
 					'alto_ventana',
 					'ancho_ventana',

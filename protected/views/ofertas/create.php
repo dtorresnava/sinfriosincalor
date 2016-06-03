@@ -5,11 +5,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-array('label'=>'List Ofertas','url'=>array('index')),
-array('label'=>'Manage Ofertas','url'=>array('admin')),
+array('label'=>'Ver ofertas','url'=>array('index')),
+array('label'=>'Administrar ofertas','url'=>array('admin')),
 );
 ?>
 
-<h1>Create Ofertas</h1>
+<h1>Añadir oferta</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

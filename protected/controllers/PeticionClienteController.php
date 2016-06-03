@@ -42,7 +42,8 @@ class PeticionClienteController extends Controller {
 				array (
 						'allow', // allow authenticated user to perform 'create' and 'update' actions
 						'actions' => array (
-								'create'
+								'create',
+								'update'
 						),
 						'users' => array (
 								'@' 
@@ -86,6 +87,7 @@ class PeticionClienteController extends Controller {
 	 */
 	public function actionCreate() {
 		$model = new PeticionCliente ();
+		$modelFoto=new SubirFoto();
 		$usuario = new Usuarios();
 		$id=Yii::app()->user->id;
 		
@@ -96,14 +98,15 @@ class PeticionClienteController extends Controller {
 		if (isset ( $_POST ['PeticionCliente'] )) {
 			$model->attributes = $_POST ['PeticionCliente'];
 			$model->fecha_pedido=date ( 'd/m/Y' );
+			
 			if ($model->save ()){
 				$usuario = Usuarios::model()->findByAttributes(array(
 						'id' => $id
 				));
 				$mail= new EnviarEmail();
-				$subject = 'Petición presupuesto nº: '.$model->numero_pedido;
-				$message = 'tiene una nueva petición de presupuesto.';
-				$message .= "<a href='http://sinfriosincalor.esy.es/index.php?r=peticionCliente/view&id=".$model->id."'>Ver petición</a>";
+				$subject = 'PeticiÃ³n presupuesto nÂº: '.$model->numero_pedido;
+				$message = 'tiene una nueva peticiÃ³n de presupuesto.';
+				$message .= "<a href='http://sinfriosincalor.esy.es/index.php?r=peticionCliente/view&id=".$model->id."'>Ver peticiï¿½n</a>";
 				
 				$mail->enviar(
 						array($usuario->email, $usuario->nombre),
@@ -122,6 +125,7 @@ class PeticionClienteController extends Controller {
 		
 		$this->render ( 'create', array (
 				'model' => $model,
+				'modelFoto'=>$modelFoto,
 				'id'=>$id
 		) );
 	}

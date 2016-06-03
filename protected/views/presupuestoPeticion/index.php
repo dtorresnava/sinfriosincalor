@@ -4,8 +4,7 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-array('label'=>'Create PresupuestoPeticion','url'=>array('create')),
-array('label'=>'Manage PresupuestoPeticion','url'=>array('admin')),
+array('label'=>'Administrar presupuestos generados','url'=>array('admin')),
 );
 ?>
 

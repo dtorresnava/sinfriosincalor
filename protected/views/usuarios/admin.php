@@ -8,13 +8,13 @@ $this->breadcrumbs = array (
 
 $this->menu = array (
 		array (
-				'label' => 'List Usuarios',
+				'label' => 'Ver usuarios',
 				'url' => array (
 						'index'
 				)
 		),
 		array (
-				'label' => 'Create Usuarios',
+				'label' => 'Añadir usuarios',
 				'url' => array (
 						'create'
 				)
@@ -34,52 +34,54 @@ return false;
 });
 " );
 ?>
+<div class="paneladmin" >
+	<h1>Administrar usuarios</h1>
+	
+	<p>
+		Puedes añadir de forma opcional los siguientes comparadores (<b>&lt;</b>, <b>&lt;=</b>,
+		<b>&gt;</b>, <b>&gt;=</b>, <b> &lt;&gt;</b> or <b>=</b>) al principio de la busqueda de cada campo.
+	</p>
 
-<h1>Manage Usuarioses</h1>
-
-<p>
-	You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>,
-	<b>&gt;</b>, <b>&gt;=</b>, <b> &lt;&gt;</b> or <b>=</b>) at the
-	beginning of each of your search values to specify how the comparison
-	should be done.
-</p>
-
-<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button btn')); ?>
-<div class="search-form" style="display: none">
+	<?php echo CHtml::link('Búsqueda avanzada','#',array('class'=>'search-button btn')); ?>
+	<div class="search-form" style="display: none">
+	<?php
+		
+	$this->renderPartial ( '_search', array (
+				'model' => $model 
+		) );
+		?>
+	</div>
+	<!-- search-form -->
+	
 	<?php
 	
-$this->renderPartial ( '_search', array (
-			'model' => $model 
+	$this->widget ( 'booster.widgets.TbExtendedGridView', array (
+			'id' => 'usuarios-grid',
+			'fixedHeader' => true,
+			'type' => 'striped bordered',
+			'headerOffset' => 40,
+			'dataProvider' => $model->search (),
+			'filter' => $model,
+			'columns' => array (
+					'id',
+					'nombre',
+					'dni',
+					'roles',
+					'calle',
+					'poblacion',
+			/*
+			'provincia',
+			'cp',
+			'email',
+			'telefono',
+			'fecha_alta',
+			'usuario',
+			'password',
+			*/
+	array (
+							'class' => 'booster.widgets.TbButtonColumn' 
+					) 
+			) 
 	) );
 	?>
 </div>
-<!-- search-form -->
-
-<?php
-
-$this->widget ( 'booster.widgets.TbGridView', array (
-		'id' => 'usuarios-grid',
-		'dataProvider' => $model->search (),
-		'filter' => $model,
-		'columns' => array (
-				'id',
-				'nombre',
-				'dni',
-				'roles',
-				'calle',
-				'poblacion',
-		/*
-		'provincia',
-		'cp',
-		'email',
-		'telefono',
-		'fecha_alta',
-		'usuario',
-		'password',
-		*/
-array (
-						'class' => 'booster.widgets.TbButtonColumn' 
-				) 
-		) 
-) );
-?>

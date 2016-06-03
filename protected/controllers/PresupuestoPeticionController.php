@@ -35,7 +35,10 @@ class PresupuestoPeticionController extends Controller {
 						'actions' => array (
 								'index',
 								'view',
-								'validar'
+								'validar',
+								'verPresupuestos',
+								'delete',
+								
 						),
 						'users' => array (
 								'@' 
@@ -56,7 +59,6 @@ class PresupuestoPeticionController extends Controller {
 						'allow', // allow admin user to perform 'admin' and 'delete' actions
 						'actions' => array (
 								'admin',
-								'delete',
 								'createAuto'
 						),
 						'users' => array (
@@ -90,8 +92,8 @@ class PresupuestoPeticionController extends Controller {
 	 * If creation is successful, the browser will be redirected to the 'view' page.
 	 */
 	public function actionCreate() {
-		$model = new PresupuestoPeticion ();
-		
+		$model = new PresupuestoPeticion();
+		$oferta = new Ofertas();
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 		
@@ -99,11 +101,35 @@ class PresupuestoPeticionController extends Controller {
 			$model->attributes = $_POST ['PresupuestoPeticion'];
 			$model->validar = 0;
 			$model->fecha_presupuesto = date('d/m/Y');
+			
+			$idpeticion=0;
+			if(isset($_GET['peticion_id'])){
+				$idpeticion=$_GET['peticion_id'];
+				$peticion=PeticionCliente::model()->findByPk($idpeticion);
+				$model->servicio_id=$peticion->servicio_extra_id;
+			}
+			
+			$oferta=Ofertas::model()->findByPk($model->oferta);
+			$producto=Productos::model()->findByPk($model->producto_id);
+			$servicio=Servicios::model()->findByPk($model->servicio_id);
+			$servicioDefecto = Servicios::model()->findByAttributes(array(
+					'nombre'=>'Montage'
+			));
+			
+			$model->presupuesto_producto=$producto->precio;
+			$model->presupuesto_servicio=$servicio->precio_hora;
+			$precioP=$model->presupuesto_producto-($model->presupuesto_producto*($oferta->descuento_producto/100));
+			$precioS=($servicioDefecto->precio_hora*$model->horas_servicio)-($servicioDefecto->precio_hora*($oferta->descuento_servicio/100));
+			$model->total=$precioP+$precioS;
+			
 			if ($model->save ())		
 				
 				$this->redirect ( array (
 						'view',
-						'id' => $model->id 
+						'id' => $model->id,
+						'precio'=>$model->total,
+						
+						
 				) );
 		}
 		
@@ -113,7 +139,7 @@ class PresupuestoPeticionController extends Controller {
 	}
 	
 	/**
-	 * Generar presupuesto de forma automática
+	 * Generar presupuesto de forma automÃ¡tica
 	 */
 	
 	public function actionCreateAuto(){
@@ -150,13 +176,35 @@ class PresupuestoPeticionController extends Controller {
 			foreach($servicios as $servicio){
 				$num++;
 			}
-			$randomselect=rand(0, $num-1);
+			$randomselect=rand(1, $num-1);
 			$model->servicio_id=$servicios[$randomselect]->id;
 			$model->presupuesto_servicio=$servicios[$randomselect]->precio_hora;
 			
 			$model->peticion_cliente_id=$peticion_id;
 			$model->validar = 0;
 			$model->fecha_presupuesto = date('d/m/Y');
+			
+			$ofertas=Ofertas::model()->findAll();
+			$sum=0;
+			foreach ($ofertas as $oferta){
+				$sum++;
+			}
+			$oferta=Ofertas::model()->findByPk($sum);
+			$producto=Productos::model()->findByPk($model->producto_id);
+			$servicio=Servicios::model()->findByPk($model->servicio_id);
+				
+			$model->presupuesto_producto=$producto->precio;
+			$model->presupuesto_servicio=$servicio->precio_hora;
+			
+			$servicioDefecto = Servicios::model()->findByAttributes(array(
+					'nombre'=>'Montage'
+			));
+			
+			$randomselect=rand(1, 4);
+			$model->horas_servicio=$randomselect;
+			$precioP=$model->presupuesto_producto-($model->presupuesto_producto*($oferta->descuento_producto/100));
+			$precioS=($servicioDefecto->precio_hora*$model->horas_servicio)-($servicioDefecto->precio_hora*($oferta->descuento_servicio/100));
+			$model->total=$precioP+$precioS;
 			
 			
 			$smg="No se ha podido generar el presupuesto";
@@ -167,7 +215,7 @@ class PresupuestoPeticionController extends Controller {
 				$usuario = Usuarios::model()->findByPk($cliente_id);
 				
 				$mail= new EnviarEmail();
-				$subject = 'Presupuesto producto y servicio nº: '.$model->id;
+				$subject = 'Presupuesto producto y servicio nÂº: '.$model->id;
 				$message = 'Se ha generado el presupuesto para ver los detalles y validar el presupuesto acceda mediante el siguiente enlace:';
 				$message .= "<a href='http://sinfriosincalor.esy.es/index.php?r=presupuestoPeticion/view&id=".$model->id."'>Ver y Validar presupuesto</a>";
 				
@@ -198,6 +246,9 @@ class PresupuestoPeticionController extends Controller {
 	 */
 	public function actionUpdate($id) {
 		$model = $this->loadModel ( $id );
+		$model=PresupuestoPeticion::model()->findByAttributes(array(
+				'id'=>$id
+		));
 		
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -212,7 +263,8 @@ class PresupuestoPeticionController extends Controller {
 		}
 		
 		$this->render ( 'update', array (
-				'model' => $model 
+				'model' => $model,
+				'peticion_id'=>$model->peticion_cliente_id
 		) );
 	}
 	
@@ -234,10 +286,28 @@ class PresupuestoPeticionController extends Controller {
 				$this->redirect ( isset ( $_POST ['returnUrl'] ) ? $_POST ['returnUrl'] : array (
 						'admin' 
 				) );
-		} else
-			throw new CHttpException ( 400, 'Invalid request. Please do not repeat this request again.' );
+		} else{
+			//throw new CHttpException ( 400, 'Invalid request. Please do not repeat this request again.' );
+			$presupuesto=PresupuestoPeticion::model()->findByPk($id);
+			$usuario=Usuarios::model()->findByAttributes(array(
+					'usuario'=>Yii::app()->user->name
+			));
+			if($presupuesto->delete(false)){
+				$mail= new EnviarEmail();
+				$subject = 'Eliminado presupuesto nÂº'.$id;
+				$message = 'El usaurio '.$usuario->nombre.' ha eliminado el presupuesto con id: '.$id;
+				
+				$mail->enviar(
+						array($usuario->email, $usuario->nombre),
+						array("sinfriosincalorvlcpyme@gmail.com", "admin"),
+						$subject,
+						$message
+						);
+					
+				$this->render ( 'verPresupuestos');
+			}
+		}
 	}
-	
 	/**
 	 * Lists all models.
 	 */
@@ -263,7 +333,7 @@ class PresupuestoPeticionController extends Controller {
 	}
 	
 	/**
-	 * Validar el presupuesto acción que realiza el usuario
+	 * Validar el presupuesto acciÃ³n que realiza el usuario
 	 * 
 	 */
 	public function actionValidar(){
@@ -292,11 +362,24 @@ class PresupuestoPeticionController extends Controller {
 					$presupuesto->validar=1;
 					$presupuesto->fecha_alta_presupuesto=date('d/m/Y');
 					$presupuesto->save(false);
+					
+					$mail= new EnviarEmail();
+					$subject = 'Validado presupuesto nÂº'.$idPresu;
+					$message = 'El usaurio '.$usuario->nombre.' ha validado el presupuesto con id: '.$idPresu;
+					$message .= "\n puede proceder a organizar el pedido.";
+					
+					$mail->enviar(
+							array($usuario->email, $usuario->nombre),
+							array("sinfriosincalorvlcpyme@gmail.com", "admin"),
+							$subject,
+							$message
+							);
+					
 				}
 			}
 			
 			
-			$smg="Si entras en el if y validas";
+			$smg="Se ha validado el presupuesto";
 			
 		}
 		
@@ -304,6 +387,24 @@ class PresupuestoPeticionController extends Controller {
 				'smg'=>$smg
 		) );
 	}
+	
+	/**
+	 * 
+	 */
+	public function actionVerPresupuestos(){
+		$usermodel=new Usuarios();
+		$name=Yii::app()->user->name;
+				
+		
+// 		$this->render ( 'index', array (
+// 				'dataProvider' => $dataProvider
+// 		) );
+ 		$this->render ( 'verPresupuestos',array(
+ 				'name'=>$name,
+ 				'usermodel'=>$usermodel
+ 		));
+	}
+	
 	/**
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
