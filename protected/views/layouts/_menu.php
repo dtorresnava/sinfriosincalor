@@ -57,14 +57,14 @@ $items = array (
 				),
 				'visible' =>Yii::app()->user->name == "admin"
 		),
-		array (
-				'label' => 'About',
-				'url' => array (
-						'/site/page',
-						'view' => 'about' 
-				),
-				'visible' =>Yii::app()->user->name != "admin"
-		),
+// 		array (
+// 				'label' => 'About',
+// 				'url' => array (
+// 						'/site/page',
+// 						'view' => 'about' 
+// 				),
+// 				'visible' =>Yii::app()->user->name != "admin"
+// 		),
 		array (
 				'label' => 'Contacto',
 				'url' => array (

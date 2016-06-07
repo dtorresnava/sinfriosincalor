@@ -45,6 +45,6 @@ $this->menu = array (
 );
 ?>
 
-<h1>Modificar usuario <?php echo $model->id; ?></h1>
+<h1 class="posstitle">Modificar usuario <?php echo $model->id; ?></h1>
 
-<?php echo $this->renderPartial('_form',array('model'=>$model)); ?>
+<?php echo $this->renderPartial('_form',array('model'=>$model, 'smg'=>$smg)); ?>

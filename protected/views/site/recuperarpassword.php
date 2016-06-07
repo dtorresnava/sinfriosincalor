@@ -2,7 +2,10 @@
 
 </div>
 <div class="col-xs-6 col-md-6 loginpos">
+
+	
 	<?php
+	echo $mse;
     /* @var $this SiteController */
     /* @var $model LoginForm */
     /* @var $form CActiveForm  */
@@ -11,7 +14,7 @@
     $this->breadcrumbs = array(
         'Recuperarpassword',
     );
-    echo $mse;
+    
     
     ?>
     <br>
@@ -35,7 +38,7 @@
          
         <div class=" buttons">
             
-            <?php //echo CHtml::submitButton('Recuperar contraseña', array('class'=>'btn primary'));
+            <?php //echo CHtml::submitButton('Recuperar contraseï¿½a', array('class'=>'btn primary'));
             $this->widget ( 'booster.widgets.TbButton', array (
             		'buttonType' => 'submit',
             		'context' => 'primary',

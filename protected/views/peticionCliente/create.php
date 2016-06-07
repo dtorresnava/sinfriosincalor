@@ -6,6 +6,6 @@ $this->breadcrumbs=array(
 
 ?>
 
-<h1>Create PeticionCliente</h1>
+<h1 class="posstitle">Create PeticionCliente</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model, 'modelFoto'=>$modelFoto, 'id'=>$id)); ?>

@@ -6,16 +6,6 @@ $this->breadcrumbs = array (
 		'Manage' 
 );
 
-$this->menu = array (
-		array (
-				'label' => 'Ver peticiones de los clientes',
-				'url' => array (
-						'index' 
-				) 
-		),
-		
-);
-
 Yii::app ()->clientScript->registerScript ( 'search', "
 $('.search-button').click(function(){
 $('.search-form').toggle();
@@ -71,7 +61,8 @@ return false;
 					'fecha_pedido',
 		
 					array (
-						'class' => 'booster.widgets.TbButtonColumn' 
+						'class' => 'booster.widgets.TbButtonColumn' ,
+						'template'=>'{view}'
 					) 
 			) 
 	) );

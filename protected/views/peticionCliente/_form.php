@@ -1,12 +1,12 @@
-<div class="anyadirPeticion">
+<div class="formulariosStyle">	
 	<?php $form=$this->beginWidget('booster.widgets.TbActiveForm',array(
 		'id'=>'peticion-cliente-form',
 		'enableAjaxValidation'=>false,
 	)); ?>
 	
-<p class="help-block">
-	Campos con el <span class="required">*</span> son obligatorios.
-</p>
+	<p class="help-block">
+		Campos con el <span class="required">*</span> son obligatorios.
+	</p>
 	
 	<?php echo $form->errorSummary($model); ?>
 	

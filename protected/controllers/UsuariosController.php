@@ -108,7 +108,7 @@ class UsuariosController extends Controller {
 	 */
 	public function actionCreate() {
 		$model = new Usuarios ();
-		
+		$smg="";
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 		
@@ -116,6 +116,7 @@ class UsuariosController extends Controller {
 			$model->attributes = $_POST ['Usuarios'];
 			
 			if ($model->save ()){
+				$smg="Usuario creaddo correctamente, revisar el correo para activar su cuenta";
 				$mail= new EnviarEmail();
 				$subject = 'Confirmar cuenta';
 				$message = 'Para confirmar su cuenta vaya a la siguiente direccion ....';
@@ -127,10 +128,10 @@ class UsuariosController extends Controller {
 						$subject, 
 						$message
 						);
-		
-				$this->redirect ( array (
-						'view',
-						'id' => $model->id 
+				$model = new Usuarios ();
+				$this->render ('create', array (
+						'model' => $model,
+						'smg'=>$smg
 				) );
 			}
 		}
@@ -148,7 +149,8 @@ class UsuariosController extends Controller {
 		}
 		
 		$this->render ( 'create', array (
-				'model' => $model 
+				'model' => $model,
+				'smg'=>$smg
 		) );
 	}
 	
@@ -162,12 +164,13 @@ class UsuariosController extends Controller {
 	 */
 	public function actionUpdate($id) {
 		$model = $this->loadModel ( $id );
-		
+		$smg="";
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 		
 		if (isset ( $_POST ['Usuarios'] )) {
 			$model->attributes = $_POST ['Usuarios'];
+			$model->password=md5($model->password);
 			if ($model->save ())
 				$this->redirect ( array (
 						'view',
@@ -176,7 +179,8 @@ class UsuariosController extends Controller {
 		}
 		
 		$this->render ( 'update', array (
-				'model' => $model 
+				'model' => $model,
+				'smg'=>$smg
 		) );
 	}
 	

@@ -144,9 +144,10 @@ public function actionLogin()
 							$subject,
 							$message);
 				}
-				//$mse='<strong>Se ha enviado un email con la nueva contraseña</strong>';
+				$mse='<h3><strong>Se ha enviado un email con la nueva contraseÃ±a</strong><h3>';
 			}
 		}
+		$model = new RecuperarPassword();
 		$this->render('recuperarpassword', array('model'=>$model, 'mse'=>$mse));
 	}
 	

@@ -1,5 +1,5 @@
 
-<div class="mostrarCliente view">
+<div class="mostrarCliente">
 	<div class="infoProducto">
 		<?php if(Yii::app()->user->name == "admin"){?>
 			<b><?php echo CHtml::encode($data->getAttributeLabel('id')); ?>:</b>
@@ -23,10 +23,6 @@
 		<?php echo CHtml::encode($data->codigo); ?>
 		<br />
 	
-		<b><?php echo CHtml::encode($data->getAttributeLabel('descripcion')); ?>:</b>
-		<?php echo CHtml::encode($data->descripcion); ?>
-		<br />
-	
 		<b><?php echo CHtml::encode($data->getAttributeLabel('tipo')); ?>:</b>
 		<?php echo CHtml::encode($data->tipo); ?>
 		<br />
@@ -34,6 +30,9 @@
 		<b><?php echo CHtml::encode($data->getAttributeLabel('precio')); ?>:</b>
 		<?php echo CHtml::encode($data->precio."€"); ?>
 		<br />
+		<div class="imagenProducto">
+			<img id="estiloimagen" src="<?php echo Yii:: app() ->baseUrl.'/images/'.$data->modelo.'.jpg' ?>">
+		</div>
 	</div>
 	<?php /*
 	<b><?php echo CHtml::encode($data->getAttributeLabel('alta_especificaciones')); ?>:</b>
@@ -112,11 +111,11 @@
 		
 		
 	<?php	
+	}else{
+		echo "<h5 class='enlaceEspe'>sin especificaciones</h5>";
 	}//echo CHtml::link(utf8_encode('Ver especificaciones'),array('especificaciones/view&id='.$data->id));
 	?>
 	
-	<div class="imagenProducto">
-		<img id="estiloimagen" src="<?php echo Yii:: app() ->baseUrl.'/images/'.$data->modelo.'.jpg' ?>">
-	</div>
+	
 </div>
 <br>

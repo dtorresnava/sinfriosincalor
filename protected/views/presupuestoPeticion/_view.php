@@ -7,7 +7,7 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('peticion_cliente_id')); ?>:</b>
 	<?php echo CHtml::encode($data->peticion_cliente_id); ?>
 	<br />
-
+	
 	<b><?php echo CHtml::encode($data->getAttributeLabel('producto_id')); ?>:</b>
 	<?php echo CHtml::encode($data->producto_id); ?>
 	<br />

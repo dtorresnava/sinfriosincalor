@@ -22,6 +22,5 @@ $this->menu = array (
 );
 ?>
 
-<h1>Crear usuario</h1>
-
-<?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+<h1 class="posstitle">Crear usuario</h1>
+<?php echo $this->renderPartial('_form', array('model'=>$model, 'smg'=>$smg)); ?>

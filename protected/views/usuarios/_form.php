@@ -1,10 +1,12 @@
 <div class="formulariosStyleAlta">
+	<h3><?=$smg ?></h3>
 	<?php
 	$form = $this->beginWidget ( 'booster.widgets.TbActiveForm', array (
 			'id' => 'usuarios-form',
 			'enableAjaxValidation' => false 
 	) );
 	?>
+	
 	
 	<p class="help-block">
 		Campos con el <span class="required">*</span> son obligatorios.
@@ -13,7 +15,6 @@
 	
 	<div class="row">
 		<?php echo $form->errorSummary($model); ?>
-		<div class="col-md-6">
 			<?php echo $form->textFieldGroup($model,'usuario',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5','maxlength'=>40)))); ?>
 			
 			<?php echo $form->textFieldGroup($model,'nombre',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5','maxlength'=>50)))); ?>
@@ -34,9 +35,8 @@
 				) );
 			}
 			?>
-		</div>
 		
-		<div class="col-md-6">
+		<div>
 			<?php
 			if (Yii::app ()->user->name == "admin") {
 				echo $form->textFieldGroup ( $model, 'dni', array (
@@ -98,7 +98,7 @@
 				$this->widget ( 'booster.widgets.TbButton', array (
 						'buttonType' => 'submit',
 						'context' => 'primary',
-						'label' => $model->isNewRecord ? 'Create' : 'Save' 
+						'label' => $model->isNewRecord ? 'Añadir' : 'Modificar' 
 				) );
 			}
 			?>
@@ -106,14 +106,14 @@
 		</div>
 	</div>
 	
-	<div class="row"> 
-		<div class="col-md-6">
+	<div class=""> 
+		<div class="">
 			<?php
 			if (Yii::app ()->user->name != "admin") {
 				$this->widget ( 'booster.widgets.TbButton', array (
 						'buttonType' => 'submit',
 						'context' => 'primary',
-						'label' => $model->isNewRecord ? 'Create' : 'Save' 
+						'label' => $model->isNewRecord ? 'Añadir' : 'Modificar' 
 				) );
 			}
 			?>

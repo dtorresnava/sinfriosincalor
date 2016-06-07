@@ -18,7 +18,7 @@ $this->menu = array (
 		) 
 );
 ?>
-
+<div class="view">
 <h2>Nuestros productos</h2>
 
 <?php
@@ -28,3 +28,4 @@ $this->widget ( 'booster.widgets.TbListView', array (
 		'itemView' => '_view' 
 ) );
 ?>
+</div>

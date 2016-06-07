@@ -17,11 +17,9 @@ $this->menu = array (
 				)
 		)
 );
-
-
 ?>
 
-<h1>Usuarios</h1>
+<h1 class="">Usuarios</h1>
 
 <?php
 
