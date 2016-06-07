@@ -9,7 +9,8 @@ array('label'=>'List MaterialVentanaMetadata','url'=>array('index')),
 array('label'=>'Manage MaterialVentanaMetadata','url'=>array('admin')),
 );
 ?>
-
-<h1>Create MaterialVentanaMetadata</h1>
+<div class="formulariosStyle">
+<h1>Añadir materiales de fabricación</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+</div>

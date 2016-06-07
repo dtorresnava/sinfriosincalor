@@ -10,6 +10,6 @@ array('label'=>'Manage Servicios','url'=>array('admin')),
 );
 ?>
 
-<h1>Create Servicios</h1>
-
-<?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+	<h1>Create Servicios</h1>
+	
+	<?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

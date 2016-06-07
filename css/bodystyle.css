@@ -129,13 +129,27 @@ div.portadaimg img{
 .view{
 	position: relative;
 	left: 10%;
-	width: 80%;
-	
+	width: 80%;	
 }
 .grid-view table.items th a {
 	color: #30404E;
 }
 
+.red{
+	color: red;
+}
+
+.sublistapresupuesto{
+	position: relative;
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 10px;
+}
+.contenidopresupuesto{
+	position: relative;
+	left: 30px;
+	right: 30px;
+}
 .pagination>.active>a, 
 .pagination>.active>span, 
 .pagination>.active>a:hover, 
@@ -189,7 +203,6 @@ td.selected{
 	margin: 0 auto;
 	left: 10%;
 	right: 10%;
-	top: 60px;
 	width: 400px;
 }
 .posstitle{

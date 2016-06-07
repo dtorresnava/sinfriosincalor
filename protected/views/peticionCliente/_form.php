@@ -1,4 +1,4 @@
-<div class="formulariosStyle">	
+<div class="">	
 	<?php $form=$this->beginWidget('booster.widgets.TbActiveForm',array(
 		'id'=>'peticion-cliente-form',
 		'enableAjaxValidation'=>false,
@@ -11,8 +11,6 @@
 	<?php echo $form->errorSummary($model); ?>
 	
 		<?php echo $form->textFieldGroup($model,'cliente_id',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5', 'value'=>$id, 'readonly'=>true))));?>
-	
-		<?php echo $form->textFieldGroup($model,'numero_pedido',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
 	
 		<?php echo $form->textFieldGroup($model,'largo_habitacion',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5','maxlength'=>20)))); ?>
 	

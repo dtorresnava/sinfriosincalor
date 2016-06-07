@@ -1,4 +1,4 @@
-<div class="view">
+
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('nombre')); ?>:</b>
 	<?php echo CHtml::encode($data->nombre); ?>
@@ -23,6 +23,3 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('fecha_fin')); ?>:</b>
 	<?php echo CHtml::encode($data->fecha_fin); ?>
 	<br />
-
-
-</div>

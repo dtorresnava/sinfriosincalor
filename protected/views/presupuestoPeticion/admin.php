@@ -6,15 +6,6 @@ $this->breadcrumbs = array (
 		'Manage' 
 );
 
-$this->menu = array (
-		array (
-				'label' => 'Ver presupuestos generados',
-				'url' => array (
-						'index' 
-				) 
-		),
-);
-
 Yii::app ()->clientScript->registerScript ( 'search', "
 $('.search-button').click(function(){
 $('.search-form').toggle();
@@ -64,13 +55,14 @@ return false;
 					'presupuesto_producto',
 					'presupuesto_servicio',
 					'total',
-			/*
-			'fecha_presupuesto',
-			'fecha_alta_presupuesto',
-			'validar',
-			*/
-	array (
-							'class' => 'booster.widgets.TbButtonColumn' 
+					/*
+					'fecha_presupuesto',
+					'fecha_alta_presupuesto',
+					'validar',
+					*/
+					array (
+						'class' => 'booster.widgets.TbButtonColumn',
+						'template'=>'{view}'
 					) 
 			) 
 	) );

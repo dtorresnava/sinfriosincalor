@@ -1,4 +1,4 @@
-<div class="formulariosStyle">	
+<div class="">	
 	<?php $form=$this->beginWidget('booster.widgets.TbActiveForm',array(
 		'id'=>'productos-form',
 		'enableAjaxValidation'=>false,
@@ -28,7 +28,18 @@
 	
 		<?php echo $form->textFieldGroup($model,'codigo',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
 	
-		<?php echo $form->textFieldGroup($model,'descripcion',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5','maxlength'=>400)))); ?>
+		<?php echo $form->textAreaGroup(
+			$model,
+			'descripcion',
+			array(
+				'wrapperHtmlOptions' => array(
+					'class' => 'col-sm-5',
+				),
+				'widgetOptions' => array(
+					'htmlOptions' => array('rows' => 5),
+				)
+			)
+		); ?>
 	
 		<?php echo $form->textFieldGroup($model,'tipo',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5','maxlength'=>20)))); ?>
 	

@@ -91,14 +91,13 @@ class PeticionClienteController extends Controller {
 		$usuario = new Usuarios();
 		$id=Yii::app()->user->id;
 		
-		
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 		
 		if (isset ( $_POST ['PeticionCliente'] )) {
 			$model->attributes = $_POST ['PeticionCliente'];
 			$model->fecha_pedido=date ( 'd/m/Y' );
-			
+			$model->numero_pedido=0;
 			if ($model->save ()){
 				$usuario = Usuarios::model()->findByAttributes(array(
 						'id' => $id
@@ -114,11 +113,12 @@ class PeticionClienteController extends Controller {
 						$subject,
 						$message
 						);
-				
+				$smg="se ha enviado un email al administrador para generar tu presupuesto, en unos minutos tendrá su respuesta";
 				
 				$this->redirect ( array (
 						'view',
-						'id' => $model->id 
+						'id' => $model->id,
+						'smg'=>$smg
 				) );
 			}
 		}

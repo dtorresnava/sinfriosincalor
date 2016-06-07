@@ -9,7 +9,8 @@ array('label'=>'Ver ofertas','url'=>array('index')),
 array('label'=>'Administrar ofertas','url'=>array('admin')),
 );
 ?>
-
+<div class="formulariosStyle">
 <h1>Añadir oferta</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+</div>

@@ -1,4 +1,4 @@
-<div class="formulariosStyle">
+<div class="">
 	<?php $form=$this->beginWidget('booster.widgets.TbActiveForm',array(
 		'id'=>'fabricante-form',
 		'enableAjaxValidation'=>false,
@@ -14,7 +14,18 @@
 	
 		<?php echo $form->textFieldGroup($model,'web',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5','maxlength'=>50)))); ?>
 	
-		<?php echo $form->textFieldGroup($model,'descripcion',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5','maxlength'=>400)))); ?>
+		<?php echo $form->textAreaGroup(
+			$model,
+			'descripcion',
+			array(
+				'wrapperHtmlOptions' => array(
+					'class' => 'col-sm-5',
+				),
+				'widgetOptions' => array(
+					'htmlOptions' => array('rows' => 5),
+				)
+			)
+		); ?>
 	
 		<?php echo $form->textFieldGroup($model,'calle',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5','maxlength'=>100)))); ?>
 	
@@ -32,7 +43,7 @@
 		<?php $this->widget('booster.widgets.TbButton', array(
 				'buttonType'=>'submit',
 				'context'=>'primary',
-				'label'=>$model->isNewRecord ? 'Create' : 'Save',
+				'label'=>$model->isNewRecord ? 'Añadir' : 'Actualizar',
 			)); ?>
 	</div>
 	

@@ -9,7 +9,8 @@ array('label'=>'Ver fabricantes','url'=>array('index')),
 array('label'=>'Administrar fabricantes','url'=>array('admin')),
 );
 ?>
-
-<h1>Aladir fabricante</h1>
+<div class="formulariosStyle">
+<h1>Añadir fabricante</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+</div>

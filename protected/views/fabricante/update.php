@@ -12,7 +12,8 @@ $this->breadcrumbs=array(
 	array('label'=>'Administrar fabricantes','url'=>array('admin')),
 	);
 	?>
-
+<div class="formulariosStyle">
 	<h1>Actualizar fabricante nº:<?php echo $model->id; ?></h1>
 
-<?php echo $this->renderPartial('_form',array('model'=>$model)); ?>
+	<?php echo $this->renderPartial('_form',array('model'=>$model)); ?>
+</div>

@@ -15,7 +15,8 @@ $this->menu = array (
 		) 
 );
 ?>
-
+<div class="formulariosStyle">
 <h1>Create Productos</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+</div>
