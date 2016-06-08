@@ -1,4 +1,5 @@
-<div class="centerviewStyle">
+<div class="centerviewStyle ">
+
 	<?php
 	$this->breadcrumbs=array(
 		'Especificaciones'=>array('index'),

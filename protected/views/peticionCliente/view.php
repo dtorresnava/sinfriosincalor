@@ -64,11 +64,11 @@
 		}
 		
 		if(Yii::app()->user->name == "admin") {?>
-		<div class="col-md-6">
+		<div class="col-md-6 manual">
 			<h3><?php echo CHtml::link(utf8_encode('Generar presupuesto'),array('presupuestoPeticion/create&cliente='.$model->cliente_id.'&peticion_id='.$model->id)); ?></h3>
 		</div>
 		
-		<div class="col-md-6">
+		<div class="col-md-6 automatico">
 			<h3><?php echo CHtml::link('Generar presupuesto automático',array('presupuestoPeticion/createAuto&cliente='.$model->cliente_id.'&peticion_id='.$model->id)); ?></h3>
 		</div>
 	<?php }?>

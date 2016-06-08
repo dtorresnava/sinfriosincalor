@@ -1,3 +1,5 @@
+
+<div class="formulariosStyle">
 <?php
 $this->breadcrumbs=array(
 	'Material Ventana Metadatas'=>array('index'),
@@ -6,13 +8,14 @@ $this->breadcrumbs=array(
 );
 
 	$this->menu=array(
-	array('label'=>'List MaterialVentanaMetadata','url'=>array('index')),
-	array('label'=>'Create MaterialVentanaMetadata','url'=>array('create')),
-	array('label'=>'View MaterialVentanaMetadata','url'=>array('view','id'=>$model->id)),
-	array('label'=>'Manage MaterialVentanaMetadata','url'=>array('admin')),
+	array('label'=>'Ver materiales','url'=>array('index')),
+	array('label'=>'Añadir material','url'=>array('create')),
+	array('label'=>'Ver material','url'=>array('view','id'=>$model->id)),
+	array('label'=>'Administrar materiales','url'=>array('admin')),
 	);
 	?>
 
-	<h1>Update MaterialVentanaMetadata <?php echo $model->id; ?></h1>
+	<h1>Actualizar material <?php echo $model->id; ?></h1>
 
 <?php echo $this->renderPartial('_form',array('model'=>$model)); ?>
+</div>

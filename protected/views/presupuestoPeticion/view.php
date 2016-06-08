@@ -6,7 +6,6 @@
 	);
 	
 	$this->menu=array(
-	array('label'=>'Var presupuestos','url'=>array('index')),
 	array('label'=>'Administrar presupuestos','url'=>array('admin')),
 	);
 	?>

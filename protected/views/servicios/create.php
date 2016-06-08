@@ -9,7 +9,8 @@ array('label'=>'List Servicios','url'=>array('index')),
 array('label'=>'Manage Servicios','url'=>array('admin')),
 );
 ?>
-
+<div class="formulariosStyle">
 	<h1>Create Servicios</h1>
 	
 	<?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+</div>

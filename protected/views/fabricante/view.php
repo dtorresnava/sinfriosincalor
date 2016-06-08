@@ -67,4 +67,5 @@
 			) 
 	) );
 	?>
+	<?php echo "<h3><a href='".$model->web."'> Acceder a la web del fabricante </a></h3>";?>
 </div>

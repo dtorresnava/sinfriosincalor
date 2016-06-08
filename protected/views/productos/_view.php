@@ -2,10 +2,10 @@
 <div class="mostrarCliente">
 	<div class="infoProducto">
 		<?php if(Yii::app()->user->name == "admin"){?>
-			<b><?php echo CHtml::encode($data->getAttributeLabel('id')); ?>:</b>
-			<?php echo CHtml::link(CHtml::encode($data->id),array('view','id'=>$data->id));?>
+			<b><?php echo CHtml::encode($data->getAttributeLabel('modelo')); ?>:</b>
+			<?php echo CHtml::link(CHtml::encode($data->modelo),array('view','id'=>$data->id));?>
 		<br />
-		<?php }?>
+		<?php }else?>
 		
 		<b><?php echo CHtml::encode($data->getAttributeLabel('modelo')); ?>:</b>
 		<?php echo CHtml::encode($data->modelo); ?>

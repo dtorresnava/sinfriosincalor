@@ -5,8 +5,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-array('label'=>'List MaterialVentanaMetadata','url'=>array('index')),
-array('label'=>'Manage MaterialVentanaMetadata','url'=>array('admin')),
+array('label'=>'Ver materiales','url'=>array('index')),
+array('label'=>'Administrar materiales','url'=>array('admin')),
 );
 ?>
 <div class="formulariosStyle">

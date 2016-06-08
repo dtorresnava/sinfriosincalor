@@ -43,7 +43,7 @@
 		<?php $this->widget('booster.widgets.TbButton', array(
 				'buttonType'=>'submit',
 				'context'=>'primary',
-				'label'=>$model->isNewRecord ? 'Añadir' : 'Actualizar',
+				'label'=>$model->isNewRecord ? 'Añadir' : 'Modificar',
 			)); ?>
 	</div>
 	

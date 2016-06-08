@@ -1,4 +1,4 @@
-<div class="formulariosStyle">
+<div class="">
 	<?php $form=$this->beginWidget('booster.widgets.TbActiveForm',array(
 		'id'=>'servicios-form',
 		'enableAjaxValidation'=>false,
@@ -20,7 +20,7 @@
 		<?php $this->widget('booster.widgets.TbButton', array(
 				'buttonType'=>'submit',
 				'context'=>'primary',
-				'label'=>$model->isNewRecord ? 'Create' : 'Save',
+				'label'=>$model->isNewRecord ? 'Añadir' : 'Modificar',
 			)); ?>
 	</div>
 	

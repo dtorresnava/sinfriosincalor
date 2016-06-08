@@ -105,8 +105,8 @@ li a:hover{
 div.portada{
 	position:fixed;
 	margin: 0 auto;
-	top: 50px;
 	overflow: hidden;
+	top: 50px;
 	width: 100%;
 	bottom: 35px;
 	z-index: -1;
@@ -115,6 +115,13 @@ div.portada{
 }
 
 div.portadaimg{
+	position:fixed;
+	margin: 0 auto;
+	top: 50px;
+	left: 5%;
+	right: 5%;
+	bottom: 35px;
+	overflow: hidden;
 	background: #F1F7E2;
 }
 
@@ -213,6 +220,7 @@ td.selected{
 	right: 10%;
 	width: 400px;
 }
+
 .posstitleAlta{
 	position: relative;
 	width: 50%;
@@ -234,13 +242,46 @@ td.selected{
 .texto{
 	position: absolute;
 	margin: 0 auto;
-	top: 20%;
+	top: 100px;
 	left: 20%;
 	right: 20%;
 }
+.input-group-addon{
+	background-color: #4FA9B8;
+	color: #F1F7E2;
+	border-color: #4FA9B8;
+} 
+..navbar-nav>li>a:hover{
+	background-color: #4FA9B8;
+}
+a:hover{
+	color: #4FA9B8;
+}
+
+.manual h3 {
+	padding: 5px;
+	border-radius: 5px;
+	background-color: #202B30;
+}
+.manual h3 a:hover{
+	text-decoration: none;
+	color: #F1F7E2;
+}
+.automatico h3{
+	padding: 5px;
+	border-radius: 5px;
+	background-color: #202B30;
+}
+.automatico h3 a:hover{
+	text-decoration: none;
+	color: #F1F7E2;
+}
+
+
 .texto p{
 	position: absolute;
 	margin: 0 auto;
+	top: 25%;
 	font-size: 20px;
 	padding: 10px;
 	border-radius:10px;
@@ -280,9 +321,6 @@ h5.enlaceEspe{
 	.centermaindata{
 		top: 204px;
 	}
-	div.portada{
-		top:104px;
-	}
 	.rigthmenudata{
 		top: 154px;	
 	}
@@ -301,9 +339,6 @@ h5.enlaceEspe{
 	}
 	.rigthmenudata{
 		top: 204px;	
-	}
-	div.portada{
-		top:204px;
 	}
 }
 
